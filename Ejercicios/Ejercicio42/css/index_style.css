@@ -1,0 +1,108 @@
+/*Cambiar el fondo de la pagina web de color morado muy claro*/
+body {
+  background-color: #e6e6ff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*Alienar todos los contenidos que estan dentro de un div al centro*/
+.content {
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+}
+/*Indicar los aside en linea*/
+.content_body {
+  display: flex;
+}
+
+/*Contenidos del indice que se muevan a la izquierda del todo*/
+.aside_left {
+  width: 170px;
+  padding-left: 30px;
+  margin-right: 10px;
+}
+
+/*El contenido de debajo de la imagen, la bienvenida se le cambia el tamaño y su textura*/
+#welcome {
+  font-weight: 800;
+  font-size: x-small;
+}
+.tit_buscador {
+  font-size: small;
+  padding-bottom: 3px;
+}
+/*Modificar input del buscador para que tenga borde*/
+input {
+  border-radius: 40px;
+  border-collapse: collapse;
+}
+
+/*Lista con espaciado de la derecha para que este centrado*/
+ul {
+  margin-right: 30px;
+}
+
+/*Clase principal que se encarga del estilo general de la lista*/
+.cuadro_rq {
+  list-style-type: none;
+  background-color: darkblue;
+  color: white;
+  font-size: small;
+  margin-bottom: 2px;
+  padding: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Clase adicional de la lista que se encarga de la celda grande*/
+.cuadro_rq_big {
+  font-size: large;
+  font-weight: bold;
+  border: 3px double;
+  border-color: white;
+}
+/*Contenidos del aside de la derecha*/
+.aside_right {
+  width: 100%;
+  text-align: center;
+}
+/*Aumentar el grosor de la fuente y el tamaño del titulo*/
+#title_book {
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.list_img {
+  display: flex;
+  padding-left: 50px;
+}
+
+/*Palabras pagina web titulo aside de la derecha*/
+.title_1 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+/*Palabras de la pagina web*/
+.title_2 {
+  font-size: 25px;
+}
+
+/*Contenedor para los parrafos para controlar el espaciado de los contenidos del texto*/
+.container_p p {
+  margin: 2px;
+}
+
+/*Contenedor de las oraciones el cual tienen un fondo blanco*/
+.container_p_bgwhite {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: white;
+}
+
+/*Span para simular los enlaces de la pagina web*/
+span {
+  color: blue;
+  text-decoration: underline;
+}
+
+/*Footer de la pagina web*/
+footer {
+  font-size: xx-small;
+}

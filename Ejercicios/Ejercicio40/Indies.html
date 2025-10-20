@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indies</title>
+    <style>
+      /* Estilo general para los párrafos: fuente legible y tamaño grande */
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+      }
+
+      /* Fondo de la página con imagen centrada y texto en blanco */
+      body {
+        background-image: url(img/background.jpg);
+        background-size: auto;
+        background-position: center;
+        color: rgb(255, 255, 255);
+      }
+
+      /* Imagen principal de la sección de juegos indie: ocupa todo el ancho y altura fija */
+      .img_principal_indies {
+        margin: 0 auto;
+        width: 100%;
+        height: 400px;
+      }
+
+      /* Barra de navegación fija en la parte superior al hacer scroll */
+      nav {
+        position: sticky;
+        top: 0;
+      }
+
+      /* Lista de navegación horizontal con fondo negro y separación entre elementos */
+      nav ul {
+        background-color: rgb(0, 0, 0);
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 20px;
+      }
+
+      /* Estilo de los enlaces del menú: transición suave, texto blanco y centrado */
+      nav ul li a {
+        transition: all 0.5s;
+        font-size: large;
+        text-decoration: none;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+      }
+
+      /* Efecto hover sobre los enlaces del menú: cambia el fondo */
+      nav ul li a:hover {
+        transition: 0.5s;
+        background-color: rgb(104, 100, 100);
+      }
+
+      /* Estilo para los ítems de lista: tamaño grande y espacio inferior */
+      li {
+        font-size: large;
+        margin-bottom: 10px;
+      }
+
+      /* Imagen destacada del juego "Until Then": centrada y con bordes redondeados */
+      .img_premioUT {
+        border-radius: 30%;
+        width: 270px;
+        margin: 0 auto;
+      }
+
+      /* Imagen interna dentro del contenedor de Until Then: bordes redondeados */
+      .img_premioUT img {
+        border-radius: 20%;
+      }
+
+      /* Contenedor lateral para Until Then: fondo oscuro, bordes redondeados y alineado a la derecha */
+      .aside_UT {
+        background-color: rgb(75, 75, 66);
+        border-radius: 10%;
+        float: right;
+        width: 400px;
+      }
+
+      /* Contenedor del juego Hollow Knight: ancho fijo */
+      .hollow_knight {
+        width: 460px;
+      }
+
+      /* Contenedor del juego Undertale: ancho fijo */
+      .undertale {
+        width: 400px;
+      }
+
+      /* Imagen destacada de Undertale: centrada, con bordes redondeados y ancho relativo */
+      .img_premioU {
+        border-radius: 30%;
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      /* Imagen interna de Undertale: tamaño fijo y bordes redondeados */
+      .img_premioU img {
+        width: 200px;
+        border-radius: 20%;
+      }
+
+      /* Contenedor lateral para Undertale: fondo oscuro, bordes redondeados y alineado a la derecha */
+      .aside_U {
+        background-color: rgb(75, 75, 66);
+        border-radius: 10%;
+        float: right;
+        width: 250px;
+      }
+
+      /* Pie de página: fondo semitransparente y texto blanco */
+      footer {
+        background-color: rgba(0, 0, 0, 0.473);
+        color: white;
+      }
+
+      /* Iconos de redes sociales: tamaño pequeño y forma circular */
+      .redes_sociales {
+        width: 50px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Juegos Indies</h1>
+      <img class="img_principal_indies" src="img/indies.jpg" alt="" />
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Principal</a></li>
+        <li><a href="Indies.html">Indies</a></li>
+        <li><a href="rolplaygames.html">RPG</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <section>
+      <article>
+        <h2>¿Que son los juegos indie?</h2>
+        <p>
+          Los videojuegos indie son los que equipos pequeños se animaron a
+          crear. De hecho, también hay videojuegos indie creados por una sola
+          persona. Aquí las grandes empresas o corporaciones no tienen cabida,
+          no pueden meter mano ni en la parte creativa ni en el financiamiento
+          del proyecto. A diferencia de los juegos triple A, donde las grandes
+          compañías imponen tendencias con sus enormes presupuestos, los indie
+          se la juegan por la libertad total para innovar y hacer cosas
+          diferentes
+        </p>
+        <p>
+          Si lo viéramos como el cine, los juegos triple A serían los
+          blockbusters de Hollywood, con todo el dinero y el espectáculo,
+          mientras que los indie serían como el cine de autor: menos plata, pero
+          con más identidad y ganas de arriesgarse creativamente.
+        </p>
+      </article>
+    </section>
+    <section>
+      <article>
+        <h2>Caracteristicas</h2>
+        <p>
+          Los juegos indie se destacan por varias características que los
+          diferencian de los títulos producidos por grandes estudios:
+        </p>
+        <ul>
+          <li>
+            <strong>Independencia Creativa:</strong> Los desarrolladores de
+            juegos indie tienen total libertad creativa, lo que les permite
+            explorar ideas y mecánicas de juego innovadoras sin las
+            restricciones impuestas por los grandes editores.
+          </li>
+          <li>
+            <strong>Presupuestos Modestos:</strong> A menudo, los juegos indie
+            se desarrollan con presupuestos mucho más bajos en comparación con
+            los títulos AAA. Esto puede resultar en gráficos menos
+            impresionantes, pero también lleva a una mayor innovación en otros
+            aspectos del juego.
+          </li>
+          <li>
+            <strong>Equipos Pequeños:</strong> Los juegos indie suelen ser
+            creados por individuos o pequeños equipos. Esta cercanía puede
+            traducirse en una mayor cohesión y una visión más clara en el diseño
+            del juego.
+          </li>
+          <li>
+            <strong>Distribución Digital:</strong> Muchos juegos indie se
+            distribuyen a través de plataformas digitales como Steam, itch.io, y
+            las tiendas de consolas, lo que permite a los desarrolladores llegar
+            a una audiencia global sin la necesidad de un distribuidor físico.
+          </li>
+        </ul>
+      </article>
+    </section>
+    <section>
+      <article>
+        <h2>Ejemplos de juegos Indies</h2>
+        <h3>Until Then</h3>
+        <img src="img/until_then.jpg" alt="" />
+        <aside class="aside_UT">
+          <div class="img_premioUT">
+            <img src="img/premio_untilthen.png" alt="" />
+          </div>
+          <p>
+            En el año 2024, por su narrativa, arte de dibujo estilo pixel art,
+            musica ideal representando la vida del protagonista y emociones a lo
+            largo del juego. Fue nominado mejor juego de 2024
+          </p>
+        </aside>
+        <p>
+          En un mundo que aún se recupera de una catástrofe, Mark Borja y sus
+          amigos navegan por las alegrías y penas de otro año de instituto.
+          Despiértate en la típica habitación de adolescente, ensaya con el
+          piano, date prisa para entregar los deberes a tiempo y desarrolla (y
+          quema) relaciones, mientras rememoras las inseguridades diarias de la
+          vida en el instituto.
+        </p>
+        <p>
+          Hasta que un fatídico encuentro desencadena una reacción en cadena que
+          pone patas arriba la vida de Mark. La gente desaparece y los recuerdos
+          resultan poco fiables. Descubre una verdad oculta con Mark y sus
+          amigos en esta aventura centrada en la narrativa en la que tus
+          elecciones pueden tener consecuencias y apresúrate para desvelar el
+          misterio antes de que sea demasiado tarde.
+        </p>
+        <ul>
+          <li>Creado en 2024</li>
+          <li>Por Polichroma Games</li>
+        </ul>
+      </article>
+    </section>
+    <section>
+      <article>
+        <h3>Hollow Knight</h3>
+        <img class="hollow_knight" src="img/hollowKnigt.png" alt="" />
+        <p>
+          Hollow Knight cuenta la historia de Hallownest, un antiguo reino de
+          insectos que cayó en ruina tras la propagación de una infección
+          provocada por una entidad llamada el Destello. El Rey Pálido, para
+          contenerla, creó al Hollow Knight, un recipiente sin voluntad
+          destinado a encerrar al Destello, pero el plan falló.
+        </p>
+        <p>
+          El protagonista, un ser del Vacío como el Hollow Knight, llega a
+          Hallownest y se adentra en sus profundidades, enfrentando enemigos,
+          descubriendo secretos del pasado y enfrentando su propio origen. A lo
+          largo del viaje, el jugador puede influir en el destino del reino, con
+          varios finales posibles que exploran temas como el sacrificio, la
+          corrupción y la redención.
+        </p>
+        <ul>
+          <li>Creando en 2017</li>
+          <li>Por Team Cherry</li>
+        </ul>
+      </article>
+    </section>
+    <section>
+      <article>
+        <h3>Undertale</h3>
+        <img class="undertale" src="img/undertale.png" alt="" />
+        <aside class="aside_U">
+          <div class="img_premioU">
+            <img src="img/premio_undertale.png" alt="" />
+          </div>
+          <p>
+            Ganó el Premio Matthew Crump a la Innovación Cultural, reconociendo
+            su impacto creativo y narrativo
+          </p>
+        </aside>
+        <p>
+          Undertale narra la historia de un niño que cae en el mundo
+          subterráneo, habitado por monstruos que fueron encerrados allí tras
+          una guerra con los humanos. Para regresar a la superficie, el
+          protagonista debe atravesar este mundo, enfrentando criaturas que
+          pueden ser derrotadas o perdonadas, según las decisiones del jugador.
+        </p>
+        <p>
+          El juego se distingue por su sistema de combate no violento y por cómo
+          las elecciones morales afectan profundamente la historia y sus
+          múltiples finales. A lo largo del viaje, se revelan secretos sobre el
+          pasado del reino, el origen de los personajes y el verdadero propósito
+          del protagonista
+        </p>
+        <ul>
+          <li>Creado en 2015</li>
+          <li>Por TobyFox</li>
+        </ul>
+      </article>
+    </section>
+    <footer id="contacto">
+      <h2>Contacto</h2>
+      <article>
+        <p>Daniel Iglesias Prieto</p>
+        <p>666 666 666</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10588.283752026457!2d139.7640205054875!3d35.69776693358907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c101ab8143f%3A0x1089bcf3bf419a32!2sBIZCORE%20Jinbocho!5e0!3m2!1ses-419!2ses!4v1760524521165!5m2!1ses-419!2ses"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <br />
+        <a href="https://x.com/"
+          ><img
+            class="redes_sociales"
+            src="https://store-images.s-microsoft.com/image/apps.60673.9007199266244427.4d45042b-d7a5-4a83-be66-97779553b24d.5d82b7eb-9734-4b51-b65d-a0383348ab1b"
+            alt=""
+        /></a>
+        <a href="https://www.instagram.com/"
+          ><img
+            class="redes_sociales"
+            src="https://tse2.mm.bing.net/th/id/OIP.72S49bENY6EMqQr0n7eg_AHaHZ?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt=""
+        /></a>
+        <a href="https://youtube.com/"
+          ><img
+            class="redes_sociales"
+            src="https://th.bing.com/th/id/R.649c77a204202c9bee4d3d4daf4c15bf?rik=UGdWixKAZmKWVA&riu=http%3a%2f%2ffreelogopng.com%2fimages%2fall_img%2f1656502794yt-logo.png&ehk=pfXRvGTb5wA0jh5iykLD2VqJ8InJrfRmaOFVBct6UTE%3d&risl=&pid=ImgRaw&r=0"
+            alt=""
+        /></a>
+      </article>
+    </footer>
+  </body>
+</html>

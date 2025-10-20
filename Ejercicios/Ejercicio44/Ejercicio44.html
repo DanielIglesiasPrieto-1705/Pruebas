@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 39</title>
+    <style>
+      h1{
+        margin: 0 auto;
+        width: 300px;
+      }
+      body{
+        background: linear-gradient(to right, #cd4545,#f16821,#f3a333);
+      }
+      section{
+        display: flex;
+        justify-content: center;
+      }
+      img {
+        width: 100px;
+        height: 100px;
+        transition: all 0.75s;
+      }
+      iframe {
+        margin: 0 auto;
+        width: 75%;
+        height: 400px;
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        padding: 10px;
+      }
+      img:hover {
+        transition: 0.75s;
+        width: 150px;
+        height: 150px;
+      }
+      .flores_nombre {
+        padding-top: 10px;
+        font-size: x-large;
+        text-decoration: none;
+        transition: all 0.75s;
+        color: color-mix(in srgb, red 80%, yellow 20%);
+      }
+      .flores_nombre:hover {
+        transition: 0.75s;
+        text-decoration: underline;
+        font-size: xx-large;
+      }
+      .frame_container{
+        margin: 0 auto;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flores Japonesas</h1>
+    <hr />
+    <section>
+      <aside style=" width: auto; margin-left: 50px">
+        <h2>Selecciona</h2>
+        <a href="Ume.html" target="iframe_view"><img src="img/ume.jpg" /></a>
+        <a href="Tsubaki.html" target="iframe_view"
+          ><img src="img/tsubaki.jpg" alt=""
+        /></a>
+        <br />
+        <a href="Sakura.html" target="iframe_view"
+          ><img src="img/sakura.jpg" alt=""
+        /></a>
+        <a href="Kiku.html" target="iframe_view"
+          ><img src="img/kiku.jpg" alt=""
+        /></a>
+        <br />
+        <a href="Kinmokusei.html" target="iframe_view"
+          ><img src="img/kinmokusei.jpg" alt=""
+        /></a>
+        <a href="Lycoris.html" target="iframe_view">
+          <img src="img/lycoris.jpg" alt=""
+        /></a>
+      </aside>
+      <div class="frame_container">
+        <iframe
+          name="iframe_view"
+          frameborder="1"
+        ></iframe>
+      </div>
+      <aside style=" width: auto; margin-right: 50px">
+        <h2>Selecciona</h2>
+        <ul>
+          <li>
+            <a class="flores_nombre" href="Ume.html" target="iframe_view"
+              >Ume</a
+            >
+          </li>
+          <li>
+            <a class="flores_nombre" href="Tsubaki.html" target="iframe_view"
+              >Tsubaki</a
+            >
+          </li>
+          <li>
+            <a class="flores_nombre" href="Sakura.html" target="iframe_view"
+              >Sakura</a
+            >
+          </li>
+          <li>
+            <a class="flores_nombre" href="Kiku.html" target="iframe_view"
+              >Kiku</a
+            >
+          </li>
+          <li>
+            <a class="flores_nombre" href="Kinmokusei.html" target="iframe_view"
+              >Kinmokusei</a
+            >
+          </li>
+          <li>
+            <a class="flores_nombre" href="Lycoris.html" target="iframe_view"
+              >Lycoris Radiatta</a
+            >
+          </li>
+        </ul>
+      </aside>
+    </section>
+  </body>
+</html>

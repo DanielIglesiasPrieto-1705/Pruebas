@@ -1,0 +1,89 @@
+/* INDENTIFICADORES */
+
+/* Hace que la barra nav esta en la parte superior y que cuando baje la pagina web se muestre todavia en la parte superior*/
+#navbar {
+  position: sticky;
+  top: 0;
+  background-color: beige;
+}
+/*Centra la lista*/
+#navbar ul {
+  margin: 0 auto;
+  width: 30%;
+}
+/* Indica que la lista se muestre en horizontal y con espacios entre ellos (padding) */
+#navbar ul li {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: large;
+  font-weight: bolder;
+  padding: 20px;
+}
+/*Cuando el raton este encima del li del navbar este cambiara de color*/
+#navbar ul li:hover {
+  background-color: rgb(218, 192, 153);
+  transition: 0.5s;
+}
+/*Indicamos un fondo a la lista de los libros */
+#libros_Greene {
+  background-color: rgba(182, 159, 110, 0.534);
+  margin: 0 auto;
+  width: 500px;
+}
+/*Indicamos que los contenidos de la lsta de libros esten en bloques, separados y con distinto tamaño de letra*/
+#libros_Greene li {
+  font-size: large;
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+}
+/*Cuando el raton pase por encima de el los contenidos de la lista de libros cambiara el tamaño del texto y indicara una linea debajo de este*/
+#libros_Greene li a:hover {
+  color: rgb(160, 145, 114);
+  font-size: x-large;
+  text-decoration: underline;
+  transition: 1s;
+}
+/* CLASES */
+
+/*Indica el color de fondo del footer y su separacion del espacio de relleno*/
+.footer {
+  background-color: rgb(238, 221, 194);
+  padding: 10px;
+  border-style: double;
+}
+/*Indica la separacion del espacio de relleno de los articulos*/
+.articulo {
+  padding: 20px;
+}
+
+/* ETIQUETAS */
+
+body {
+  background-color: rgba(240, 228, 209, 0.849);
+}
+
+/*Indica que la cabecera y sus contenidos este centrado*/
+header {
+  margin: 0 auto;
+  width: 20%;
+}
+/*Modifica el ancho de la imagen*/
+img {
+  width: 300px;
+}
+/*Modficia el texto de los enlaces, haceindo que sea negrita y se quite la linea del enlace*/
+a {
+  text-decoration: none;
+  color: black;
+}
+/*Indica que los contenidos del aside se muevan a la derecha, tenga una separacion de los demas contenidos y un fondo para mejor visualización*/
+aside {
+  width: 20%;
+  padding-left: 15px;
+  margin-left: 15px;
+  font-style: italic;
+  float: right;
+  background-color: rgb(241, 211, 165);
+}
+

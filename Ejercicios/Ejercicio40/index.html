@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina principal</title>
+    <style>
+      /* Estilo para los párrafos: fuente moderna y tamaño legible */
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+
+/* Encabezado principal: alinea logo y título en una fila horizontal */
+header {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 0 20px;
+}
+
+/* Fondo de la página y color del texto */
+body {
+  background-image: url(img/background.jpg);
+  background-size: auto;
+  background-position: center;
+  color: white;
+}
+
+/* Barra de navegación fija en la parte superior */
+nav {
+  position: sticky;
+  top: 0;
+}
+
+/* Lista horizontal para los enlaces del menú */
+ul {
+  background-color: rgb(0, 0, 0);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+/* Estilo de los enlaces del menú */
+ul li a {
+  transition: all 0.5s;
+  font-size: large;
+  text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+/* Efecto al pasar el cursor sobre los enlaces del menú */
+ul li a:hover {
+  transition: 0.5s;
+  background-color: rgb(104, 100, 100);
+}
+
+/* Título centrado dentro del encabezado */
+.title {
+  text-align: center;
+}
+
+/* Logo principal: tamaño fijo */
+.img_principal {
+  height: 100px;
+  width: 100px;
+}
+
+/* Caja lateral para el primer juego: fondo claro y bordes redondeados */
+.aside_primerjuego {
+  float: right;
+  background-color: bisque;
+  border-radius: 5%;
+  width: 15%;
+  justify-content: center;
+  margin-right: 25px;
+}
+
+/* Imágenes dentro de secciones: tamaño grande horizontal */
+.img_sections {
+  height: 200px;
+  width: 400px;
+}
+
+/* Imágenes dentro del aside: centradas y tamaño mediano */
+.img_aside {
+  width: 200px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+/* Contenido del aside: centrado vertical y horizontal */
+.article_aside {
+  align-items: center;
+  text-align: center;
+}
+
+/* Pie de página: fondo semitransparente y texto blanco */
+footer {
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.473);
+  color: white;
+}
+
+/* Iconos de redes sociales: tamaño pequeño y forma circular */
+.redes_sociales {
+  width: 50px;
+  border-radius: 50%;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Videojuegos</h1>
+      <img src="img/logo.png" class="img_principal" />
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Principal</a></li>
+        <li><a href="Indies.html">Indies</a></li>
+        <li><a href="rolplaygames.html">RPG</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <br />
+    <section>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/5l-NxZB9zFo?si=L89GdKdF-4RSlX6D"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <section>
+      <article>
+        <h2>¿Que son los videojuegos?</h2>
+        <p>
+          Un videojuego o juego de video es un software o juego electrónico en
+          el que uno o más jugadores interactúan por medio de diversos
+          dispositivos (teléfonos, consolas, computadoras), los cuales muestran
+          imágenes de video. Estos dispositivos, conocidos genéricamente como
+          «plataforma», puede ser una computadora, una máquina de arcade, una
+          consola de videojuegos o un dispositivo portátil, como por ejemplo un
+          teléfono móvil, teléfono inteligente, tableta o una consola de
+          videojuegos portátil. La industria de los videojuegos es un sector en
+          constante crecimiento y se ha convertido en una forma de
+          entretenimiento muy popular a nivel mundial.
+        </p>
+        <img src="img/videojuego.gif" />
+        <p>
+          Los jugadores interactúan con los videojuegos a través de dispositivos
+          de entrada a los que se conoce como controladores o mandos. Mediante
+          estos dispositivos, los jugadores controlan los movimientos y acciones
+          de los personajes del juego y varía dependiendo de la plataforma. Por
+          ejemplo, un controlador podría únicamente consistir de un botón y una
+          palanca de mando o joystick, mientras otro podría presentar una docena
+          de botones y una o más palancas, lo que llamamos mando. Los primeros
+          juegos informáticos solían hacer uso de un teclado para llevar a cabo
+          la interacción, o bien requerían que el usuario adquiriera un mando
+          con un botón como mínimo. Muchos juegos de computadora modernos
+          permiten o exigen que el usuario utilice un teclado y un ratón de
+          forma simultánea.
+        </p>
+      </article>
+      <article>
+        <h2>Historia</h2>
+        <p>
+          Los orígenes del videojuego se remontan a la década de 1950, cuando
+          poco después de la aparición de las primeras computadoras electrónicas
+          tras el fin de la Segunda Guerra Mundial, se llevaron a cabo los
+          primeros intentos por implementar programas de carácter lúdico. Así,
+          fueron creados el Nimrod (1951) o el Oxo (1952), juegos electrónicos
+          que aún no pueden ser denominados videojuegos, y el Tennis for Two
+          (1958) o el Spacewar! (1962), auténticos pioneros del género. Todos
+          ellos eran todavía prototipos, juegos muy simples y de carácter
+          experimental que no llegaron a comercializarse, entre otras cosas,
+          porque funcionaban en unas máquinas que solo estaban disponibles en
+          universidades o en institutos de investigación.
+        </p>
+        <aside class="aside_primerjuego">
+          <article class="article_aside">
+            <figcaption>Primer videojuego</figcaption>
+            <img class="img_aside" src="img/primer_videojuego.png" alt="" />
+            <p>
+              OXO, también conocido como "Noughts and Crosses", fue un
+              videojuego desarrollado en 1952 por Alexander S. Douglas como
+              parte de su tesis doctoral en la Universidad de Cambridge. El
+              juego era una versión digital del clásico "Tres en raya"
+              (tic-tac-toe), diseñado para ejecutarse en la computadora EDSAC.
+            </p>
+          </article>
+        </aside>
+        <p>
+          No sería hasta la década de los 70 en que, con la bajada de los costes
+          de fabricación, aparecieron las primeras máquinas recreativas y los
+          primeros videojuegos dirigidos al gran público. Títulos como Computer
+          Space (1971) o Pong (1972), de Atari, inauguraron las primeras
+          máquinas recreativas construidas al efecto, que funcionaban con
+          monedas. Poco después llegarían los videojuegos a los hogares gracias
+          a las consolas domésticas, la primera de las cuales fue la Magnavox
+          Odyssey (1972), y más tarde la exitosa Atari 2600 o VCS (de 1977), con
+          su sistema de cartuchos intercambiables. Por aquel entonces las
+          máquinas de arcade empezaron a hacerse comunes en bares y salones
+          recreativos, una expansión debida en parte a un matamarcianos que
+          alcanzó gran popularidad, el Space Invaders (1978). Otros juegos que
+          marcaron esta primera época fueron Galaxian (1979), Asteroids (1979) o
+          Pac-Man (1980).
+        </p>
+        <img class="img_sections" src="img/persona_jugando_old.jpg" alt="" />
+      </article>
+      <article>
+        <h2>Dispositivos</h2>
+        <p>
+          Los distintos tipos de dispositivo en los que se ejecutan los
+          videojuegos se conocen como plataformas. Los cuatro tipos de
+          plataformas más populares son la PC, las videoconsolas, los
+          dispositivos portátiles y las máquinas de arcade.
+        </p>
+        <h3>Videoconsolas</h3>
+        <p>
+          Las videoconsolas o consolas de videojuegos son aparatos electrónicos
+          domésticos destinados exclusivamente a reproducir videojuegos. Creadas
+          por diversas empresas desde los años 70, han generado un inmenso
+          negocio de trascendencia histórica en la industria del
+          entretenimiento. La videoconsola por antonomasia es un aparato de
+          sobremesa que se conecta a un televisor para la visualización de sus
+          imágenes, pero existen también modelos de bolsillo con pantalla
+          incluida, conocidos como videoconsolas portátiles.
+        </p>
+        <h3>Ordenador</h3>
+        <p>
+          El PC u computador personal es también una plataforma de videojuegos,
+          pero como su función no es solo ejecutar videojuegos, no se considera
+          como videoconsola. La PC no entra en ninguna generación, ya que cada
+          pocos meses salen nuevas piezas que modifican sus prestaciones. La PC
+          por regla general puede ser mucho más potente que cualquier consola
+          del mercado. Las más potentes soportan modos gráficos con resoluciones
+          y efectos de postprocesamiento gráfico muy superiores a cualquier
+          consola.
+        </p>
+        <h3>Máquinas recreativas</h3>
+        <p>
+          Las máquinas recreativas de videojuegos están disponibles en lugares
+          públicos de diversión, centros comerciales, restaurantes, bares, o
+          salones recreativos especializados. En los años 1980 y 90 del siglo
+          pasado disfrutaron de un alto grado de popularidad al ser entonces el
+          tipo de plataforma más avanzado técnicamente. Los progresos
+          tecnológicos en las plataformas domésticas han supuesto a comienzos
+          del siglo XXI una cierta decadencia en el uso de las máquinas arcade.
+        </p>
+        <h3>Videoconsolas portátiles</h3>
+        <p>
+          Las videoconsolas portátiles y otros aparatos de bolsillo cuentan con
+          la capacidad para reproducir videojuegos. Entre estos últimos destacan
+          hoy en día los teléfonos celulares (en particular los teléfonos
+          inteligentes) que, sin ser los videojuegos su función primaria, los
+          han ido incorporando a medida que se han ido incrementando sus
+          prestaciones técnicas. Otros dispositivos portátiles de creciente
+          popularidad en los últimos años son las tabletas.
+        </p>
+      </article>
+    </section>
+    <footer id="contacto">
+      <h2>Contacto</h2>
+      <article>
+        <p>Daniel Iglesias Prieto</p>
+        <p>666 666 666</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10588.283752026457!2d139.7640205054875!3d35.69776693358907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c101ab8143f%3A0x1089bcf3bf419a32!2sBIZCORE%20Jinbocho!5e0!3m2!1ses-419!2ses!4v1760524521165!5m2!1ses-419!2ses"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <br />
+        <a href="https://x.com/"
+          ><img
+            class="redes_sociales"
+            src="https://store-images.s-microsoft.com/image/apps.60673.9007199266244427.4d45042b-d7a5-4a83-be66-97779553b24d.5d82b7eb-9734-4b51-b65d-a0383348ab1b"
+            alt=""
+        /></a>
+        <a href="https://www.instagram.com/"
+          ><img
+            class="redes_sociales"
+            src="https://tse2.mm.bing.net/th/id/OIP.72S49bENY6EMqQr0n7eg_AHaHZ?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt=""
+        /></a>
+        <a href="https://youtube.com/"
+          ><img
+            class="redes_sociales"
+            src="https://th.bing.com/th/id/R.649c77a204202c9bee4d3d4daf4c15bf?rik=UGdWixKAZmKWVA&riu=http%3a%2f%2ffreelogopng.com%2fimages%2fall_img%2f1656502794yt-logo.png&ehk=pfXRvGTb5wA0jh5iykLD2VqJ8InJrfRmaOFVBct6UTE%3d&risl=&pid=ImgRaw&r=0"
+            alt=""
+        /></a>
+      </article>
+    </footer>
+  </body>
+</html>

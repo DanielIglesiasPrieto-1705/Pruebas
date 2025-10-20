@@ -1,0 +1,16 @@
+ul {
+  background-color: rgb(255, 235, 205);
+  margin: 0 auto;
+  width: 200px;
+  text-align: center;
+}
+
+ul li{
+  transition: all 0.75s ease-out;
+}
+
+ul li:hover {
+  background-color: rgb(233, 203, 159);
+  font-weight: bolder;
+  font-size: x-large;
+}

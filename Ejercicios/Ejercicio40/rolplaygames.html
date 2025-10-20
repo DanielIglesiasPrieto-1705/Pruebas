@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rol Play Games</title>
+    <style>
+      /* Estilo general para los párrafos: fuente moderna y tamaño grande */
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+      }
+
+      /* Fondo de la página: imagen centrada, tamaño automático y texto blanco */
+      body {
+        background-image: url(img/background.jpg);
+        background-size: auto;
+        background-position: center;
+        color: rgb(255, 255, 255);
+      }
+
+      /* Imagen principal de la página: ocupa todo el ancho y tiene altura fija */
+      .img_principal {
+        width: 100%;
+        height: 400px;
+      }
+
+      /* Barra de navegación fija en la parte superior al hacer scroll */
+      nav {
+        position: sticky;
+        top: 0;
+      }
+
+      /* Lista horizontal del menú de navegación: sin viñetas, fondo negro y espacio entre elementos */
+      nav ul {
+        background-color: rgb(0, 0, 0);
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 20px;
+      }
+
+      /* Estilo de los enlaces del menú: transición suave, texto blanco y centrado */
+      nav ul li a {
+        transition: all 0.5s;
+        font-size: large;
+        text-decoration: none;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+      }
+
+      /* Efecto al pasar el cursor sobre los enlaces: mantiene fondo negro (puedes cambiarlo si quieres destacar más) */
+      nav ul li a:hover {
+        transition: 0.5s;
+        background-color: rgb(0, 0, 0);
+      }
+
+      /* Estilo para los ítems de lista: tamaño grande y espacio inferior entre elementos */
+      li {
+        font-size: large;
+        margin-bottom: 10px;
+      }
+
+      /* Imágenes de los juegos: ancho fijo de 400px */
+      .img_Juego {
+        width: 400px;
+      }
+
+      /* Pie de página: fondo semitransparente y texto blanco */
+      footer {
+        background-color: rgba(0, 0, 0, 0.473);
+        color: white;
+      }
+
+      /* Contenedor de contacto: centrado, con ancho reducido y texto alineado al centro */
+      .container_contacto {
+        margin: 0 auto;
+        text-align: center;
+        width: 20%;
+      }
+
+      /* Iconos de redes sociales: tamaño pequeño y forma circular */
+      .redes_sociales {
+        width: 50px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>RPG</h1>
+      <img class="img_principal" src="img/rpg.jpg" alt="" srcset="" />
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Principal</a></li>
+        <li><a href="Indies.html">Indies</a></li>
+        <li><a href="rolplaygames.html">RPG</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <br />
+    <section>
+      <article>
+        <h2>¿Que son los juegos RPG?</h2>
+        <p>
+          Un videojuego de rol o juego de rol por computadora/ordenador, también
+          llamado por simplificación juego de rol (JDR), o referido con la sigla
+          inglesa RPG (role-playing game) o CRPG (computer role-playing game),
+          es un género de videojuegos donde el jugador controla las acciones de
+          un personaje (o de diversos miembros de un grupo) inmerso en algún
+          detallado mundo. La gran mayoría de estos videojuegos tienen sus
+          orígenes en juegos de rol de sobremesa (incluyendo Dungeons & Dragons)
+          y usan mucho de la misma terminología, escenarios y mecánicas de
+          juego. Otra mayor similitud con los juegos de lápiz y papel incluyen
+          una desarrollada historia y elementos narrativos, el crecimiento del
+          personaje del jugador, complejidad, así como también rejugabilidad e
+          inmersión. El medio electrónico elimina la necesidad de un director de
+          juego e incrementa la velocidad de resolución de combate. Los JDR han
+          evolucionado desde videojuegos de texto a visualmente ricas
+          experiencias 3D.
+        </p>
+      </article>
+    </section>
+
+    <section>
+      <article>
+        <h2>Caracteristicas</h2>
+        <ul>
+          <li>
+            El jugador asume el rol de uno o varios personajes que evolucionan
+            con nuevas capacidades y características durante la progresión del
+            juego.
+          </li>
+          <li>
+            El videojuego crea y controla personajes denominados Non Player
+            Character (NPJ), es decir Personajes No Jugables, con los cuales el
+            jugador tiene la posibilidad de interactuar y establecer una
+            relación positiva, neutral o negativa.
+          </li>
+          <li>
+            Los RPG se caracterizan por presentar un argumento central alrededor
+            del cual se tejen subtramas que se conciben como misiones para el
+            jugador.
+          </li>
+          <li>
+            El jugador posee capacidades de combate que adquiere durante cada
+            combate. Entre estas capacidades, se pueden mencionar las
+            estrategias de ataque, de defensa, el carisma, los poderes mágicos,
+            etc.
+          </li>
+        </ul>
+      </article>
+    </section>
+    <section>
+      <article>
+        <h2>Ejemplo de juegos RPG</h2>
+
+        <section>
+          <article>
+            <h3>The Elder Scrolls V: Skyrim</h3>
+            <img src="img/skyrim.jpg" alt="" class="img_Juego" />
+            <p>
+              Skyrim está ambientado en la provincia ficticia de Skyrim, dentro
+              del continente de Tamriel. El jugador asume el papel del Dovahkiin
+              o "Sangre de Dragón", un héroe profetizado con el poder de
+              absorber las almas de los dragones y usar sus gritos mágicos
+              llamados Thu’um.
+            </p>
+            <p>
+              La historia principal gira en torno al regreso de los dragones,
+              liderados por Alduin, el devorador de mundos, y tu misión para
+              detenerlo. Pero lo más destacado es que puedes ignorar la historia
+              principal y explorar libremente.
+            </p>
+          </article>
+          <article>
+            <h3>Elden Ring</h3>
+            <img src="img/elden ring.jpg" alt="" class="img_Juego" />
+            <p>
+              Las Tierras Intermedias eran gobernadas por la Reina Marika la
+              Eterna, quien custodiaba el Círculo de Elden, una fuente divina
+              que mantenía el orden del mundo. Marika rompió el Círculo, lo que
+              provocó una guerra entre sus descendientes —los semidioses— por
+              los fragmentos del poder: las Grandes Runas.
+            </p>
+            <p>
+              Elden Ring combina la dificultad y el diseño meticuloso de
+              FromSoftware con una libertad sin precedentes. Su mundo está lleno
+              de secretos, desafíos y belleza melancólica. Ha sido elogiado por
+              su dirección artística, música, diseño de niveles y la sensación
+              de descubrimiento constante.
+            </p>
+          </article>
+          <article>
+            <h3>Baldurs Gate III</h3>
+            <img src="img/baldurs.jpg" alt="" class="img_Juego" />
+            <p>
+              La historia comienza cuando tu personaje es infectado por un
+              parásito illithid, una criatura que convierte a los humanos en
+              azotamentes. Sin embargo, en lugar de transformarte, el parásito
+              te otorga poderes misteriosos. Tu misión es encontrar una cura,
+              pero en el camino te verás envuelto en una trama épica que
+              involucra dioses, demonios, facciones en guerra y secretos
+              ancestrales.
+            </p>
+            <p></p>
+          </article>
+        </section>
+      </article>
+    </section>
+    <footer id="contacto">
+      <h2>Contacto</h2>
+      <article>
+        <p>Daniel Iglesias Prieto</p>
+        <p>666 666 666</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10588.283752026457!2d139.7640205054875!3d35.69776693358907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c101ab8143f%3A0x1089bcf3bf419a32!2sBIZCORE%20Jinbocho!5e0!3m2!1ses-419!2ses!4v1760524521165!5m2!1ses-419!2ses"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <br />
+        <a href="https://x.com/"
+          ><img
+            class="redes_sociales"
+            src="https://store-images.s-microsoft.com/image/apps.60673.9007199266244427.4d45042b-d7a5-4a83-be66-97779553b24d.5d82b7eb-9734-4b51-b65d-a0383348ab1b"
+            alt=""
+        /></a>
+        <a href="https://www.instagram.com/"
+          ><img
+            class="redes_sociales"
+            src="https://tse2.mm.bing.net/th/id/OIP.72S49bENY6EMqQr0n7eg_AHaHZ?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt=""
+        /></a>
+        <a href="https://youtube.com/"
+          ><img
+            class="redes_sociales"
+            src="https://th.bing.com/th/id/R.649c77a204202c9bee4d3d4daf4c15bf?rik=UGdWixKAZmKWVA&riu=http%3a%2f%2ffreelogopng.com%2fimages%2fall_img%2f1656502794yt-logo.png&ehk=pfXRvGTb5wA0jh5iykLD2VqJ8InJrfRmaOFVBct6UTE%3d&risl=&pid=ImgRaw&r=0"
+            alt=""
+        /></a>
+      </article>
+    </footer>
+  </body>
+</html>
