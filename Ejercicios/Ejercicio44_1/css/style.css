@@ -1,0 +1,36 @@
+/*Logotipo de la pagina web*/
+header {
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+#logo {
+  width: 100px;
+  margin-right: 20%;
+}
+#navbar ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+#navbar ul li {
+    padding: 15px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+#navbar ul li:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: rgb(179, 179, 179);
+    border-radius: 20px;
+}
+.article_main{
+width: 100%;
+}
+.container_notice{
+    width: 50%;
+    background-color: aqua;
+}
+
