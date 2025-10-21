@@ -1,6 +1,7 @@
 body {
   background: linear-gradient(to left, #53b3af93, #4c88bda1, #4448aa96);
   color: white;
+  text-align: center;
 }
 
 #logo {
@@ -14,8 +15,10 @@ header {
     rgba(19, 131, 196, 0.397)
   );
   border-radius: 50px;
+  position: sticky;
+  top: 0;
 }
-nav {
+#navBar {
   width: 100%;
 }
 .container_icon {
@@ -28,7 +31,7 @@ nav {
   margin-left: 20px;
   margin-top: 25px;
   height: 80px;
-  padding: 0 40px 0 20PX;
+  padding: 0 40px 0 20px;
   display: flex;
   align-items: center;
   width: 15%;
@@ -38,27 +41,80 @@ nav {
 #title_web {
   justify-content: center;
 }
-nav {
-  position: sticky;
-  top: 0;
-}
 ul {
   list-style: none;
   float: right;
   display: flex;
 }
-nav ul li {
+#navBar ul li {
   transition: 0.75s;
   font-size: larger;
   margin: 20px;
   padding: 20px 30px 20px 30px;
   cursor: pointer;
 }
-nav ul li:hover {
+#navBar ul li:hover {
   border-radius: 30px;
   background: linear-gradient(
     to right,
     rgba(10, 10, 172, 0.473),
     rgba(10, 94, 172, 0.473)
   );
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+.img {
+  width: 300px;
+}
+
+article {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 20px;
+  background: linear-gradient(
+    270deg,
+    rgb(13, 159, 226),
+    rgb(15, 171, 182),
+    rgb(9, 178, 184),
+    rgb(13, 159, 226),
+    rgb(20, 247, 235),
+    rgb(9, 178, 184)
+  );
+  background-size: 600% 600%;
+  animation: wave_effects 8s ease-in-out infinite;
+}
+
+@keyframes wave_effects {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.title_mountain{
+font-size: 40px;
+}
+
+.img_mountain{
+width: 500px;
+border-radius: 30px;
+}
+footer{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.container_socialmedia{
+  width: 146px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  gap: 10px;
 }
