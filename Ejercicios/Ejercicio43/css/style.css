@@ -1,120 +1,143 @@
-body {
-  background: linear-gradient(to left, #53b3af93, #4c88bda1, #4448aa96);
-  color: white;
-  text-align: center;
+/* Define el fondo general, color del texto y alineación del contenido de toda la página. */
+body {   
+  background: linear-gradient(to left, #53b3af93, #4c88bda1, #4448aa96);   
+  color: white;   
+  text-align: center; 
+}  
+
+/* Controla el tamaño del logotipo (imagen principal del encabezado). */
+#logo {   
+  width: 80px; 
 }
 
-#logo {
-  width: 80px;
-}
-header {
-  display: flex;
-  background: linear-gradient(
-    to right,
-    rgba(11, 83, 124, 0.397),
-    rgba(19, 131, 196, 0.397)
-  );
-  border-radius: 50px;
-  position: sticky;
-  top: 0;
-}
-#navBar {
-  width: 100%;
-}
-.container_icon {
-  background: linear-gradient(
-    to right,
-    rgba(10, 73, 209, 0.5),
-    rgba(4, 36, 126, 0.397)
-  );
-  border-radius: 50px;
-  margin-left: 20px;
-  margin-top: 25px;
-  height: 80px;
-  padding: 0 40px 0 20px;
-  display: flex;
-  align-items: center;
-  width: 15%;
-  gap: 20px;
-}
+/* Contenedor superior de la página; usa flexbox, tiene fondo degradado y se mantiene fijo al hacer scroll. */
+header {   
+  display: flex;   
+  background: linear-gradient(     
+    to right,     
+    rgba(11, 83, 124, 0.397),     
+    rgba(19, 131, 196, 0.397)   
+  );   
+  border-radius: 50px;   
+  position: sticky;   
+  top: 0; 
+}  
 
-#title_web {
-  justify-content: center;
-}
-ul {
-  list-style: none;
-  float: right;
-  display: flex;
-}
-#navBar ul li {
-  transition: 0.75s;
-  font-size: larger;
-  margin: 20px;
-  padding: 20px 30px 20px 30px;
-  cursor: pointer;
-}
-#navBar ul li:hover {
-  border-radius: 30px;
-  background: linear-gradient(
-    to right,
-    rgba(10, 10, 172, 0.473),
-    rgba(10, 94, 172, 0.473)
-  );
-}
-a{
-  color: white;
-  text-decoration: none;
-}
-.img {
-  width: 300px;
-}
+/* Contenedor principal de la barra de navegación. */
+#navBar {   
+  width: 100%; 
+}  
 
-article {
-  width: 50%;
-  margin: 0 auto;
-  padding: 10px;
-  border-radius: 20px;
-  background: linear-gradient(
-    270deg,
-    rgb(13, 159, 226),
-    rgb(15, 171, 182),
-    rgb(9, 178, 184),
-    rgb(13, 159, 226),
-    rgb(20, 247, 235),
-    rgb(9, 178, 184)
-  );
-  background-size: 600% 600%;
-  animation: wave_effects 8s ease-in-out infinite;
-}
+/* Contenedor del icono o logotipo junto al título del sitio en el header. */
+.container_icon {   
+  background: linear-gradient(     
+    to right,     
+    rgba(10, 73, 209, 0.5),     
+    rgba(4, 36, 126, 0.397)   
+  );   
+  border-radius: 50px;   
+  margin-left: 20px;   
+  margin-top: 25px;   
+  height: 80px;   
+  padding: 0 40px 0 20px;   
+  display: flex;   
+  align-items: center;   
+  width: 15%;   
+  gap: 20px; 
+}  
 
-@keyframes wave_effects {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-.title_mountain{
-font-size: 40px;
-}
+/* Centra el título principal del sitio dentro del header. */
+#title_web {   
+  justify-content: center; 
+}  
 
-.img_mountain{
-width: 500px;
-border-radius: 30px;
-}
-footer{
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
-}
-.container_socialmedia{
-  width: 146px;
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  gap: 10px;
+/* Elimina los puntos de lista y usa flexbox para alinear los elementos de navegación en línea. */
+ul {   
+  list-style: none;   
+  float: right;   
+  display: flex; 
+}  
+
+/* Define los estilos de cada elemento del menú (espaciado, tamaño y transición). */
+#navBar ul li {   
+  transition: 0.75s;   
+  font-size: larger;   
+  margin: 20px;   
+  padding: 20px 30px 20px 30px;   
+  cursor: pointer; 
+}  
+
+/* Aplica un efecto visual (degradado y borde redondeado) al pasar el cursor por un ítem del menú. */
+#navBar ul li:hover {   
+  border-radius: 30px;   
+  background: linear-gradient(     
+    to right,     
+    rgba(10, 10, 172, 0.473),     
+    rgba(10, 94, 172, 0.473)   
+  ); 
+}  
+
+/* Estilos para los enlaces: color blanco y sin subrayado. */
+a {   
+  color: white;   
+  text-decoration: none; 
+}  
+
+/* Define el tamaño general de las imágenes. */
+.img {   
+  width: 300px; 
+}  
+
+/* Contenedor de artículos o secciones de contenido. 
+   Tiene animación de fondo con efecto de “olas” y bordes redondeados. */
+article {   
+  width: 50%;   
+  margin: 0 auto;   
+  padding: 10px;   
+  border-radius: 20px;   
+  background: linear-gradient(     
+    270deg,     
+    rgb(13, 159, 226),     
+    rgb(15, 171, 182),     
+    rgb(9, 178, 184),     
+    rgb(13, 159, 226),     
+    rgb(20, 247, 235),     
+    rgb(9, 178, 184)   
+  );   
+  background-size: 600% 600%;   
+  animation: wave_effects 8s ease-in-out infinite; 
+}  
+
+/* Define la animación del fondo del artículo para simular movimiento de olas. */
+@keyframes wave_effects {   
+  0% { background-position: 0% 50%; }   
+  50% { background-position: 100% 50%; }   
+  100% { background-position: 0% 50%; } 
+}  
+
+/* Define el tamaño de fuente para los títulos relacionados con montañas. */
+.title_mountain { 
+  font-size: 40px; 
+}  
+
+/* Establece el tamaño y bordes redondeados de las imágenes de montañas. */
+.img_mountain { 
+  width: 500px; 
+  border-radius: 30px; 
+}  
+
+/* Contenedor del pie de página, centrado y con ancho fijo. */
+footer {   
+  width: 50%;   
+  margin: 0 auto;   
+  text-align: center; 
+}  
+
+/* Contenedor de iconos de redes sociales, centrado y con separación entre íconos. */
+.container_socialmedia {   
+  width: 146px;   
+  margin: 0 auto;   
+  text-align: center;   
+  display: flex;   
+  gap: 10px; 
 }
