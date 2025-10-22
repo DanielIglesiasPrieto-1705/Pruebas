@@ -6,6 +6,10 @@ header {
   align-items: center;
   text-align: center;
 }
+a {
+  color: black;
+  text-decoration: none;
+}
 #logo {
   width: 100px;
   margin-right: 20%;
@@ -16,21 +20,86 @@ header {
   gap: 20px;
 }
 #navbar ul li {
-    padding: 15px;
-    border-radius: 20px;
-    transition: 0.5s;
+  padding: 15px;
+  border-radius: 20px;
+  transition: 0.5s;
 }
-#navbar ul li:hover{
-    transition: 0.5s;
-    cursor: pointer;
-    background-color: rgb(179, 179, 179);
-    border-radius: 20px;
+#navbar ul li:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: rgb(179, 179, 179);
+  border-radius: 20px;
 }
-.article_main{
-width: 100%;
+.article_main {
+  width: 100%;
+  display: flex;
+  height: 40vh;
 }
-.container_notice{
-    width: 50%;
-    background-color: aqua;
+.container_notice {
+  width: 50%;
+  background-color: beige;
+}
+button {
+  background-color: rgba(0, 0, 0, 0.788);
+  color: white;
+  height: 30px;
+  width: 100px;
 }
 
+.img_notice {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container_notice_2 {
+  width: 50%;
+}
+#gray {
+  color: gray;
+  font-size: small;
+}
+.section_bottom {
+  display: flex;
+}
+.container_notices {
+  width: 50%;
+}
+.container_notice1,
+.container_notice2,
+.container_notice3 {
+  display: flex;
+  margin-bottom: 20px;
+}
+.img_notices {
+  width: 100px;
+  margin-right: 10px;
+}
+.title_notices {
+  font-size: medium;
+}
+/*--------------------------Noticias.html----------------------------*/
+
+.article_notice {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+.number_big{
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.article_notice_2 {
+  display: flex;
+  align-items: center;
+}
+.img_notices_notice {
+  margin-left: 10px;
+  width: 150px;
+}
+.main {
+  display: flex;
+}
+footer{
+  text-align: center;
+}
