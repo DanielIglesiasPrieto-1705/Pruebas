@@ -1,0 +1,168 @@
+/*El ponemos un fondo de imgane al fondo de la pagina web*/
+body {
+  background-image: url(../img/background.png);
+  background-clip: unset;
+  background-size: cover;
+}
+/*Logotipo de la imagen del header*/
+#logo {
+  width: 60px;
+  border-radius: 20px;
+}
+
+/*Header de la imagen que tenga un color de fondo como el logo y que este alinead*/
+header {
+  width: 100%;
+  background-color: #f1e9dd;
+  display: flex;
+  border-radius: 20px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+/*Hacemos que los enlaces no tenga el color caracteristicos de estos y que no tenga la linea debajo de estas*/
+a {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+/*Aumento de tamaño de las palabras*/
+p,
+strong {
+  font-size: 1.2rem;
+}
+
+.navbar {
+  margin: 0 auto;
+}
+
+/*Ponemos que la lista desordenada este alineado con el display flex en la misma linea*/
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+.navbar ul li {
+  padding: 10px;
+  border-radius: 50px;
+}
+.navbar ul li:hover {
+  transition: 0.25s;
+  background-color: #dbcab1;
+}
+.navbar a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+
+/* Línea debajo del enlace al hacer hover */
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
+}
+.img_inicio {
+  width: 500px;
+  border-radius: 50px;
+  border-style: groove;
+  margin-bottom: 10px;
+}
+.inicio {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contenido_armas{
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+/*Imagenes de armas*/
+.armas{
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.486);
+}
+
+/*Articulo el cual muestra la informacion sobre la hoistoria del japon antiguo*/
+.art_historia {
+  text-align: center;
+  width: 40%;
+  background-color: #f5ecd998;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+/*Articulo el cual muestra la informacion sobre las armas usadas en el japon antiguo*/
+.art_armas {
+  margin: 0 auto;
+  text-align: center;
+  width: 40%;
+  background-color: #f5ecd998;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+/*Articulo el cual muestra la informacion sobre la historia de la katana*/
+.art_katana {
+  text-align: center;
+  width: 40%;
+  background-image: url(../img/katana.png);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5ecd9c0;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+.art_odachi {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+  background-image: url(../img/odachi.png);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5ecd9c0;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+.art_kusarigama {
+  text-align: center;
+  width: 40%;
+  margin-left: auto;
+  background-image: url(../img/kusarigama.png);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5ecd9c0;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+footer {
+  background-color: #0000004f;
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+}
