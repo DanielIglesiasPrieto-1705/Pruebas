@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Principal</title>
+    <style>
+        /*Cambio el ancho de la imagen (perfil)*/
+      img {
+        width: 200px;
+      }
+      /*Cambio el ancho de la imagen de las redes*/
+      .redes {
+        width: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Encabezado del inicio del CV/web-->
+    <header>
+      <h1>Currículum Daniel Iglesias Prieto</h1>
+      <img
+        src="img/user.jpg"
+        alt="Imagen Usuario"
+        title="Daniel Iglesias Prieto"
+      />
+      <!--Barra de navegación-->
+      <nav>
+        <ul>
+          <li><a href="#info">Información Personal</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#conocimineto">Conocimientos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <!--Seccion de la descripcion de mi informacion personal-->
+    <section>
+      <!--Articulo de la informacion personal-->
+      <article>
+        <h2 id="info">Información Personal</h2>
+        <p>
+          Programador de aplicaciones multiplataformas y web, con gran
+          creatividad y muchas ideas para aportar en programas/webs. Me gusta la
+          informatica ya que es un campo que esta en constante cambio, trayendo
+          nuevas cosas cada año y abriendo trabajos sobre este. He cursado
+          ciclos formativo de grado medio y superior para expandir mis
+          conocimientos sobre este campo.
+        </p>
+      </article>
+    </section>
+    <hr />
+    <!--Seccion de la informacoin de mi experiencia laboral-->
+    <section>
+      <!--Articulo de mi experiencia laboral-->
+      <article>
+        <h2 id="experiencia">Experiencia laboral</h2>
+        <!--Articulo de mi experiencia laboral en Grupo Inova-->
+        <article>
+          <h3>
+            Alumno en practicas de tienda informatica "grupo Inova" - 3 meses
+          </h3>
+          <p>
+            He trabajado como asistente en matenimiento de equipos en los
+            dispositivos de la empresa y de los clientes, realizando las
+            siguientes labores:
+          </p>
+          <!--Listado de trabajos que he estado realizando en grupo inova-->
+          <ul>
+            <li>Instalación y configuración de sistemas operativos</li>
+            <li>Montaje de equipos de sobremesa y servidores</li>
+            <li>Creación de RAID en servidores</li>
+            <li>
+              Cambio de componentes viejos/rotos de dispositivos (PC, Portatiles
+              y Servidores)
+            </li>
+            <li>Solucionar problemas de rendimientos de dispositivos</li>
+          </ul>
+        </article>
+        <!--Articulo de mi experiencia laboral en Applus+-->
+        <article>
+          <h3>
+            Alumno en practicas en empresa informatica "Applus+" - 3 meses
+          </h3>
+          <p>
+            He trabajado en equipo de desarollo de aplicaciones multiplataformas
+            y web, arreglando errores de aplicaciones y añadiendo nuevos
+            contenidos a páginas web. Realizando las siguientes labores:
+          </p>
+          <!--Listado de trabajos que he estado realizando en Applus+-->
+          <ul>
+            <li>Arreglando errores de aplicaciones y páginas web</li>
+            <li>
+              Añadiendo nuevas funcionalidades a aplicaciones y páginas web
+            </li>
+            <li>Mejorando visualización de páginas web</li>
+          </ul>
+        </article>
+      </article>
+    </section>
+    <hr />
+    <!--Seccion de conocimientos-->
+    <section>
+      <!--Articulo mis conocimientos adquiridos-->
+      <article>
+        <h2 id="conocimineto">Conocimientos</h2>
+        <p>A lo largo de mis estudios he aprendido muchos lenguajes:</p>
+        <h3>Lenguajes de programacion</h3>
+        <!--Lista ordenada de los lenguajes de programación-->
+        <ol>
+          <li>Java</li>
+          <li>C#</li>
+          <li>Python</li>
+          <li>Javascript</li>
+          <li>.NET ASP</li>
+          <li>.NET MAUI</li>
+        </ol>
+        <h3>BBDD</h3>
+        <!--Lista ordenada de lenguajes de bases de datos-->
+        <ol>
+          <li>SQL Server</li>
+          <li>MySQL</li>
+        </ol>
+        <h3>Frameworks</h3>
+        <!--Lista ordeanada de frameworks-->
+        <ol>
+          <li>Angular</li>
+          <li>Flask (Python)</li>
+        </ol>
+      </article>
+    </section>
+    <hr />
+    <!--Pie de pagina de contacto-->
+    <footer id="contacto">
+      <h2>Contacto</h2>
+      <!--Numero de telefono-->
+      <p>Tef: +34 666 666 666</p>
+      <!--Enlace con imagen para enviar un gmail a mi correo-->
+      <a href="mailto:danieliglesiasprieto@gmail.com?subject=Contacto&body=Este%20es%20un%20mensaje%20de%20prueba.">
+        <img
+          src="img/gmail.png"
+          alt="img gmail"
+          title="Enviar Correo a Daniel"
+          class="redes"
+        />
+      </a>
+      <!--Enlace con imagen para ver mi linkedin-->
+      <a href="https://www.linkedin.com/in/daniel-iglesias-prieto-042467347/" target="_blank">
+        <img
+          src="img/linkedin.png"
+          alt="img linkedin"
+          title="Linkedin"
+          class="redes"
+        />
+      </a>
+      <br />
+    </footer>
+  </body>
+</html>
