@@ -1,0 +1,79 @@
+/*Ponemos todos los contenidos que sea de tipo de fuente arial, y centrado*/
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+}
+/*Le ponemos el color de fondo gris claro*/
+body {
+  background-color: lightgrey;
+}
+/*Hacemos que el titulo este centrado y de color blanco*/
+h1 {
+  text-align: center;
+  color: white;
+}
+/*Hacemos que el header tenga una altura, que tenga un color de fondo rojo y este centrado con borde*/
+header {
+  height: 100px;
+  background-color: red;
+  align-content: center;
+  border-bottom: dotted;
+}
+/*Hacemos que el nav tenga un color de fondo azul claro*/
+nav {
+  background-color: rgba(71, 231, 231, 0.959);
+}
+/*Hacemos que los contenidos esten alineados, tenga una separacion de 10px y no tengan ningun estilo de lista*/
+nav ul {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+}
+/*Alineamos los contenidos y expandimos su espaciado interior(padding)*/
+nav ul li {
+  align-content: center;
+  padding: 15px;
+}
+/*Hacemos que tenga un minimo de altura, este a la izquierda y tenga un ancho de 80%(quitandole el padding de los contenidos) y un color de fondo verde*/
+section {
+  width: calc(80% - 80px);
+  float: left;
+  padding: 40px;
+  background-color: green;
+  min-height: 500px;
+}
+/*Que este alineado a la derecha, que tenga un ancho calculado segun los contenidos, una anchura minima de 500px y un color de fondo naranja*/
+aside {
+  width: calc(20% - 20px);
+  float: right;
+  padding: 10px;
+  min-height: 500px;
+  background-color: orange;
+}
+/*Añadimos un margin a los contenidos del articulo de 20px*/
+article {
+  margin: 20px;
+}
+article {
+  color: white;
+  border-bottom: 2px solid;
+}
+/*Hacemos el contenido completo de la pagina web tenga una anchura de 50%*/
+.container {
+  width: 50%;
+}
+.clearfix {
+  clear: both;
+}
+/*Hacemos que el footer tenga un fondo de negro, que tenga una altura de 50px y que este centrado*/
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  align-content: center;
+  height: 50px;
+}
+/*Hacemos que tenga un margen de 0 para que no haya espacios*/
+footer p {
+  margin: 0;
+}
