@@ -1,0 +1,30 @@
+/*Todo el contenido de la pagina web tendra el tpo de letra arial, un fondo azul oscuro y el color de letra blanco*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #45678a;
+  color: white;
+}
+/*Hacemos que el main tenga un anchura de un 40% de toda la pagina y que este centrado*/
+main {
+  width: 40%;
+  margin: 0 auto;
+}
+/*Hacemos que el h1 del titulo tenga 3 rem de padding, tenga un colo de fondo blanco, color de letra azul como la pagina web y que este centrado*/
+h1 {
+  padding: 3rem;
+  background-color: white;
+  color: #45678a;
+  text-align: center;
+}
+/*Hacemos que tenga borde solido y texto alineado*/
+h2 {
+  border-bottom: 3px solid;
+  text-align: center;
+}
+/*Hago que tenga una achura de 70% del articulo, centrado, y con borde*/
+h3 {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 1px solid;
+}

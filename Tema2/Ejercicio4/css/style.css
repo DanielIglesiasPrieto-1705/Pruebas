@@ -1,0 +1,26 @@
+/*Hacemos que tondas las letras tenga de tipo de fuente verdana*/
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Hacemos que todos los enlaces tenga el color amarillo oscuro*/
+a {
+  color: rgb(104, 104, 2);
+}
+/*Hacemos que el contenido del parrafo de tenga el color rosa*/
+#parrafo1 p {
+  color: pink;
+}
+/*Hacemos que las palabras italicas tenga de color de fondo beige y que tenga el color blue de letra*/
+#parrafo1 i {
+  background-color: beige;
+  color: darkblue;
+}
+/*Hacemos que las palabras italicas del parrafo2 tenga de color de fondo black y el color de letra yellow*/
+#parrafo2 .especial {
+  background-color: black;
+  color: yellow;
+}
+/*Hacemos que el span del parrafo 2 tenga el tipo de letra bolder*/
+#parrafo2 span {
+  font-weight: bolder;
+}
