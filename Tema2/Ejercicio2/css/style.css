@@ -1,6 +1,6 @@
 /*Hacemos que el section ocupe el 80% de la pantalla y que tenga un borde de 6 px y rojo*/
 section{
-    width: 80%;
+    width: 60%;
     border: 6px dashed red;
 }
 /*Le ponemos tipo de fuente de letra a todos los parrafoos para que sea arial*/
