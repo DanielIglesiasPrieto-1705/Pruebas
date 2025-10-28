@@ -27,6 +27,7 @@ header {
 button {
   border: 1px solid;
   padding: 10px;
+  cursor: pointer;
   border-radius: 10px;
   background-color: #45678a;
   color: white;
