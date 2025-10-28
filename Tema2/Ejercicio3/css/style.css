@@ -1,0 +1,18 @@
+/*Titulo de color rojo*/
+h1 {
+  color: red;
+}
+/*Parrafo de color azul*/
+p {
+  color: blue;
+}
+/*Clase que tenga el color de fondo negro y el color de letra blanco*/
+.invertido {
+  background-color: black;
+  color: white;
+}
+/*Clase que tenga un fondo amarillo y que la letra de color verde*/
+.colorido {
+  background-color: yellow;
+  color: green;
+}
