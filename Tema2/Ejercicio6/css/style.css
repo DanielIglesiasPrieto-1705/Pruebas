@@ -1,0 +1,38 @@
+/*Hacemos que la fuente de letra de todo sea arial*/
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*Haacemos que el color defondo de la pagina web sea azul oscuro y el color de las letras blanco*/
+body {
+  background-color: #45678a;
+  color: white;
+}
+/*Hacemos que el main que engloba los contenidos tenga una anchura de 80% y que este centrado*/
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+/*Hacemos que el header tenga el color de las letras azul oscuro, tenga un  color de fondo blanco y que los contenidos esten centrados*/
+header {
+  color: #45678a;
+  background-color: white;
+  text-align: center;
+}
+/*Hacemos que el titulo del articulo tenga una funte de letra larga para mejor visualizacion y le quitamos el bolder*/
+.title_art {
+  font-size: large;
+  font-weight: 100;
+}
+/*Hacemos que el boton tenga un borde solido, un espaciado interior de 10px(padding) con bordes redondeados y el color de fondo azul oscuro y el color de letra blanco*/
+button {
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #45678a;
+  color: white;
+}
+/*Hacemos que cuando el raton pase por encima del boton se inviertan los colores del boton*/
+button:hover {
+  background-color: white;
+  color: #45678a;
+}
