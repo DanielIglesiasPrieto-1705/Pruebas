@@ -1,0 +1,40 @@
+/* Caja fija en la esquina superior izquierda de la ventana */
+#caja_1 {
+  width: 300px;
+  height: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(220, 20, 60, 0.3);
+  border: 2px solid blue;
+}
+/* Caja fija en la esquina superior derecha de la ventana */
+#caja_2 {
+  width: 300px;
+  height: 100px;
+  right: 0;
+  top: 0;
+  position: fixed;
+  background-color: rgba(220, 20, 60, 0.3);
+  border: 2px solid blue;
+}
+/* Caja fija en la esquina inferior izquierda de la ventana */
+#caja_3 {
+  width: 300px;
+  height: 100px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(220, 20, 60, 0.3);
+  border: 2px solid blue;
+}
+/* Caja fija en la esquina inferior derecha de la ventana */
+#caja_4 {
+  width: 300px;
+  height: 100px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(220, 20, 60, 0.3);
+  border: 2px solid blue;
+}
