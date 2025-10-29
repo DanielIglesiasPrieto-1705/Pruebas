@@ -2,13 +2,13 @@
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-/*Hacemos que todos los enlaces tenga el color amarillo oscuro*/
-a {
-  color: rgb(104, 104, 2);
-}
 /*Hacemos que el contenido del parrafo de tenga el color rosa*/
 #parrafo1 p {
   color: pink;
+}
+/*Hacemos que todos los enlaces tenga el color amarillo oscuro*/
+a {
+  color: rgb(104, 104, 2);
 }
 /*Hacemos que las palabras italicas tenga de color de fondo beige y que tenga el color blue de letra*/
 #parrafo1 i {
