@@ -1,0 +1,28 @@
+/*Le indicamos al header un color de fondo amarillo, un espaciado interno de 20(Padding)*/
+header {
+  background-color: yellow;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+/*Indicamos al li que tenga un ancho de 200px, margen y padding para mejor visualizacion y color de letra blanco*/
+ul li {
+  width: 200px;
+  margin: 5px;
+  padding: 8px;
+  color: white;
+  background-color: rgb(202, 77, 202);
+  list-style: none;
+}
+/*Cuando pasamos el raton por encima este se cambiara de color purpura (un color mas oscuro)*/
+ul li:hover {
+  background-color: purple;
+}
+/*Hacemos que nos indiquen los contenidos dentro del seccion en flex (en la misma linea)*/
+section {
+  display: flex;
+}
+/*Le indicamos al footer un color de fondo amarillo, un espaciado interno de 20(Padding)*/
+footer {
+  background-color: yellow;
+  padding: 20px;
+}
