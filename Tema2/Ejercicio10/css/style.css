@@ -1,0 +1,76 @@
+/* Aplica una fuente sans-serif a todos los elementos */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*Ponemos el fondo de color gris*/
+body {
+  background-color: rgba(128, 128, 128, 0.562);
+}
+/* Centra el texto del título h1 y le da color carmesí */
+h1 {
+  text-align: center;
+  color: crimson;
+}
+/* Estiliza los párrafos dentro del encabezado: centra el texto, aplica fondo, padding y borde */
+header p {
+  text-align: center;
+  background-color: burlywood;
+  padding-bottom: 50px;
+  border: 2px double;
+}
+/* Caja amarilla posicionada a la izquierda con fondo amarillo y z-index bajo */
+.yellow_box {
+  width: 700px;
+  height: 250px;
+  background-color: rgba(255, 255, 0);
+  position: absolute;
+  left: 10px;
+  z-index: 0;
+}
+/* Caja cian posicionada a la derecha con fondo cian y z-index bajo */
+.cyan_box {
+  width: 700px;
+  height: 250px;
+  background-color: rgba(0, 255, 255);
+  position: absolute;
+  right: 10px;
+  z-index: 0;
+}
+/* Caja verde centrada verticalmente, alineada a la derecha, con fondo verde claro y z-index medio */
+.green_box {
+  width: 700px;
+  height: 300px;
+  background-color: rgba(172, 255, 47);
+  position: absolute;
+  top: 300px;
+  left: 600px;
+  text-align: center;
+  z-index: 1;
+}
+/* Caja púrpura posicionada en la parte inferior con fondo púrpura y z-index bajo */
+.purple_box {
+  width: 700px;
+  height: 250px;
+  background-color: rgba(128, 0, 128);
+  position: absolute;
+  top: 500px;
+  z-index: 0;
+}
+/* Caja carmesí superpuesta en la parte inferior derecha con z-index alto */
+.crimson_box {
+  width: 700px;
+  height: 250px;
+  background-color: rgba(220, 20, 60);
+  position: absolute;
+  top: 500px;
+  right: 10px;
+  z-index: 2;
+}
+/* Clase para alinear texto a la derecha */
+.right {
+  text-align: end;
+}
+/* Clase para alinear texto a la izquierda */
+.left {
+  text-align: start;
+}
