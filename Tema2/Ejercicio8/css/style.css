@@ -1,0 +1,24 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*Hacemos que el primer parrafo la primera letra sea de color verde, este en negrita y su fuente es aumentada*/
+.green:first-letter {
+  color: green;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+/*Hacemos que el articulo 2, el primer parrafo y su primera letra tenga un color rojo y qeu el tamaño de la letra aumente*/
+.red:first-letter {
+  color: red;
+  font-size: 3rem;
+}
+/*Hacemos que el 3 articulo, el primer parrafo la primera tenga un color azul y tamaño de letra aumentada*/
+.blue::first-letter{
+    color: blue;
+    font-size: 4rem;
+}
+/*Hacemos que el 4 articulo, el primer parrafo la primera letra tenga un color gris y tamaño de la letra aumentado*/
+.gray::first-letter{
+    color: gray;
+    font-size: 5rem;
+}
