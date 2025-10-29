@@ -1,0 +1,48 @@
+/* Estilos para el contenedor principal */
+div {
+  display: flex;
+  gap: 100px;
+  margin: 0 auto;
+  width: 80%;
+}
+/* Estilos para las listas */
+ul {
+  width: 8rem;
+}
+/* Estilos para los elementos de lista */
+li {
+  text-align: center;
+  background-color: #bcbadb;
+  list-style: none;
+  border-bottom: 1px solid white;
+}
+/* Estilos generales para los enlaces */
+a {
+  text-decoration: none;
+}
+/* Enlaces no visitados dentro de .list_link_visit */
+.list_link_visit a:link {
+  color: rgb(0, 204, 255);
+  font-weight: bolder;
+}
+/* Enlaces visitados dentro de .list_link_visit */
+.list_link_visit a:visited {
+  color: crimson;
+  font-family: "Courier New", Courier, monospace;
+}
+/* Hover sobre elementos de lista dentro de .list_hover */
+.list_hover li:hover {
+  background-color: #326799;
+}
+/* Enlaces dentro de elementos en hover en .list_hover */
+.list_hover li:hover a {
+  color: white;
+}
+/* Elementos activos dentro de .list_active */
+.list_active li:active {
+  background-color: black;
+}
+/* Enlaces activos dentro de .list_active */
+.list_active li a:active {
+  color: white;
+}
