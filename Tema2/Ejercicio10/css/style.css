@@ -64,7 +64,7 @@ header p {
   position: absolute;
   top: 500px;
   right: 10px;
-  z-index: 2;
+  z-index: 0;
 }
 /* Clase para alinear texto a la derecha */
 .right {
@@ -73,4 +73,7 @@ header p {
 /* Clase para alinear texto a la izquierda */
 .left {
   text-align: start;
+}
+.yellow_box:hover, .cyan_box:hover,.purple_box:hover,.crimson_box:hover{
+  z-index: 2;
 }
