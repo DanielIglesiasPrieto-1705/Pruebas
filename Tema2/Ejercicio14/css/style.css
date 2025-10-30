@@ -1,0 +1,64 @@
+/** Aplica la fuente Verdana (y otras de respaldo) a todo el documento **/
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/** Centra el contenedor principal horizontalmente y le da un ancho del 75% de la pantalla **/
+#container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/** Establece tamaño fijo y bordes redondeados para las imágenes de las ciudades **/
+.img_city {
+  width: 250px;
+  height: 155px;
+  border-radius: 30px;
+}
+
+/** Usa flexbox para alinear horizontalmente los bloques de ciudades **/
+.containers_cities {
+  display: flex;
+}
+
+/** Estilo para cada ciudad: margen, ancho fijo, sombra, bordes redondeados y transición suave **/
+.container_city {
+  margin: 30px;
+  width: 250px;
+  box-shadow: 2px 10px 10px gray;
+  border-radius: 30px;
+  padding-bottom: 30px;
+  transition: all 0.75s; 
+}
+
+/** Estilo del botón "Leer Más": fondo blanco, borde gris, padding, color, margen y bordes personalizados **/
+.custom_btn {
+  background-color: white;
+  border: 1px solid gray;
+  margin-top: 20px;
+  padding: 20px 50px 20px 50px;
+  color: gray;
+  margin-left: 2.4rem;
+  border-radius: 25px 0 25px 25px;
+}
+
+/** Efecto hover del botón: cambia el fondo a verde al pasar el mouse **/
+.custom_btn:hover {
+  background-color: rgba(0, 128, 0, 0.568);
+  cursor: pointer;
+}
+
+/** Efecto hover del contenedor de ciudad: agranda el bloque y aumenta la sombra **/
+.container_city:hover {
+  transition: all 0.75s;
+  transform: scale(1.15);
+  box-shadow: 2px 20px 20px gray; 
+}
+
+/** Estilo del bloque de información de cada ciudad: ancho relativo, altura fija, centrado y texto alineado **/
+.info {
+  width: 80%;
+  height: 150px;
+  margin: 0 auto;
+  text-align: center;
+}
