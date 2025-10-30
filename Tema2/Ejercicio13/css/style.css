@@ -1,0 +1,80 @@
+/* Hacemos que todos los elementos tengan un tipo de letra tipo Arial */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: antiquewhite;
+}
+img {
+  width: 75px;
+  height: 75px;
+}
+
+/* Estilizamos el contenedor del header */
+#container_header {
+  display: flex;
+  align-items: center;
+  width: 700px;
+  margin: 0 auto;
+}
+/* Hacemos que el contenido del header esté centrado */
+header {
+  background-color: beige;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+}
+header h1 {
+  text-align: center;
+  padding: 20px;
+  background-color: antiquewhite;
+}
+/* Estilizamos el main con ancho del 80%, centrado y separación entre elementos */
+main {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+}
+/* Estilizamos el section con un ancho del 75% */
+section {
+  width: 75%;
+}
+/* Estilizamos el aside con un ancho del 25% */
+aside {
+  margin-top: 200px;
+  width: 25%;
+  padding: 20px;
+  background-color: blanchedalmond;
+  height: 30%;
+  border-radius: 20px;
+}
+/* Estilizamos la lista dentro del aside */
+aside ul {
+  background-color: rgb(241, 205, 161);
+  border-radius: 20px;
+  padding: 20px;
+}
+/* Estilizamos el section */
+section {
+  margin-top: 20px;
+  background-color: blanchedalmond;
+  border-radius: 30px;
+  padding: 8px;
+}
+/* Estilizamos los párrafos dentro del section */
+section p {
+  background-color: rgb(255, 216, 157);
+  padding: 10px;
+  border-radius: 20px;
+}
+/* Estilizamos los elementos de la lista con justificación, ancho del 30% y alineación a la izquierda */
+.list_part li {
+  width: 30%;
+  float: left;
+  list-style-type: none;
+  padding: 6px;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: rgb(255, 216, 157);
+}
