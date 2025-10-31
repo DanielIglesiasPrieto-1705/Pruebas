@@ -1,0 +1,107 @@
+/* Estilos generales del cuerpo de la página */
+body {
+  background-image: url(../img/background.png);
+  font-family: "Balthazar", serif;
+}
+/* Estilo del encabezado */
+header {
+  background-color: #fffef5c4;
+}
+/* Contenedor del logo y la barra de navegación */
+#logo_indice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Tamaño del logo */
+#logo {
+  width: 90px;
+}
+/* Estilo general para los párrafos */
+p {
+  font-size: 1.4rem;
+}
+/* Lista de navegación horizontal sin viñetas */
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+}
+/* Párrafo destacado de opinión */
+#p_opinion {
+  padding: 10px;
+  background-color: #f8f6e2dc;
+}
+/* Contenedor de contenido en directo */
+#directo {
+  display: flex;
+  gap: 20px;
+}
+/* Texto en directo resaltado en rojo */
+#directo span {
+  color: rgb(255, 0, 0);
+}
+/* Contenedor principal dividido en dos columnas */
+main {
+  display: flex;
+}
+/* Zona izquierda del contenido principal */
+#content_left {
+  width: 70%;
+}
+/* Zona lateral (aside) con texto centrado */
+aside {
+  width: 30%;
+  text-align: center;
+}
+/* Artículo específico con ancho del 50% */
+#art_1 {
+  width: 50%;
+}
+/*Centramos el articulo principal en el centro de la pagina web*/
+#art_main {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+/* Imagen principal del artículo con bordes redondeados */
+#art_main img {
+  width: 50%;
+  border-radius: 20px;
+}
+/*Centramos el articulo principal 2 en el centro de la pagina web*/
+#art_main_1 {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+/*Imagin principal 2 del articulo con bordes redonceados*/
+#art_main_1 img {
+  width: 50%;
+  border-radius: 20px;
+}
+/* Contenedor de noticias en formato horizontal */
+.container_notice {
+  display: flex;
+}
+/* Título o puesto destacado en la noticia */
+.puesto {
+  font-size: 1.7rem;
+}
+/* Imagen de la noticia con ancho del 50% */
+.img_notice {
+  width: 50%;
+}
+/* Autor de la noticia con fuente pequeña */
+.autor_notice {
+  font-size: 0.9rem;
+}
+/* Pie de página centrado con fondo suave */
+footer {
+  text-align: center;
+  background-color: rgba(255, 228, 196, 0.432);
+}
+/* Párrafos del footer sin margen */
+footer p {
+  margin: 0;
+}
