@@ -1,0 +1,148 @@
+/*Que todo el contenido este con fuente de letra de google fonts*/
+* {
+  font-family: "Rye", serif;
+  color: beige;
+}
+/*Hacemos que el background tenga una imagen relacionada con la pagina web*/
+body {
+  background-image: url(../img/background.png);
+}
+/*hacemos que la barra tenga un fondo y que el contenido tenga menos tamaño de letra*/
+#contacto_barra {
+  font-size: 0.7rem;
+  background-color: rgba(0, 0, 0, 0.555);
+}
+/*Hacemos que el contenido este en linea, tenga separacion y que este centrado*/
+#contenido_barra {
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+}
+#contenido_barra img{
+    width: 20px;
+    height: 20px;
+}
+.contacto {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+/*Hacemos que el tamaño de imagen de los contacto tenga menos tamaño*/
+.contacto_icon {
+  width: 20px;
+  height: 20px;
+}
+/*Hacemos que el header este centrado*/
+header {
+  margin: 0 auto;
+  top: 0;
+  position: sticky;
+  background-color: rgba(0, 0, 0, 0.562);
+}
+/*Hacemos que la imagen este centrada*/
+#logo {
+  width: 120px;
+  height: 120px;
+  display: block;
+  margin: 0 auto;
+}
+/*Hacemos que el contenido este centrado en linea con flex, tenga un espaciado interno de 20px (padding), centramos los contenidos de la lista*/
+#navbar ul {
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+  gap: 20px;
+  list-style-type: none;
+  background-color: rgba(0, 0, 0, 0.411);
+  padding: 20px;
+  align-items: center;
+}
+#navbar {
+  border-bottom: 3px double rgb(53, 51, 51);
+}
+article{
+    background-color: rgba(85, 81, 77, 0.425);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px;
+}
+/*Hacemos que todas las imagenes esten centradas y tengan una anchura responsiva*/
+article img {
+  display: block;
+  width: 50%;
+  border-radius: 30%;
+  height: 300px;
+  margin: 0 auto;
+}
+#contenido_web{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+}
+/*Hacemos que el main este centrado*/
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+aside{
+    margin: 0 auto;
+    width: 20%;
+    float: right;
+}
+.noticias img{
+    width: 200px;
+    height: 100px;
+}
+/*Hacemos que cada h2 tenga siempre una linea de separacion de su contenido*/
+article h2 {
+  border-bottom: 1px solid gray;
+}
+/*Hacemos que el cuadro tenga un fondo crimson con baja opacidad, que tenga borde y que el texto este cetraado*/
+.container_riesgo {
+  background-color: rgba(117, 0, 23, 0.699);
+  padding: 15px;
+  border: 3px double;
+  text-align: center;
+}
+#ayuda span{
+    color: rgb(255, 153, 0);
+}
+.contacto{
+    gap: 30px;
+    align-content: center;
+}
+.contacto img {
+    width: 30%;
+    height: 30%;
+    border-radius: 60%;
+}
+.contacto_info{
+    font-size: 0.9rem;
+}
+iframe{
+    border-radius: 20px;
+}
+#container_ubicacion{
+    display: flex;
+    gap: 20px;
+}
+footer{
+    background-color: black;
+    margin: 0;
+}
+#contenido_footer{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+#contenido_footer ul{
+    list-style-type: none;
+}
+button{
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
