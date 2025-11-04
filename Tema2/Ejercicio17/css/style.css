@@ -1,0 +1,69 @@
+/* Eliminamos márgenes por defecto del body */
+body {
+  margin: 0;
+}
+/* Definimos tamaño del logo con unidades rem para escalabilidad */
+#logo {
+  width: 5rem;
+}
+/* Estilizamos el header con flexbox, espaciado entre elementos y fondo blanco */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 15%;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+/* Lista de navegación en línea con espacio entre elementos y sin viñetas */
+ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  width: 30%;
+}
+/* Contenedores del video y gif ocupan toda la altura de la ventana */
+#container_video, #section_gif {
+  width: 100%;
+  height: 100vh;
+}
+/* El video se adapta al contenedor y cubre toda la pantalla */
+video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+/* Sección de categorías con fondo rojo, espaciado interno y distribución uniforme */
+#categorias {
+  display: flex;
+  padding: 50px;
+  background-color: crimson;
+  width: auto;
+  align-items: center;
+  justify-content: space-evenly;
+}
+/* En pantallas pequeñas, las categorías se apilan verticalmente */
+@media only screen and (max-width: 500px){
+  #categorias {
+    display: block;
+  }
+}
+/* Cada categoría se muestra en línea con texto blanco y ancho limitado */
+.container_categoria {
+  display: flex;
+  width: 20%;
+  align-items: center;
+  color: white;
+}
+/* Imágenes dentro de las categorías con tamaño proporcional */
+.img_categorias {
+  width: 40%;
+  height: 40%;
+}
+/* El gif se estira para llenar el contenedor */
+#gif {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
