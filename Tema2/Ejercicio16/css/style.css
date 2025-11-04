@@ -1,52 +1,66 @@
-/*Que todo el contenido este con fuente de letra de google fonts*/
+/*Aplicamos fuente de Google Fonts y color beige a todo el contenido*/
 * {
   font-family: "Rye", serif;
   color: beige;
 }
-/*Hacemos que el background tenga una imagen relacionada con la pagina web*/
+/*Establecemos una imagen de fondo para el body*/
 body {
   background-image: url(../img/background.png);
 }
-/*hacemos que la barra tenga un fondo y que el contenido tenga menos tamaño de letra*/
+/*Barra de contacto con fondo semitransparente y texto pequeño*/
 #contacto_barra {
   font-size: 0.7rem;
   background-color: rgba(0, 0, 0, 0.555);
 }
-/*Hacemos que el contenido este en linea, tenga separacion y que este centrado*/
+/*Contenido de la barra en línea, centrado y con ancho limitado*/
 #contenido_barra {
   display: flex;
   width: 40%;
   margin: 0 auto;
 }
-#contenido_barra img{
-    width: 20px;
-    height: 20px;
+/*Tamaño reducido para los íconos dentro de la barra*/
+#contenido_barra img {
+  width: 20px;
+  height: 20px;
 }
+/*Sección de contacto alineada y centrada*/
 .contacto {
   display: flex;
   margin: 0 auto;
   align-items: center;
+  gap: 30px;
+  align-content: center;
 }
-/*Hacemos que el tamaño de imagen de los contacto tenga menos tamaño*/
+/*Tamaño reducido para los íconos de contacto*/
 .contacto_icon {
   width: 20px;
   height: 20px;
 }
-/*Hacemos que el header este centrado*/
+/*Imágenes de contacto con forma circular y tamaño proporcional*/
+.contacto img {
+  width: 30%;
+  height: 30%;
+  border-radius: 60%;
+}
+/*Texto informativo de contacto con fuente más pequeña*/
+.contacto_info {
+  font-size: 0.9rem;
+}
+/*Header centrado y con fondo semitransparente, posición fija arriba*/
 header {
   margin: 0 auto;
   top: 0;
   position: sticky;
   background-color: rgba(0, 0, 0, 0.562);
 }
-/*Hacemos que la imagen este centrada*/
+/*Logo centrado con tamaño definido*/
 #logo {
   width: 120px;
   height: 120px;
   display: block;
   margin: 0 auto;
 }
-/*Hacemos que el contenido este centrado en linea con flex, tenga un espaciado interno de 20px (padding), centramos los contenidos de la lista*/
+/*Menú de navegación en línea, centrado, con espaciado y fondo*/
 #navbar ul {
   display: flex;
   width: 40%;
@@ -57,16 +71,18 @@ header {
   padding: 20px;
   align-items: center;
 }
+/*Borde inferior decorativo para el navbar*/
 #navbar {
   border-bottom: 3px double rgb(53, 51, 51);
 }
-article{
-    background-color: rgba(85, 81, 77, 0.425);
-    border-radius: 20px;
-    padding: 20px;
-    margin: 30px;
+/*Estilo para los artículos: fondo, bordes redondeados y espaciado*/
+article {
+  background-color: rgba(85, 81, 77, 0.425);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 30px;
 }
-/*Hacemos que todas las imagenes esten centradas y tengan una anchura responsiva*/
+/*Imágenes dentro de artículos centradas, redondeadas y responsivas*/
 article img {
   display: block;
   width: 50%;
@@ -74,75 +90,74 @@ article img {
   height: 300px;
   margin: 0 auto;
 }
-#contenido_web{
-    width: 60%;
-    margin: 0 auto;
-    display: flex;
+/*Contenedor principal del contenido web centrado y en línea*/
+#contenido_web {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
 }
-/*Hacemos que el main este centrado*/
+/*Main centrado con ancho definido*/
 main {
   width: 80%;
   margin: 0 auto;
 }
-aside{
-    margin: 0 auto;
-    width: 20%;
-    float: right;
+/*Aside con borde izquierdo y alineación a la derecha*/
+aside {
+  border-left: 2px solid gray;
+  margin-left: 20px;
+  margin: 0 auto;
+  width: 20%;
+  float: right;
 }
-.noticias img{
-    width: 200px;
-    height: 100px;
+/*Imágenes de noticias con tamaño fijo*/
+.noticias img {
+  width: 200px;
+  height: 100px;
 }
-/*Hacemos que cada h2 tenga siempre una linea de separacion de su contenido*/
+/*Título de artículos con línea inferior separadora*/
 article h2 {
   border-bottom: 1px solid gray;
 }
-/*Hacemos que el cuadro tenga un fondo crimson con baja opacidad, que tenga borde y que el texto este cetraado*/
+/*Cuadro de riesgo con fondo rojo semitransparente, borde y texto centrado*/
 .container_riesgo {
   background-color: rgba(117, 0, 23, 0.699);
   padding: 15px;
   border: 3px double;
   text-align: center;
 }
-#ayuda span{
-    color: rgb(255, 153, 0);
+/*Texto destacado en la sección de ayuda con color naranja*/
+#ayuda span {
+  color: rgb(255, 153, 0);
 }
-.contacto{
-    gap: 30px;
-    align-content: center;
+/*Iframe con bordes redondeados*/
+iframe {
+  border-radius: 20px;
 }
-.contacto img {
-    width: 30%;
-    height: 30%;
-    border-radius: 60%;
+/*Contenedor de ubicación con elementos en línea y separados*/
+#container_ubicacion {
+  display: flex;
+  gap: 20px;
 }
-.contacto_info{
-    font-size: 0.9rem;
+/*Pie de página con fondo negro y sin márgenes*/
+footer {
+  background-color: black;
+  margin: 0;
 }
-iframe{
-    border-radius: 20px;
+/*Contenido del footer centrado y con ancho limitado*/
+#contenido_footer {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
 }
-#container_ubicacion{
-    display: flex;
-    gap: 20px;
+/*Lista del footer sin viñetas*/
+#contenido_footer ul {
+  list-style-type: none;
 }
-footer{
-    background-color: black;
-    margin: 0;
+/*Botón fijo en la esquina inferior izquierda con forma circular*/
+button {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  cursor: pointer;
+  border-radius: 50%;
 }
-#contenido_footer{
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-}
-#contenido_footer ul{
-    list-style-type: none;
-}
-button{
-    position: fixed;
-    bottom: 30px;
-    left: 30px;
-    cursor: pointer;
-    border-radius: 50%;
-}
-
