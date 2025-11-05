@@ -35,7 +35,7 @@ video,
 .gif {
   width: 100%;
   height: auto;
-  display: block; /* Evita espacios debajo del elemento */
+  display: block; /* Evita espacios*/
   object-fit: cover; /* Asegura que el contenido cubra el contenedor */
 }
 /* Sección de categorías con fondo rojo, espaciado interno y distribución uniforme */
