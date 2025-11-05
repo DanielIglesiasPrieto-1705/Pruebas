@@ -1,6 +1,7 @@
-/* Eliminamos márgenes por defecto del body */
+/* Eliminamos márgenes por defecto del body y definimos fuente base */
 body {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 /* Definimos tamaño del logo con unidades rem para escalabilidad */
 #logo {
@@ -12,7 +13,7 @@ header {
   justify-content: space-between;
   align-content: center;
   height: 15%;
-  position: sticky;
+  position: sticky; /* Se mantiene fijo en la parte superior al hacer scroll */
   top: 0;
   background-color: white;
 }
@@ -23,16 +24,19 @@ ul {
   list-style-type: none;
   width: 30%;
 }
-/* Contenedores del video y gif ocupan toda la altura de la ventana */
-#container_video, #section_gif {
+/* Contenedores del video y gif ocupan todo el ancho disponible */
+#container_video,
+.section_gif {
   width: 100%;
-  height: 100vh;
+  height: auto;
 }
-/* El video se adapta al contenedor y cubre toda la pantalla */
-video {
+/* El video y gif se adaptan al contenedor, eliminan espacios y cubren el área */
+video,
+.gif {
   width: 100%;
-  height: 100vh;
-  object-fit: cover;
+  height: auto;
+  display: block; /* Evita espacios debajo del elemento */
+  object-fit: cover; /* Asegura que el contenido cubra el contenedor */
 }
 /* Sección de categorías con fondo rojo, espaciado interno y distribución uniforme */
 #categorias {
@@ -42,12 +46,6 @@ video {
   width: auto;
   align-items: center;
   justify-content: space-evenly;
-}
-/* En pantallas pequeñas, las categorías se apilan verticalmente */
-@media only screen and (max-width: 500px){
-  #categorias {
-    display: block;
-  }
 }
 /* Cada categoría se muestra en línea con texto blanco y ancho limitado */
 .container_categoria {
@@ -61,9 +59,88 @@ video {
   width: 40%;
   height: 40%;
 }
-/* El gif se estira para llenar el contenedor */
-#gif {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
+/* Imagen de noticia centrada y con ancho fijo */
+.img_notice {
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+}
+/* Sección de noticias organizada en cuadrícula con áreas definidas */
+.art_noticias {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "descripcion descripcion"
+    "noticia_1 noticia_2"
+    "noticia_3 noticia_4"
+    "btn btn";
+}
+/* Contenedor general de noticias centrado y con ancho limitado */
+#section_notice {
+  width: 80%;
+  margin: 0 auto;
+}
+/* Área de descripción ocupa toda la fila superior */
+.descripcion {
+  grid-area: descripcion;
+}
+/* Definimos cada noticia en su área correspondiente */
+.noticia_1 {
+  grid-area: noticia_1;
+}
+.noticia_2 {
+  grid-area: noticia_2;
+}
+.noticia_3 {
+  grid-area: noticia_3;
+}
+.noticia_4 {
+  grid-area: noticia_4;
+}
+/* Estilo común para todas las noticias: margen y texto centrado */
+.noticia_1,
+.noticia_2,
+.noticia_3,
+.noticia_4 {
+  margin: 10px;
+  text-align: center;
+}
+/* Contenedor de etiquetas grises con distribución uniforme */
+.container_small_gray {
+  display: flex;
+  justify-content: space-evenly;
+}
+/* Estilo de texto gris pequeño para etiquetas de noticias */
+.small_gray {
+  color: gray;
+  font-size: 0.7rem;
+}
+/* Botón con transición, estilo redondeado y centrado */
+#btn_sevilla {
+  transition: all 0.5s;
+  grid-area: btn;
+  width: 300px;
+  height: 50px;
+  font-size: 1.2rem;
+  background-color: white;
+  border: 1px solid;
+  margin: 0 auto;
+  border-radius: 40px;
+  margin-bottom: 30px;
+}
+/* Efecto hover para el botón: cambio de color y cursor */
+#btn_sevilla:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+  background-color: crimson;
+  color: white;
+}
+/* Media query para pantallas pequeñas: apilamos categorías y noticias */
+@media only screen and (max-width: 500px) {
+  #categorias {
+    display: block;
+  }
+  .art_noticias {
+    display: block;
+  }
 }
