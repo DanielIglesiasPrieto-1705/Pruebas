@@ -1,0 +1,24 @@
+a {
+  color: blue;
+}
+
+/* Enlaces internos, comenzando con "#" */
+a[href^="#"]{
+  background-color: gold;
+}
+
+/* Enlaces con "example" en cualquier parte de la URL */
+a[href*="example"] {
+  background-color: silver;
+}
+
+/* Enlaces con "insensitive" en cualquier parte de la URL, 
+   independientemente de las mayúsculas */
+a[href*="insensitive" i] {
+  color: cyan;
+}
+
+/* Enlaces que terminan en ".org" */
+a[href$=".org"] {
+  color: red;
+}
