@@ -1,0 +1,58 @@
+table {
+  margin: 0 auto;
+  margin-top: 20%;
+  animation: jello-horizontal 1.5s;
+}
+.big {
+  font-size: 2em;
+}
+.bg_color:hover {
+  cursor: pointer;
+  transition: 1s;
+  background-color: beige;
+}
+.grow_letter td{
+    line-height: 41px;
+    transition: 3s;
+}
+
+.grow_letter td:hover {
+  transition: 3s ;
+  background-color: color-mix(in srgb, rgba(0, 79, 197, 0.425) 50%, rgba(50, 50, 182, 0.726) 50%);
+  font-size: 2em;
+  cursor: pointer;
+}
+.underline td:active {
+  text-decoration: underline;
+}
+
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
