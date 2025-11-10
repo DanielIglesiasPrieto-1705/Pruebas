@@ -1,0 +1,119 @@
+/* Define el color de fondo principal de la página */
+body {
+  background-color: black;
+}
+/* Contenedor de imágenes en cuadrícula con 4 columnas automáticas y áreas nombradas */
+.layout_image {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-areas: "imagen_1 imagen_2 imagen_3 imagen_4";
+}
+/* Asigna cada imagen a su área correspondiente en la cuadrícula */
+.imagen_1 {
+  grid-area: imagen_1;
+}
+.imagen_2 {
+  grid-area: imagen_2;
+}
+.imagen_3 {
+  grid-area: imagen_3;
+}
+.imagen_4 {
+  grid-area: imagen_4;
+}
+/* Establece el ancho de todas las imágenes al 95% del contenedor */
+img {
+  width: 95%;
+}
+/* Aplica transición suave a las cajas de imagen */
+.image_box {
+  transition: all 1s;
+}
+/* Efecto hover: agranda verticalmente la imagen y cambia el cursor */
+.image_box:hover {
+  transition: all 1s;
+  cursor: pointer;
+  transform: scaleY(1.15);
+}
+/* Contenedor de contacto con fondo gris y disposición en cuadrícula de 4 columnas */
+.layout_contacto {
+  background-color: gray;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "box_web box_horario box_contacto box_end";
+}
+/* Asigna cada sección de contacto a su área correspondiente */
+.box_web {
+  grid-area: box_web;
+}
+.box_horario {
+  grid-area: box_horario;
+}
+.box_contacto {
+  grid-area: box_contacto;
+}
+.box_end {
+  grid-area: box_end;
+}
+/* Ajusta el tamaño de las imágenes de redes sociales al 10% del contenedor */
+.container_redes img {
+  width: 10%;
+}
+/* Caja de contacto centrada con borde derecho */
+.contacto_box {
+  text-align: center;
+  align-items: center;
+  border-right: 2px solid black;
+}
+/* Contenedor de información con elementos alineados y espacio entre ellos */
+.info {
+  width: 80%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+/* Ajusta el tamaño de las imágenes dentro de la sección de información */
+.info img {
+  width: 15%;
+  height: fit-content;
+}
+/* Diseño responsive para pantallas con ancho máximo de 500px */
+@media screen and (max-width: 500px) {
+  /* Redefine la cuadrícula de imágenes a 2 columnas y 2 filas */
+  .layout_image {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+      "imagen_1 imagen_2"
+      "imagen_3 imagen_4";
+  }
+  /* Cambia el layout de contacto a una sola columna */
+  .layout_contacto {
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "box_web"
+      "box_horario"
+      "box_contacto"
+      "box_end";
+  }
+  /* Reasigna las áreas para mantener compatibilidad en responsive */
+  .box_web {
+    grid-area: box_web;
+  }
+  .box_horario {
+    grid-area: box_horario;
+  }
+  .box_contacto {
+    grid-area: box_contacto;
+  }
+  .box_end {
+    grid-area: box_end;
+  }
+  /* Elimina el borde y centra la caja de contacto en pantallas pequeñas */
+  .contacto_box {
+    border: none;
+    margin: 0 auto;
+  }
+}
