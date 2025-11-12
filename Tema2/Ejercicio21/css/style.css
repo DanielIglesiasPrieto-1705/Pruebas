@@ -30,8 +30,52 @@
     rgb(20, 247, 235),
     rgb(9, 178, 184)
   );
-  background-size: 600% 600%;
+  background-size: 400% 400%;
   animation: wave_effects 8s ease-in-out infinite;
+}
+.div_4 {
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  background-color: transparent;
+  perspective: 1000px;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
+.card_interior {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: all 2s;
+}
+.div_4:hover .card_interior {
+  transform: rotatey(180deg);
+}
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.front {
+  background-color: #bbb;
+  border-radius: 30px;
+  color: black;
+}
+.back {
+  background: linear-gradient(#193a56, #33637f, #2d6072);
+  transform: rotateY(180deg);
+  border-radius: 30px;
+}
+img {
+  border-radius: 30px;
+
+  width: 300px;
+  height: 300px;
 }
 
 /* Define la animación del fondo del artículo para simular movimiento de olas. */
