@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio</title>
+  </head>
+  <body>
+    <form action="get" method="get">
+      <fieldset>
+        <legend>Hola, soy la etiqueta Legend</legend>
+        <label for="">Nombre</label>
+        <!--input type="text": campo de texto para escribir-->
+        <input type="text" placeholder="Indique nombre" /><br />
+        <br />
+        <label for="">Edad</label>
+        <!--input type="number": permite introducir solo números-->
+        <input type="number" />
+        <br /><br />
+        <label for="">Indique su genero</label>
+        <br />
+        <label for="">Masculino</label>
+        <!--input type="radio": opción única dentro de un grupo-->
+        <input type="radio" name="genero" />
+        <label for="">Femenino</label>
+        <input type="radio" name="genero" />
+        <br />
+        <br />
+        <label for="">Ubicación</label>
+        <br />
+        <!--select: menú desplegable con varias opciones-->
+        <select>
+          <option value="">Sevilla</option>
+          <option value="">Málaga</option>
+          <option value="">Cádiz</option>
+          <option value="">Mi casa</option>
+          <option value="">Cordoba</option>
+        </select>
+      </fieldset>
+    </form>
+
+    <h2>Tipos de input</h2>
+    <p>Texto</p>
+    <!--Campo de texto libre-->
+    <input type="text" />
+
+    <p>Boton</p>
+    <!--Botón que no envía formulario, solo ejecuta acciones-->
+    <input type="button" value="BOTON" />
+
+    <p>Checkbox</p>
+    <!--Casilla de verificación, permite seleccionar varias opciones-->
+    <input type="checkbox" name="chekbox" />
+
+    <p>Color</p>
+    <!--Selector de color-->
+    <input type="color" />
+
+    <p>Date</p>
+    <!--Selector de fecha (día, mes, año)-->
+    <input type="date" />
+
+    <p>Datetime</p>
+    <!--Selector de fecha y hora (no muy soportado en navegadores)-->
+    <input type="datetime" />
+
+    <p>Email</p>
+    <!--Campo para introducir correos electrónicos, valida formato-->
+    <input type="email" />
+
+    <p>File</p>
+    <!--Permite subir archivos desde el dispositivo-->
+    <input type="file" />
+
+    <p>Hidden</p>
+    <!--Campo oculto, no visible para el usuario-->
+    <input type="hidden" />
+
+    <p>Image</p>
+    <!--Botón de tipo imagen, se usa como botón de envío-->
+    <input type="image" />
+
+    <p>Month</p>
+    <!--Selector de mes y año-->
+    <input type="month" />
+
+    <p>Number</p>
+    <!--Campo para números-->
+    <input type="number" />
+
+    <p>Password</p>
+    <!--Campo para contraseñas, oculta los caracteres-->
+    <input type="password" />
+
+    <p>Radio</p>
+    <!--Botón de opción única dentro de un grupo-->
+    <input type="radio" />
+
+    <p>Range</p>
+    <!--Selector de rango con deslizador-->
+    <input type="range" />
+
+    <p>Reset</p>
+    <!--Botón que reinicia el formulario-->
+    <input type="reset" />
+
+    <p>Search</p>
+    <!--Campo de búsqueda optimizado para consultas-->
+    <input type="search" />
+
+    <p>Tel</p>
+    <!--Campo para números de teléfono-->
+    <input type="tel" />
+
+    <p>Url</p>
+    <!--Campo para direcciones web, valida formato-->
+    <input type="url" />
+
+    <p>Semana</p>
+    <!--Selector de semana del año-->
+    <input type="week" />
+  </body>
+</html>
