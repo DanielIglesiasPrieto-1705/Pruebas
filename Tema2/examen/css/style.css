@@ -1,0 +1,190 @@
+/*Ponemos el body un background color morado*/
+body {
+  background-color: #3C1B4A;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*Hacemos mas pequeña la imagen*/
+#arbol_img {
+  width: 30%;
+}
+/*Hacemos el titulo de distinto color*/
+#titulo {
+  color: white;
+}
+/*Hacemos que el header tenga los contenidos en la misma linea,  que esten alineados y centrado en el centro */
+header {
+  display: flex;
+  gap: 5%;
+  align-items: center;
+}
+/*Hacemos que el main tenga un color de fondo blanco*/
+#contenidos {
+  background-color: white;
+}
+/*Quitamos el estilo de la lista*/
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+article {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/*Hacemos que el articulo este centrad*/
+#art_index {
+  width: 95%;
+  margin: 0 auto;
+}
+/*Hacemos que los subtitulos tengan el color #3C1B4A*/
+h2 {
+  color: #3C1B4A;
+}
+/*Hacemos que las imagenes tengan un ancho y altura maximo y minimo por defecto (para mejor visualizacion en el responsive)*/
+img {
+  min-width: 100px;
+  max-width: 200px;
+  min-height: 100px;
+  max-height: 200px;
+}
+/*hacemos que todos los parrafos de articulo tengan el color #3C1B4A*/
+#art_index p {
+  color: #3C1B4A;
+}
+/*Hacemos que el enlace tenga un color morado y que no tenga la linea debajo*/
+a {
+  color: #3C1B4A;
+  text-decoration: none;
+  font-size: large;
+}
+/*Aumentamos el tamaño de la letra de los parrafos*/
+p{
+  font-size: 1.1rem;
+}
+/*Añadimos espacios al iframe para que este centrado y tenga espacio de los contenidos de arriba*/
+iframe {
+  margin-top: 50px;
+  margin-left: 20%;
+  width: 50%;
+  height: 300px;
+}
+/*hacemos que el footer este abajo del todo y que el color sus hijos sean blancos*/
+footer {
+  bottom: 0;
+  color: white;
+}
+/*Hacemos que el enlace de el footer sea de color blanco*/
+footer a {
+  color: white;
+}
+/*--------------------------------------------
+                ANIMALIA
+----------------------------------------------*/
+/*Hacemos que los articulos de animalia esten en la misma linea, tenga un margen debajo ,este centrado y que tenga un espacio los contenidos entre si*/
+.art_animalia {
+  width: 50%;
+  gap: 30px;
+  margin: 0 AUTO;
+  display: flex;
+  color: #3C1B4A;
+  align-items: center;
+}
+/*Hacemos mas pequeña la imagen de animalia*/
+.img_animalia {
+  width: 20%;
+}
+/*--------------------------------------------
+                MONERA
+----------------------------------------------*/
+/*Hacemos mas pequeña la imagen de monera*/
+.img_monera {
+  width: 20%;
+}
+/*Hacemos que el articulo esten en linea, tenga espacio entre ellos y que este centrado*/
+#art_monera {
+  display: flex;
+  gap: 50px;
+  width: 50%;
+  margin: 0 auto;
+  color: #3C1B4A;
+}
+/*--------------------------------------------
+                PLANTAE
+----------------------------------------------*/
+/*Hacemos mas pequeña la imagen de plantae*/
+.img_plantae {
+  width: 30%;
+  height: 20%;
+}
+/*Hacemos que el articulo esten en linea, tenga espacio entre ellos y que este centrado*/
+#art_plantae {
+  display: flex;
+  gap: 50px;
+  width: 50%;
+  margin: 0 auto;
+  color: #3C1B4A;
+  align-items: center;
+}
+/*--------------------------------------------
+                FUNGI
+----------------------------------------------*/
+/*Hacemos mas pequeña la imagen de fungi*/
+.img_fungi {
+  width: 100%;
+}
+/*Hacemos que el articulo esten en linea, tenga espacio entre ellos y que este centrado*/
+#art_fungi {
+  display: flex;
+  gap: 50px;
+  width: 50%;
+  margin: 0 auto;
+  color: #3C1B4A;
+  align-items: center;
+}
+/*Hacemos que las imagenes se muestren en columna y que tenga un espacio de separacion entre ellas*/
+#container_img {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+/*--------------------------------------------
+                PROTISTA
+----------------------------------------------*/
+/*Hacemos mas pequeña la imagen de protista*/
+.img_protista {
+  width: 60%;
+}
+/*Hacemos que el articulo esten en linea, tenga espacio entre ellos y que este centrado*/
+#art_protista {
+  display: flex;
+  gap: 50px;
+  width: 50%;
+  margin: 0 auto;
+  color: #3C1B4A;
+  align-items: center;
+}
+/*Si el tamaño del dispostivo es menor que 550 pixeles:*/
+@media screen and (max-width: 550px) {
+  /*Hacemos que todos los contenidos esten centrados para mejor visualizacion*/
+  body{
+    text-align: center;
+  }
+  /*Hacemos que todos los contenidos esten en columna y centrados*/
+  article {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+  }
+  /*Hacemos que la lista este en columna (bloque)*/
+  nav ul {
+    display: block;
+  }
+  /*Centramos la lista*/
+  nav ul li {
+    width: 30%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+}
