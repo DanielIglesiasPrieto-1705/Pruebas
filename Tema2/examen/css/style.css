@@ -128,25 +128,24 @@ footer a {
 /*--------------------------------------------
                 FUNGI
 ----------------------------------------------*/
-/*Hacemos mas pequeña la imagen de fungi*/
-.img_fungi {
-  width: 100%;
-}
 /*Hacemos que el articulo esten en linea, tenga espacio entre ellos y que este centrado*/
 #art_fungi {
-  display: flex;
   gap: 50px;
   width: 50%;
   margin: 0 auto;
   color: #3C1B4A;
   align-items: center;
 }
-/*Hacemos que las imagenes se muestren en columna y que tenga un espacio de separacion entre ellas*/
-#container_img {
+#container_info_1,#container_info_2{
   display: flex;
-  flex-direction: column;
   gap: 50px;
+  margin-bottom: 20px;
 }
+.img_fungi {
+  object-fit: contain; 
+}
+
+
 /*--------------------------------------------
                 PROTISTA
 ----------------------------------------------*/
@@ -186,5 +185,8 @@ footer a {
     margin: 0 auto;
     padding: 10px;
   }
-
+  #container_info_1,#container_info_2{
+    display: flex;
+    flex-direction: column;
+  }
 }
