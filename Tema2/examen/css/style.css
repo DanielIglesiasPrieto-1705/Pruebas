@@ -1,6 +1,6 @@
 /*Ponemos el body un background color morado*/
 body {
-  background-color: #3C1B4A;
+  background-color: #3c1b4a;
   font-family: Arial, Helvetica, sans-serif;
 }
 /*Hacemos mas pequeña la imagen*/
@@ -20,12 +20,14 @@ header {
 /*Hacemos que el main tenga un color de fondo blanco*/
 #contenidos {
   background-color: white;
+  height: auto;
 }
 /*Quitamos el estilo de la lista*/
 nav ul {
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
+  margin: 0;
 }
 article {
   padding-top: 50px;
@@ -38,7 +40,7 @@ article {
 }
 /*Hacemos que los subtitulos tengan el color #3C1B4A*/
 h2 {
-  color: #3C1B4A;
+  color: #3c1b4a;
 }
 /*Hacemos que las imagenes tengan un ancho y altura maximo y minimo por defecto (para mejor visualizacion en el responsive)*/
 img {
@@ -49,23 +51,24 @@ img {
 }
 /*hacemos que todos los parrafos de articulo tengan el color #3C1B4A*/
 #art_index p {
-  color: #3C1B4A;
+  color: #3c1b4a;
 }
 /*Hacemos que el enlace tenga un color morado y que no tenga la linea debajo*/
 a {
-  color: #3C1B4A;
+  color: #3c1b4a;
   text-decoration: none;
   font-size: large;
 }
 /*Aumentamos el tamaño de la letra de los parrafos*/
-p{
+p {
   font-size: 1.1rem;
 }
 /*Añadimos espacios al iframe para que este centrado y tenga espacio de los contenidos de arriba*/
 iframe {
-  margin-top: 50px;
-  margin-left: 20%;
-  width: 50%;
+  display: block;
+  margin: 50px auto;
+  width: 80%;
+  max-width: 600px;
   height: 300px;
 }
 /*hacemos que el footer este abajo del todo y que el color sus hijos sean blancos*/
@@ -86,7 +89,7 @@ footer a {
   gap: 30px;
   margin: 0 AUTO;
   display: flex;
-  color: #3C1B4A;
+  color: #3c1b4a;
   align-items: center;
 }
 /*Hacemos mas pequeña la imagen de animalia*/
@@ -106,7 +109,8 @@ footer a {
   gap: 50px;
   width: 50%;
   margin: 0 auto;
-  color: #3C1B4A;
+  color: #3c1b4a;
+  align-items: center;
 }
 /*--------------------------------------------
                 PLANTAE
@@ -122,7 +126,7 @@ footer a {
   gap: 50px;
   width: 50%;
   margin: 0 auto;
-  color: #3C1B4A;
+  color: #3c1b4a;
   align-items: center;
 }
 /*--------------------------------------------
@@ -133,18 +137,18 @@ footer a {
   gap: 50px;
   width: 50%;
   margin: 0 auto;
-  color: #3C1B4A;
+  color: #3c1b4a;
   align-items: center;
 }
-#container_info_1,#container_info_2{
+#container_info_1,
+#container_info_2 {
   display: flex;
   gap: 50px;
   margin-bottom: 20px;
 }
 .img_fungi {
-  object-fit: contain; 
+  object-fit: contain;
 }
-
 
 /*--------------------------------------------
                 PROTISTA
@@ -155,17 +159,26 @@ footer a {
 }
 /*Hacemos que el articulo esten en linea, tenga espacio entre ellos y que este centrado*/
 #art_protista {
-  display: flex;
   gap: 50px;
   width: 50%;
   margin: 0 auto;
-  color: #3C1B4A;
+  color: #3c1b4a;
   align-items: center;
 }
+#container_protista_info1,
+#container_protista_info2 {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+#container_protista_info2 div img {
+  margin-bottom: 20px;
+}
+
 /*Si el tamaño del dispostivo es menor que 550 pixeles:*/
 @media screen and (max-width: 550px) {
   /*Hacemos que todos los contenidos esten centrados para mejor visualizacion*/
-  body{
+  body {
     text-align: center;
   }
   /*Hacemos que todos los contenidos esten en columna y centrados*/
@@ -178,15 +191,41 @@ footer a {
   /*Hacemos que la lista este en columna (bloque)*/
   nav ul {
     display: block;
+    margin: 0;
+    padding: 0;
   }
   /*Centramos la lista*/
   nav ul li {
-    width: 30%;
-    margin: 0 auto;
     padding: 10px;
   }
-  #container_info_1,#container_info_2{
+  /*Para poner los contenidos en columna el contenedor de imagen texto de la pagina de fungi*/
+  #container_info_1,
+  #container_info_2 {
     display: flex;
     flex-direction: column;
+  }
+
+  #container_protista_info1 {
+    display: flex;
+    flex-direction: column;
+  }
+  #container_protista_info2 {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .img_top {
+    order: 1;
+  }
+
+  #info_protista {
+    order: 2;
+    padding: 10px;
+    font-size: 1rem;
+    color: #3c1b4a;
+  }
+
+  .img_bottom {
+    order: 3;
   }
 }
