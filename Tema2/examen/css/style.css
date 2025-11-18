@@ -158,18 +158,47 @@ footer a {
   width: 60%;
 }
 /*Hacemos que el articulo esten en linea, tenga espacio entre ellos y que este centrado*/
-#art_protista {
+#sec_protista {
   gap: 50px;
   width: 50%;
   margin: 0 auto;
   color: #3c1b4a;
   align-items: center;
 }
-#container_protista_info1,
+/*#container_protista_info1,
 #container_protista_info2 {
   display: flex;
   gap: 50px;
   align-items: center;
+}*/
+#container_protista_info1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-template-areas: "img_protista_1 info_1";
+}
+#img_1 {
+  grid-area: img_protista_1;
+}
+#info_1 {
+  grid-area: info_1;
+}
+#container_protista_info2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-template-areas:
+    "img_protista_2 info_2"
+    "img_protista_3 info_2";
+}
+#info_2{
+  grid-area: info_2;
+}
+#img_2{
+  grid-area: img_protista_2;
+}
+#img_3{
+  grid-area: img_protista_3;
 }
 #container_protista_info2 div img {
   margin-bottom: 20px;
@@ -198,34 +227,47 @@ footer a {
   nav ul li {
     padding: 10px;
   }
+  #container_protista_info1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "img_protista_1"
+      "info_1";
+  }
+  #img_1 {
+    grid-area: img_protista_1;
+    display: block;
+    margin: 0 auto;
+  }
+  #info_1 {
+    grid-area: info_1;
+  }
+  #container_protista_info2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  grid-template-areas:
+    "img_protista_2"
+    "info_2"
+    "img_protista_3";
+}
+#info_2{
+  grid-area: info_2;
+}
+#img_2{
+  grid-area: img_protista_2;
+  margin: 0 auto;
+}
+#img_3{
+  grid-area: img_protista_3;
+  margin: 0 auto;
+}
   /*Para poner los contenidos en columna el contenedor de imagen texto de la pagina de fungi*/
+  
   #container_info_1,
   #container_info_2 {
     display: flex;
     flex-direction: column;
   }
 
-  #container_protista_info1 {
-    display: flex;
-    flex-direction: column;
-  }
-  #container_protista_info2 {
-    display: flex;
-    flex-direction: column;
-  }
- 
-  .img_top {
-    order: 1;
-  }
-
-  #info_protista {
-    order: 2;
-    padding: 10px;
-    font-size: 1rem;
-    color: #3c1b4a;
-  }
-
-  .img_bottom {
-    order: 3;
-  }
 }
