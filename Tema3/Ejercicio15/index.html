@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 15</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <div id="fnombre">
+        <label for="nombre">Nombre</label><br />
+        <input
+          type="text"
+          placeholder="Indique su nombre"
+          name="nombre"
+          id="nombre"
+        />
+      </div>
+      <br />
+      <div id="femail">
+        <label for="mail">Mail</label><br />
+        <input
+          type="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$"
+          placeholder="ejemplo@gmail.com"
+          name="mail"
+          id="mail"
+          required
+        />
+      </div>
+      <div id="ftelf">
+        <label for="telf">Telefono</label><br />
+        <input
+          type="tel"
+          name="telf"
+          id="telf"
+          pattern="955-[0-9]{3}-[0-9]{3}-[0-9]{3}"
+          value="955-"
+          title="Formato: XXX-XXX-XXX-XXX"
+          required
+        />
+      </div>
+      <div id="fcapitales">
+          <label for="capitales">Ubicacion</label><br />
+          <select name="capitales" id="capitales">
+            <option value="Jaén">Jaén</option>
+            <option value="Álmeria">Álmeria</option>
+            <option value="Córdoba">Córdoba</option>
+            <option value="Granada">Granada</option>
+            <option value="Huelva">Huelva</option>
+            <option value="Cádiz">Cádiz</option>
+            <option value="Málaga">Málaga</option>
+            <option value="Sevilla" selected>Sevilla</option>
+          </select>
+      </div>
+      <div id="fcalificacion">
+          <label for="calificacion">Como calificaría a este sitio</label><br />
+          <select name="calificacion">
+            <option value="Malo">Malo</option>
+            <option value="Regular">Regular</option>
+            <option value="Bueno" selected>Bueno</option>
+            <option value="Muy bueno">Muy bueno</option>
+            <option value="Excelente">Excelente</option>
+          </select>
+      </div>
+      <br />
+      <textarea
+        name="comentarios"
+        id="comentarios"
+        placeholder="Ingrese aqui su comentario"
+      ></textarea>
+      <br />
+      <div id="botones">
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Restablecer" />
+      </div>
+    </form>
+  </body>
+</html>
