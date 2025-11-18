@@ -1,0 +1,9 @@
+fieldset{
+    background-color: beige;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+label{
+    display: inline-block;
+    width: 70px;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio</title>
+  </head>
+  <body>
+    <form action="datos.txt" method="get">
+      <fieldset>
+        <legend>Seleccione tipo y cantidad de pizzas</legend>
+        <!--Pizza 1-->
+        <label for="pizza_1">Pizza: </label>
+        <select name="pizza_1" id="pizza_1">
+          <option name="pizza_1" label="Mozarella" value="Mozzarella">
+            Mozarella
+          </option>
+          <option
+            name="pizza_1"
+            label="Jamon y Queso"
+            value="Jamon y Queso"
+          >
+            Jamon y Queso
+          </option>
+          <option name="pizza_1" label="Napolitana" value="Napolitana">
+            Napolitana
+          </option>
+        </select>
+        <label for="cantidad_pizza_1">Cantidad</label>
+        <select name="cantidad_pizza_1" id="cantidad_pizza_1">
+          <option name="cantidad_pizza_1" label="0" value="0">
+            0
+          </option>
+          <option name="cantidad_pizza_1" label="1" value="1">
+            1
+          </option>
+          <option name="cantidad_pizza_1" label="2" value="2">
+            2
+          </option>
+          <option name="cantidad_pizza_1" label="3" value="3">
+            3
+          </option>
+          <option name="cantidad_pizza_1" label="4" value="4">
+            4
+          </option>
+          <option name="cantidad_pizza_1" label="5" value="5">
+            5
+          </option>
+        </select>
+        <br />
+        <!--Pizza 2-->
+        <label for="pizza_2">Pizza: </label>
+        <select name="pizza_2" id="pizza_2">
+          <option label="Mozarella" value="Mozzarella">Mozarella</option>
+          <option label="Jamon y Queso" value="Jamon y Queso">
+            Jamon y Queso
+          </option>
+          <option label="Napolitana" value="Napolitana">Napolitana</option>
+        </select>
+        <label for="cantidad_pizza_2">Cantidad</label>
+        <select name="cantidad_pizza_2" id="cantidad_pizza_2">
+            <option name="cantidad_pizza_2" label="0" value="0">
+            0
+          </option>
+          <option name="cantidad_pizza_2" label="1" value="1">
+            1
+          </option>
+          <option name="cantidad_pizza_2" label="2" value="2">
+            2
+          </option>
+          <option name="cantidad_pizza_2" label="3" value="3">
+            3
+          </option>
+          <option name="cantidad_pizza_2" label="4" value="4">
+            4
+          </option>
+          <option name="cantidad_pizza_2" label="5" value="5">
+            5
+          </option>
+        </select>
+        <br />
+        <!--Pizza 3-->
+        <label for="pizza_3">Pizza: </label>
+        <select name="pizza_3" id="pizza_3">
+          <option label="Mozarella" value="Mozzarella">Mozarella</option>
+          <option label="Jamon y Queso" value="Jamon y Queso">
+            Jamon y Queso
+          </option>
+          <option label="Napolitana" value="Napolitana">Napolitana</option>
+        </select>
+        <label for="cantidad_pizza_3">Cantidad</label>
+        <select name="cantidad_pizza_3" id="cantidad_pizza_3">
+            <option name="cantidad_pizza_3" label="0" value="0">
+            0
+          </option>
+          <option name="cantidad_pizza_3" label="1" value="1">
+            1
+          </option>
+          <option name="cantidad_pizza_3" label="2" value="2">
+            2
+          </option>
+          <option name="cantidad_pizza_3" label="3" value="3">
+            3
+          </option>
+          <option name="cantidad_pizza_3" label="4" value="4">
+            4
+          </option>
+          <option name="cantidad_pizza_3" label="5" value="5">
+            5
+          </option>
+        </select>
+        <br />
+      </fieldset>
+      <fieldset>
+        <legend>Datos</legend>
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre" />
+        <br />
+        <label for="direccion">Direccion: </label>
+        <input type="text" name="direccion" id="direccion" />
+        <br />
+        <label for="telf">Teléfono</label>
+        <input type="text" name="telf" id="telf" />
+      </fieldset>
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
