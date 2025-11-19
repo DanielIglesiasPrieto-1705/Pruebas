@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio </title>
+    <title>Ejercicio 18</title>
 </head>
 <body>
     <form action="datos.txt" method="get">
-        <label for="nombre">Nombre: </label>
-        <input type="text">
+        <label for="nombre">Ingrese su nombre y apellido: </label>
+        <input type="text" name="nombre" maxlength="40">
         <br>
-        <label for="ciudad">Ciudad</label>
-        <input name="ciudad" type="text" readonly value="Sevilla">
+        <label for="edad">Ingrese su edad:</label>
+        <input type="text" maxlength="3">
         <br>
-        <textarea readonly name="comentario" id="comentario">Este comentario no se puede modificar</textarea>
-        <br>
+        <label for="dni">Ingrese su DNI:</label>
+        <input type="text" name="dni" maxlength="9">
         <input type="submit" value="Enviar">
-        <input type="reset" value="Borrar">
     </form>
 </body>
 </html>

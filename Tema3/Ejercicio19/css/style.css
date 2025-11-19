@@ -1,0 +1,48 @@
+form {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid gray;
+}
+input[type="text"] {
+  width: 30%;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  transition: all 1s;
+}
+input[type="text"]:hover {
+  transition: all 1s;
+  width: 50%;
+}
+input[type="submit"],input[type="reset"] {
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px;
+  width: 60px;
+  transition: all 1s;
+}
+input[type="submit"]:hover {
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 5px;
+  width: 60px;
+  background-color: greenyellow;
+  box-shadow: 0px 0px 7px green;
+  color: green;
+  transition: all 1s;
+  transform: scale(1.2);
+}
+input[type="reset"]:hover {
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 5px;
+  width: 60px;
+  background-color: crimson;
+  box-shadow: 0px 0px 7px red;
+  color: rgb(97, 0, 0);
+  transition: all 1s;
+  transform: scale(1.2);
+}
