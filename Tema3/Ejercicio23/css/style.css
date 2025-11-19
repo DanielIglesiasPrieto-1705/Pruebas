@@ -1,0 +1,44 @@
+header{
+    background-color: bisque;
+    text-align: center;
+    padding: 20px;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+main{
+    display: flex;
+}
+section{
+    width: 85%;
+}
+
+article{
+    background-color: beige;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+
+aside{
+    width: 30%;
+}
+form{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+input{
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 500px) {
+    ul{
+        display: flex;
+    }
+ main{
+    display: block;
+ }   
+}
