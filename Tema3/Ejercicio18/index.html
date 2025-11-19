@@ -7,6 +7,17 @@
     <title>Ejercicio </title>
 </head>
 <body>
-    
+    <form action="datos.txt" method="get">
+        <label for="nombre">Nombre: </label>
+        <input type="text">
+        <br>
+        <label for="ciudad">Ciudad</label>
+        <input name="ciudad" type="text" readonly value="Sevilla">
+        <br>
+        <textarea readonly name="comentario" id="comentario">Este comentario no se puede modificar</textarea>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
 </body>
 </html>
