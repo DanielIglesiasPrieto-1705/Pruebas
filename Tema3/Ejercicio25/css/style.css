@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+}
+input {
+  margin-bottom: 20px;
+}
+form {
+  width: 30%;
+  border: 3px solid blue;
+  text-align: center;
+  margin: 0 auto;
+}
+input[type="text"],
+input[type="email"] {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  transition: all 0.75s;
+}
+input[type="text"]:focus,
+input[type="email"]:focus {
+  transition: all 0.75s;
+  outline: none;
+  border-color: blue;
+  border-bottom: 1px solid rgb(29, 29, 109);
+}

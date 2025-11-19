@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio</title>
+  </head>
+  <body>
+    <h1>Rellena tu CV</h1>
+    <form action="datos" method="get">
+      <label for="nombre">Nombre:</label>
+      <br />
+      <input type="text" name="nombre" />
+      <br />
+      <label for="apellido">Apellido:</label>
+      <br />
+      <input type="text" name="apellido" size="35" />
+      <br />
+      <label for="direccion">Domicilio:</label>
+      <br />
+      <input type="text" name="direccion" size="50" />
+      <br />
+      <label for="dni">DNI:</label>
+      <br />
+      <input type="text" name="dni" size="9" />
+      <br />
+      <label for="email">Email:</label>
+      <br />
+      <input type="email" name="email" size="30" />
+      <br />
+      <label for="genero">Sexo</label>
+      <br />
+      <input type="radio" name="genero" id="hombre" />
+      <label for="genero">Hombre</label>
+      <br />
+      <input type="radio" name="genero" id="mujer" />
+      <label for="genero">Mujer</label>
+      <br />
+      <br />
+      <label for="foto">Añadir mi foto:</label>
+      <input type="file" name="foto" id="foto" />
+      <br /><br />
+      <input type="checkbox" name="suscripcion" id="suscripcion" />
+      <label for="suscripcion">Suscribirme al boletín de novedades</label>
+      <br /><br />
+      <input type="submit" value="Guardar cambios" />
+      <input type="reset" value="Borrar los datos introducidos" />
+    </form>
+  </body>
+</html>
