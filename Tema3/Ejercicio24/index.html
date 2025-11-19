@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 24</title>
+  </head>
+  <body>
+    <form action="datos.txt" method="get">
+      <input type="hidden" name="hora_envio" value="12:05" />
+      <label for="genero">Indique su genero</label>
+      <br />
+      <input type="radio" name="genero" id="genero" value="Masculino" />
+      <label for="genero">Masculino</label>
+      <input type="radio" name="genero" id="genero" value="Femenino" />
+      <label for="genero">Femenino</label>
+      <br /><br />
+      
+      <label for="comida">¿Cual es tu comida favorita?</label>
+      <br />
+      <input type="checkbox" name="comida" value="hamburguesa" />
+      <label for="comida">Hamburguesa</label>
+      <br />
+      <input type="checkbox" name="comida" value="Pizza" />
+      <label for="comida">Pizza</label>
+      <br />
+      <input type="checkbox" name="comida" value="Bocadillo de jamón" />
+      <label for="comida">Bocadillo de jamón</label>
+      <br /><br />
+
+      <!--Pregunta 1-->
+      <label>1. ¿Quién creó el lenguaje HTML?</label><br />
+      <input type="radio" name="pregunta1" id="p1a" value="Tim Berners-Lee" />
+      <label for="p1a">Tim Berners-Lee</label><br />
+      <input type="radio" name="pregunta1" id="p1b" value="Bill Gates" />
+      <label for="p1b">Bill Gates</label><br />
+      <input type="radio" name="pregunta1" id="p1c" value="Linus Torvalds" />
+      <label for="p1c">Linus Torvalds</label><br /><br />
+
+      <!--Pregunta 2-->
+      <label>2. ¿En qué año apareció la primera versión de HTML?</label><br />
+      <input type="radio" name="pregunta2" id="p2a" value="1991" />
+      <label for="p2a">1991</label><br />
+      <input type="radio" name="pregunta2" id="p2b" value="1985" />
+      <label for="p2b">1985</label><br />
+      <input type="radio" name="pregunta2" id="p2c" value="2000" />
+      <label for="p2c">2000</label><br /><br />
+
+      <!--Pregunta 3-->
+      <label>3. ¿Dónde trabajaba Tim Berners-Lee cuando creó HTML?</label><br />
+      <input type="radio" name="pregunta3" id="p3a" value="CERN" />
+      <label for="p3a"
+        >CERN (Organización Europea para la Investigación Nuclear)</label
+      ><br />
+      <input type="radio" name="pregunta3" id="p3b" value="NASA" />
+      <label for="p3b">NASA</label><br />
+      <input type="radio" name="pregunta3" id="p3c" value="MIT" />
+      <label for="p3c">MIT</label><br /><br />
+
+      <!--Pregunta 4-->
+      <label>4. ¿Cuál fue la primera versión oficial de HTML?</label><br />
+      <input type="radio" name="pregunta4" id="p4a" value="HTML 1.0" />
+      <label for="p4a">HTML 1.0</label><br />
+      <input type="radio" name="pregunta4" id="p4b" value="HTML 2.0" />
+      <label for="p4b">HTML 2.0</label><br />
+      <input type="radio" name="pregunta4" id="p4c" value="HTML 4.0" />
+      <label for="p4c">HTML 4.0</label><br /><br />
+
+      <!--Pregunta 5-->
+      <label>5. ¿Qué organización se encarga de estandarizar HTML?</label><br />
+      <input type="radio" name="pregunta5" id="p5a" value="W3C" />
+      <label for="p5a">W3C (World Wide Web Consortium)</label><br />
+      <input type="radio" name="pregunta5" id="p5b" value="IEEE" />
+      <label for="p5b">IEEE</label><br />
+      <input type="radio" name="pregunta5" id="p5c" value="ISO" />
+      <label for="p5c">ISO</label><br /><br />
+      <br />
+      <input type="file" name="archivo" id="archivo" accept=".jpg, .jpge" />
+      <br /><br /><br />
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
