@@ -1,0 +1,58 @@
+#form {
+  width: 20%;
+  margin: 0 auto;
+  border: none;
+  background-color: #fdcb91;
+  transition: all 1s;
+}
+#form:hover {
+  transition: all 1s;
+  background-color: rgb(255, 181, 91);
+  border-radius: 10px 0px 10px 0px;
+}
+legend {
+  background-color: rgb(255, 203, 138);
+  padding: 8px;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  margin-left: 0; 
+  transition: margin-left 1s ease; 
+}
+#form:hover legend {
+  transition: all 1s;
+  background-color: rgb(180, 106, 16);
+  margin-left: 50%; /* se mueve hacia el centro */
+}
+ol {
+  list-style-type: none;
+}
+ol li {
+  padding: 6px;
+  margin-bottom: 10px;
+}
+#form ol label {
+  text-transform: uppercase;
+  color: white;
+  width: 100px;
+  float: left;
+}
+input[type="text"]{
+  border: none;
+}
+input[type="text"]:focus{
+  transition: 1s;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+input[type="submit"]{
+  border: none;
+  padding: 8px;
+  color: white;
+  display: block;
+  background-color: #b17632;
+  border-radius: 20px;
+  margin: 0 auto;
+}
