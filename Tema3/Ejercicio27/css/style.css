@@ -1,0 +1,38 @@
+#inp1{
+    width: 80%;
+    padding: 6px;
+}
+#inp2{
+    width: 80%;
+    padding: 6px;
+    border-radius: 10px;
+}
+#inp3{
+    width: 80%;
+    padding: 6px;
+    background-color: greenyellow;
+}
+#inp4{
+    width: 80%;
+    padding: 6px;
+    border: none;
+}
+#inp5{
+    width: 80%;
+    padding: 6px;
+    border: none;
+    background-color: burlywood;
+}
+#inp6{
+    width: 80%;
+    padding: 6px;
+    border: none;
+    outline: none;
+    background-color: rgb(114, 114, 255);
+}
+#inp7{
+    width: 80%;
+    padding: 6px;
+    border-color: rgb(97, 97, 255);
+    border-radius: 10px;
+}
