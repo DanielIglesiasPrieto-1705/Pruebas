@@ -1,0 +1,63 @@
+form {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  background-color: rgba(98, 173, 223, 0.555);
+  padding: 20px;
+  border-radius: 20px;
+}
+label {
+  font-size: 1.2rem;
+  display: block;
+}
+input[type="text"] {
+  transition: all 0.75s;
+
+  border: none;
+  margin-bottom: 15px;
+  padding: 6px;
+  border-radius: 20px;
+  width: 50%;
+}
+input[type="text"]:focus {
+  transition: all 0.75s;
+  background-color: azure;
+
+  width: 70%;
+  outline: 4px solid;
+  outline-color: rgb(88, 170, 221);
+}
+textarea {
+  border: none;
+  width: 60%;
+  height: 80px;
+  margin: 0 auto;
+}
+textarea:focus {
+  outline: none;
+  border: 2px solid rgb(88, 170, 221);
+  transition: all 0.75s;
+  background-color: azure;
+  outline: none;
+}
+
+input[type="submit"] {
+  transition: 0.5s;
+  margin-top: 20px;
+  padding: 8px;
+  border: 3px solid lightblue;
+  background-color: azure;
+  transform: translateY(-2px);
+  box-shadow: 4px 7px rgb(98, 170, 194);
+}
+
+input[type="submit"]:active {
+  transition: 0.5s;
+  margin-top: 20px;
+  padding: 8px;
+  border: 3px solid lightblue;
+  background-color: azure;
+  transform: translateY(3px);
+  box-shadow: 4px 7px 10px rgb(98, 170, 194);
+}
