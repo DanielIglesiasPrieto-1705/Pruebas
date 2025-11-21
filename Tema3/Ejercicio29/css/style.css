@@ -1,6 +1,10 @@
+body{
+  background-color: #60d9f165;
+}
 #container {
   width: 40%;
   margin: 0 auto;
+  border: #047179;
 }
 input {
   margin-bottom: 20px;
