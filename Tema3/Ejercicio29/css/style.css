@@ -4,7 +4,8 @@ body{
 #container {
   width: 40%;
   margin: 0 auto;
-  border: #047179;
+  border: 1px solid #047179;
+  padding: 50px;
 }
 input {
   margin-bottom: 20px;
@@ -12,10 +13,7 @@ input {
 input[type="text"] {
   width: 80%;
   outline-color: navy;
-}
-input[type="text"] {
-  width: 80%;
-  outline-color: navy;
+  
 }
 label {
   font-size: 1.2rem;
