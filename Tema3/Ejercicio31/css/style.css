@@ -1,0 +1,70 @@
+ol li{
+    padding: 10px;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+fieldset ol li label{
+width: 75px;
+float: left;
+}
+#flsmain{
+    width: 50%;
+    margin: 0 auto;
+}
+#lgmain{
+    text-align: center;
+}
+#flsmain fieldset{
+    margin-bottom: 20px;
+}
+#flspersonal{
+    border: 3px dotted black;
+    color: white;
+    font-weight: bolder;
+    background-color: gray;
+    padding: 30px;
+}
+#flspersonal legend{
+    background-color: black;
+}
+#flspersonal select, #flspersonal input{
+    width: auto;
+    background-color: #D8D7DD;
+}
+
+#flscuenta{
+background-color: #775532;
+}
+#flscuenta label{
+    width: 200px;
+    color: #FAEE44;
+    font-weight: bolder;
+}
+#flscuenta legend{
+    background-color: #FAEE44;
+    font-weight: bolder;
+}
+#flscuenta input,#flscuenta select{
+background-color: #FAEE44;
+}
+
+#flscontacto{
+    background-color: #84F452;
+    border: 1px solid blue;
+}
+#flscontacto legend{
+    background-color: blue;
+    color: white;
+}
+#flscontacto label{
+    width: 100px;
+    color: #0663bb;
+    font-weight: bolder;
+}
+#flscontacto input, #flscontacto select{
+    background-color: #B9F49A;
+}
+input[type="reset"],input[type="submit"]{
+    background-color: black;
+    color: white;
+}
