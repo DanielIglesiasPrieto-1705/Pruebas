@@ -1,0 +1,54 @@
+#container{
+    background-color: #FEE3C5;
+}
+h1{
+    text-align: center;
+    color: #BE242C;
+}
+form {
+  padding: 50px;
+  color: #ab2a34;
+  font-weight: bold;
+  width: 40%;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+
+li {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+li label {
+  width: 75px;
+  float: left;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  padding: 10px;
+  border: 2px dotted #ab2a34;
+  color: #ab2a34;
+  font-weight: bold;
+}
+select{
+    margin-right: 5px;
+}
+#registro{
+    flex-direction: column;
+}
+#registro label{
+width: 100%;
+margin-bottom: 20px;
+}
+#registro input{
+    padding: 30px;
+    background-color: #BE242C;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
