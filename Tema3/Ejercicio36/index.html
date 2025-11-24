@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio</title>
+  </head>
+  <body>
+    <main>
+      <section id="container_top">
+        <h1>COME VISIT OUR OFFICE BY THE SEA</h1>
+        <article>
+          <p>
+            Our office is located on the second floor of the historic Gadsden
+            House in downtown Charleston.
+          </p>
+          <div id="container_info">
+            <p class="orange">
+              329 east Bay Street, Second Floor Charleston, SC 29401 U.S.A.
+            </p>
+            <div>
+              <p>847.718.3337</p>
+              <p class="orange">Hello@cobblehdigital.com</p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <hr />
+      <form action="datos.txt" method="get">
+        <div id="container_form">
+          <input type="text" placeholder="Name" name="Nombre" class="nombre" />
+          <input type="email" placeholder="Email" name="Email" class="email" />
+          <input type="tel" placeholder="Telefono" name="Phone" class="phone" />
+          <div class="campo_comentario">
+            <label for="comentario">Message</label>
+            <textarea name="comentarios" class="comentarios"></textarea>
+          </div>
+        </div>
+        <input type="submit" id="btn" value="SEND MESSAGE" />
+      </form>
+    </main>
+  </body>
+</html>
