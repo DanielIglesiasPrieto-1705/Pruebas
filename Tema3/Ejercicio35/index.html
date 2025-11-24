@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 35</title>
+  </head>
+  <body>
+    <header>
+      <h1>Página web</h1>
+    </header>
+    <form action="datos.txt" method="get">
+      <img
+        src="https://eslaformacion.com/wp-content/uploads/2025/07/Logotipo-Membrete.svg"
+        id="logo"
+        alt="img_esla"
+      />
+      <p class="subtitulo">
+        Rellena el siguiente formulario y te contestaremos con a maxima brevedad
+        posible.
+      </p>
+      <input type="text" name="Nombre" placeholder="Nombre*" required class="nombre" />
+      <input type="text" name="Apellidos" placeholder="Apellido*" required class="apellido" />
+      <input type="email" placeholder="Correo electrónico" class="correo" />
+      <input
+        type="tel"
+        name="Telefono"
+        placeholder="Teléfono* (ej: 683564783)"
+        required
+        class="telf"
+      />
+      <select name="provincia" class="provincia">
+        <option value="Provincia" disabled selected>Provincia</option>
+        <option value="Sevilla">Sevilla</option>
+        <option value="Granada">Granada</option>
+        <option value="Córdoba">Córdoba</option>
+        <option value="Huelva">Huelva</option>
+        <option value="Jaén">Jaén</option>
+        <option value="Almería">Almería</option>
+        <option value="Málaga">Málaga</option>
+        <option value="Cádiz">Cádiz</option>
+      </select>
+      <input type="text" placeholder="Asunto*" required class="asunto" />
+      <textarea
+        name="comentario"
+        placeholder="Comentarios"
+        class="comentarios"
+      ></textarea>
+      <div class="checkbox">
+        <input type="checkbox" name="aceptar_terminos" id="terminos" />
+        <label for="aceptar_terminos"
+          >He leído y acepto los térinos y condiciones de la
+          <span id="underline-txt">politica de privacidad</span></label
+        >
+      </div>
+      <label class="campo" for="campos">*campos obligatorios</label>
+      <input type="submit" class="btn" value="ENVIAR" />
+    </form>
+  </body>
+</html>
