@@ -3,6 +3,7 @@
   gap: 50px;
 }
 #container_info {
+  gap: 10px;
   display: flex;
 }
 #container_info p {
@@ -11,34 +12,44 @@
 .orange {
   color: orangered;
 }
-#container_form{
-    display: grid;
-    grid-template-columns: 35% 65%;
-    grid-template-areas: "nombre comentario"
+#container_form {
+  display: grid;
+  grid-template-columns: 25% 74%;
+  grid-template-areas:
+    "nombre comentario"
     "email comentario"
     "phone comentario";
-    gap: 15px;
+  gap: 15px;
 }
-.nombre{
-    grid-area: nombre;
+.nombre {
+  grid-area: nombre;
 }
-.email{
-    grid-area: email;
+.email {
+  grid-area: email;
 }
-.phone{
-    grid-area: phone;
+.phone {
+  grid-area: phone;
 }
-.nombre,.phone,.email{
-    border: none;
-    border-bottom: 3px solid black;
+.nombre,
+.phone,
+.email {
+  border: none;
+  border-bottom: 3px solid black;
 }
-.campo_comentario{
-    display: flex;
-    flex-direction: column;
-    grid-area: comentario;
+.campo_comentario {
+  display: flex;
+  flex-direction: column;
+  grid-area: comentario;
 }
-#btn
-{
-    background-color: none;
-    float: right;
+textarea {
+  height: 100px;
+  border: 3px solid black;
+}
+#btn {
+  border: 1px solid rgb(189, 50, 0);
+  margin-top: 20px;
+  padding: 10px;
+  color: rgb(189, 50, 0);
+  background-color: white;
+  float: right;
 }
