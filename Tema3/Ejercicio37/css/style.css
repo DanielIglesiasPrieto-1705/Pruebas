@@ -1,0 +1,74 @@
+body {
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a, #2c2c2c);
+  color: white;
+  font-family: "Pangolin", cursive;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+header {
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.671);
+}
+main {
+  text-align: center;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+nav li {
+  transition: all 0.75s;
+  padding: 20px;
+  border-radius: 20px;
+}
+nav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+nav ul li:hover {
+  transition: all 0.75s;
+  background-color: rgb(56, 51, 52);
+}
+#sec_main article {
+  background-color: #353333;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#img_ed_lorraine {
+  width: 15%;
+  border-radius: 10px;
+}
+#sec_inicios article {
+  background-color: rgb(56, 51, 52);
+  padding: 10px;
+  border-radius: 20px;
+}
+#img_exorcismo {
+  width: 15%;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+#sec_cine article {
+  background-color: rgb(56, 51, 52);
+  padding: 10px;
+  border-radius: 20px;
+}
+#warren_cine {
+  width: 15%;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+/*------------------------------------------------------
+-----------------------Objetos.html---------------------
+--------------------------------------------------------*/
+#museo{
+    width: 300px;
+}
