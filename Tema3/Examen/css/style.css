@@ -1,0 +1,51 @@
+/*Hacemos que el main tenga un ancho del 80% de la pantalla, que este centrado y que tenga un background gris*/
+#container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  
+}
+/*Hacemos que el formulario tenga un padding alrededor de 20 px para que los contenidos no sobresalgan*/
+form {
+    padding: 20px;
+}
+/*Hacemos que el grosor de el h2 no sea tan brusco, para que asi se asemeje al ejemplo del examen*/
+h2{
+    font-weight: 100;
+}
+/*Hacemos que el textarea, los inputs de nombre,correo y enviar ocupen la totalidad de el formulario de ancho, tenga un margen de abajo de 20px y que tenga un borde alrededor color plata*/
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid silver;
+}
+/*Hacemos que el textarea tenga una altura de 200px y un margen de abajo de 20px*/
+textarea {
+  height: 200px;
+}
+/*Hacemos que los checkbox tengan tambien un margen de abajo de 20 px*/
+input[type="checkbox"] {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+/*Hacemos que el enlace tenga un color azul mas brillante y que no tenga el underline*/
+a {
+  color: #28a0e4;
+  text-decoration: none;
+}
+/*Hacemos que el input de submit tenga un espaciado interior (padding) de 10px y que tenga el color azul*/
+input[type="submit"] {
+  transition: 0.4s;
+
+  padding: 10px;
+  background-color: #28a0e4;
+  color: white;
+}
+/*Animacion de boton cuando el raton para por encima, el color del raton se vuelve un azul mas ocuro*/
+input[type="submit"]:hover {
+  transition: 0.4s;
+  background-color: #1481c0;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+</head>
+<body>
+    <!--Contenedor principal-->
+    <main id="container">
+        <!--Formulario, los datos se envian a datos.txt y se realiza una peticion get-->
+        <form action="datos.txt" method="get">
+            <!--Titulo-->
+            <h2>Deja un comentario</h2>
+            <!--Parrafo que indica algunas instrucciones-->
+            <p>Tu dirección de correo electrónico no será publicada. Los campos obligatorios estan marcados con *</p>
+            <!--Apartado para indicar el comentario-->
+            <label for="comentarios">Comentario</label>
+            <br>
+            <textarea name="comentarios"></textarea>
+            <br>
+            <!--Apartado para indicar el nombre-->
+            <label for="nombre">Nombre*</label>
+            <br>
+            <input type="text" name="nombre" required>
+            <br>
+            <!--Apartado para indicar el correo electrónico-->
+            <label for="email">Correo electrónico*</label>
+            <br>
+            <input type="email" name="email" required>
+            <br>
+            <!--Apartado para que acepte los terminos de licencia-->
+            <input type="checkbox" name="terminos" required>
+            <label for="terminos">Acepto los <a href="">terminos de privacidad</a>*</label>
+            <br>
+            <!--Apartado para indica si se va a suscribir a newsletter-->
+            <input type="checkbox" name="suscripcion">
+            <label for="suscripcion">Quiero suscribirme a la newsletter</label>
+            <br>
+            <!--Boton para publicar el comentario-->
+            <input type="submit" value="Publicar comentario">
+        </form>
+    </main>
+</body>
+</html>
