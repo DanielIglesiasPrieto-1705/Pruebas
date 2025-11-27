@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+  </head>
+  <body>
+    <header>
+      <h1>Los Warren</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="objetos.html">Objetos</a></li>
+          <li><a href="formulario.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main_contacto">
+      <section id="sec_contacto">
+        <h2>Contactanos</h2>
+        <p>Envianos un mensaje para contactar con nosostros</p>
+      </section>
+      <form id="form_contacto" action="datos.txt" method="get">
+        <label for="nombre">Nombre(<span>*</span>)</label>
+        <br />
+        <input required type="text" name="nombre" />
+        <br />
+        <label for="correo">E-mail(<span>*</span>)</label>
+        <br />
+        <input required type="email" name="mail" />
+        <br />
+        <label for="asunto">Asunto(<span>*</span>)</label>
+        <br />
+        <input required type="text" name="asunto" />
+        <br />
+        <label for="comentarios">Comentarios</label>
+        <br />
+        <textarea name="comentarios"></textarea>
+        <br>
+        <input type="submit" id="btn" value="Enviar">
+      </form>
+    </main>
+  </body>
+</html>
