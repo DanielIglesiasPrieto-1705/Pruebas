@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+  </head>
+  <body>
+    <!--Header de la pagina web-->
+    <header>
+        <!--logo de la empresa-->
+      <img id="logo" src="img/logo.jpg" alt="logo" />
+      <!--Contenedor de la parte derecha de la pagina web-->
+      <div id="container_links">
+        <input
+          type="text"
+          placeholder="Escribe tu búsqueda y presiona intro"
+          size="40"
+        />
+        <input type="button" value="Buscar" />
+        <br />
+        <p>
+          <a href="">INNpulsa Turismo</a> al servicio de las empress y
+          emprendedores innovadores del sector turístico <a href="">+</a>
+        </p>
+        <div id="container_button">
+          <input id="btn_blue" type="button" value="Linea de financiación" />
+          <input id="btn_green" type="button" value="Emprendedores" />
+          <input id="btn_orange" type="button" value="Internacialización" />
+          <input id="btn_crimson" type="button" value="Canal de ayudas" />
+        </div>
+      </div>
+    </header>
+    <!--Contenido principal-->
+    <main>
+        <h1>Formulario Alta</h1>
+        <!--Contenedor para los section/formularios-->
+      <div id="forms">
+        <!--Primer section que contiene el primer formulario-->
+        <section id="sec_1">
+          <article id="art_form">
+            <!--Formulario 1-->
+            <form action="datos.txt" method="get">
+                <!--Contenedor de parte del formulario para que tenga fondo y box-shadow-->
+              <div id="container_form">
+                <!--Indicar nombre-->
+                <label for="nombre">Nombre y apellido</label>
+                <br />
+                <input type="text" name="nombre" />
+                <span class="obligatorio">Nombre obligatorio</span>
+                <br />
+                <!--Indicar correo-->
+                <label for="correo">Correo electrónico</label>
+                <br /><input type="email" name="correo" />
+                <span class="obligatorio">email obligatorio</span>
+                <br />
+                <!--Indicar contraseña-->
+                <label for="contraseña">Contraseña</label>
+                <br />
+                <input
+                  type="password"
+                  name="contraseña"
+                  placeholder="Solo numeros"
+                  pattern="[0-9]"
+                />
+                <span class="obligatorio">Campo obligatorio</span>
+                <br />
+                <!--Indicar si eres o no emprendedor-->
+                <label for="radio_opc">¿Es usted emprendedor?</label>
+                <br />
+                <input type="radio" name="radio_opc" value="Si" />
+                <label for="radio_opc">Si</label>
+                <span class="obligatorio">Campo obligatorio</span>
+                <br />
+                <input type="radio" name="radio_opc" value="No" />
+                <label for="radio_opc">No</label>
+                <br />
+                <!--Indicar area de negocio-->
+                <label for="areas">Areas de negocio</label>
+                <br />
+                <input type="checkbox" value="Desarollo" name="areas" />
+                <label for="areas">Desarollo</label>
+                <br />
+                <input type="checkbox" value="e-comerce" name="areas" />
+                <label for="areas">e-comerce</label>
+                <br />
+                <input type="checkbox" value="Divulgación" name="areas" />
+                <label for="areas">Divulgación</label>
+                <br />
+                <input type="checkbox" value="Otras" name="areas" />
+                <label for="areas">Otras</label>
+                <br />
+                <!--Indicar tipo de empreesa-->
+                <label for="tipos">Tipo de empresa u organización</label>
+                <br />
+                <select name="tipos">
+                  <option value="--">--</option>
+                  <option value="Autónomo">Autónomo</option>
+                  <option value="SL">SL</option>
+                  <option value="Cooperativa">Cooperativa</option>
+                </select>
+                <span class="obligatorio">Campo obligatorio</span>
+              </div>
+              <!--Contenedor para las imagenes y el boton-->
+              <div id="container_submit">
+                <!--Contenedor para las imagenes-->
+                <div id="container_redes">
+                  <img src="img/twitter-logo-128.png" alt="redes" />
+                  <img src="img/unnamed.png" alt="redes" />
+                  <img src="img/in.jpg" alt="redes" />
+                </div>
+                <!--Boton de enviar-->
+                <input id="enviar" type="submit" value="Enviar" />
+              </div>
+            </form>
+          </article>
+        </section>
+
+        <!--section de formulario premium-->
+        <section id="sec_form_pr">
+          <article id="art_form_pr">
+            <!--Contenedor de imagenes-->
+            <div id="container_redes_2">
+              <img src="img/twitter.png" alt="Redes" />
+              <img src="img/linkedin.png" alt="Redes" />
+              <img src="img/youtube.png" alt="Redes" />
+              <img src="img/iconorss.png" alt="Redes" />
+              <img src="img/email.png" alt="Redes" />
+            </div>
+            <!--Segundo formulario-->
+            <form action="datos.txt" method="get">
+                <!--Titulo del formulario-->
+              <h2>INNpulsa premium</h2>
+              <!--Indicar nombre-->
+              <label for="usuario">Nombre de usuario</label>
+              <br />
+              <input type="text" name="usuario" />
+              <br />
+              <!--Indicar contraseña-->
+              <label for="contraseña">Contraseña</label>
+              <br />
+              <input type="password" name="contraseña" />
+              <br />
+              <!--Indicar si quiere recordar la cuenta-->
+              <input type="checkbox" name="recordar" />
+              <label for="recordar">Recuerdame</label>
+              <br />
+              <!--Botones de acceso-->
+              <input type="submit" value="Acceder" />
+              <input type="submit" value="Regístrate" />
+              <br />
+              <!--Enlace para recordar contraseña-->
+              <a href="">Recordar contraseña</a>
+            </form>
+          </article>
+        </section>
+      </div>
+      <!--Footer-->
+      <footer>
+        <img src="img/logo_MINETUR.png" alt="gob_españa" />
+        <img src="img/logosegittur.png" alt="Segittur" />
+      </footer>
+    </main>
+  </body>
+</html>

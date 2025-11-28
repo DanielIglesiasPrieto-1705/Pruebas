@@ -1,0 +1,137 @@
+/*Hacemos que el header tenga un display flex para indicar los contenidos horizontalmente y el justify content para que tenga separacion entre ambos*/
+header {
+  display: flex;
+  justify-content: space-between;
+}
+/*Hacemos que el contendor de los enlaces (parte derecha del header) tenga un ancho de 30% y que los contenidos del texto esten alieados al final*/
+#container_links {
+  width: 30%;
+  font-weight: bold;
+  text-align: end;
+}
+/*Hacemos que todos los enlaces sean de color azul y no tenga ninguna decoracion en el texto*/
+a {
+  color: #6fa4d4;
+  text-decoration: none;
+}
+/*Hacemos que los botones de final del contenedor tengan un padding de 5 px*, el color del texto sea blanco y que no tenga borde*/
+#container_button input {
+  padding: 8px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+/*Hacemos que el color de fondo del boton azul*/
+#btn_blue {
+  background-color: #6fa4d4;
+}
+/*Hacemos que el color de fondo del boton verde*/
+#btn_green {
+  background-color: #8cb43b;
+}
+/*Hacemos que el color de fondo del boton naranja*/
+#btn_orange {
+  background-color: #cd7243;
+}
+/*Hacemos que el color de fondo del boton crimson*/
+#btn_crimson {
+  background-color: #c71441;
+}
+/*Hacemos que el titulo tenga un espaciado interno (padding) de 40px y que el color de fondo sea gris claro*/
+h1 {
+  padding: 40px;
+  background-color: #eeeeee;
+}
+/*Hacemos que el contedor que contiene los formulario (los 2) tengan un display flex para que este en horizontal*/
+#forms {
+  display: flex;
+}
+/*Hacemos que el sec tenga un tamaño de ancho de 80% (Para que no se descuadre la pagina web)*/
+#sec_1 {
+  width: 80%;
+}
+/*Hacemos que el articulo tenga un ancho del 90%, tenga un borde alrededor gris y un espaciado interno (padding) de 20 px*/
+#art_form {
+  width: 90%;
+  border: 1px solid silver;
+  padding: 20px;
+}
+/*Hacemos que el formulario (el primero) tenga un ancho de 60% del contenedor en el que esta y que este centrado*/
+#art_form form {
+  width: 60%;
+  margin: 0 auto;
+}
+/*Hacemos que parte del formulario tenga un color de fondo gris, un sombreado en la caja y un espaciado interno de 15 px*/
+#container_form {
+  background-color: #ecedf2;
+  box-shadow: 0px 0px 10px;
+  padding: 15px;
+}
+/*Hacemos que los inputs de texto, email, password y el select tengan un ancho de 60%*/
+#container_form input[type="text"],
+#container_form input[type="email"],
+#container_form input[type="password"],
+#container_form select {
+  width: 60%;
+}
+/*Hacemos que esten alineado a la derecha del formularo, esten en negrita y que tenga un margen a la derecha de 50px*/
+.obligatorio {
+  float: right;
+  margin-right: 50px;
+  font-weight: bolder;
+}
+/*Hacemos que el contenedor que tiene el submit y las imagenes tengan un margen de arriba de 20px, esten en horizontal, sus contenidos tengan espacio de separacion y que esten alineados*/
+#container_submit {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*Hacemos que el conjunto de imagenes tenga un tamaño de 40px*/
+#container_redes img {
+  width: 40px;
+}
+/*Hacemos que el boton de enviar tenga un radio en el border de 20px, este en color verde, no tenga borde, que el tamaño de la letra sea larga, el color de la letra sea blanca y que tenga un espaciado interno de 6px*/
+#enviar {
+  border-radius: 20px;
+  background-color: #56c657;
+  border: none;
+  font-size: large;
+  padding: 6px;
+  width: 100px;
+  color: white;
+}
+/*Hacemos que el segundo section ocupe un 30% de ancho*/
+#sec_form_pr {
+  width: 30%;
+}
+/*Hacemos que el articulo del section tenga un 50%*/
+#art_form_pr {
+  width: 50%;
+}
+/*Hacemos que el formulario tenga un color de fondo gris y un espacido interno de 20 pixeles*/
+#sec_form_pr form {
+  background-color: #ecedf2;
+  padding: 20px;
+}
+/*Hacemos que los inputs de texto y contraseña tengan un ancho de 95%*/
+#sec_form_pr input[type="text"],
+#sec_form_pr input[type="password"] {
+  width: 95%;
+}
+/*Hacemos que los bootones de registro y acceso tenga espacio tanto de arriba como de abajo*/
+#sec_form_pr input[type="submit"] {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/*Hacemos que el footer este debajo, muestre los contenidos en horizontal, los contenidos internos tengan separacion entre ellos y que el color de fondo sea de color gris*/
+footer {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #eeeeee;
+}
+/*Hacemos que las imagenes de footer tengan una altura de 75 pixeles*/
+footer img {
+  height: 75px;
+}
