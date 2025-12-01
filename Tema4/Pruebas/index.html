@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="js/index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1</title>
+  </head>
+  <body>
+    <h1>Ejercicios de javascript para aprender</h1>
+    <hr />
+    <h2>Añadir contenidos en la tabla</h2>
+    <form action="">
+      <label for="nombre">Indique su nombre</label>
+      <br />
+      <input type="text" name="nombre" id="nombre" />
+      <br />
+      <label for="apellido">Indique su apellido</label>
+      <br />
+      <input type="text" name="apellido" id="apellido" />
+      <br />
+      <input type="button" value="Enviar" onclick="añadirPersonas()" />
+    </form>
+    <table border="1">
+      <tbody id="contenido_tabla">
+        <tr>
+          <td>Nombre</td>
+          <td>Apellido</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <h2>Calculadora</h2>
+    <input type="number" id="num1" />
+    <input type="number" id="num2" />
+    <br>
+    <input type="button" value="+" onclick="">
+    <input type="button" value="-" onclick="">
+    <input type="button" value="*" onclick="">
+    <input type="button" value="/" onclick="">
+    <p id="result"></p>
+  </body>
+</html>
