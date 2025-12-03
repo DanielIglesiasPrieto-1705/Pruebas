@@ -39,5 +39,28 @@
     <input type="button" value="*" onclick="multiplicar()">
     <input type="button" value="/" onclick="dividir()">
     <p id="result"></p>
+    <hr>
+    <h2>Cambio de color</h2>
+    <div id="box" style="background-color: black; width: 100px; height: 100px;">
+    </div>
+    <button type="button" onclick="cambiarColor()">Cambiar color</button>
+    <hr>
+    <h2>Generar numeros</h2>
+    <p id="numeros"></p>
+    <button type="button" onclick="generaNumeros()">Genera numeros</button>
+    <button type="button" onclick="borrar()">Borrar</button>
+    <hr>
+    <h2>Comprobador de numeros pares</h2>
+    <label for="numero">Indique el numero: </label>
+    <input id="input_par" type="number">
+    <br>
+    <button onclick="comprobarPar()">Comprobar numero</button>
+    <p id="result_par"></p>
+    <hr>
+    <h2>Comprobar palindromo</h2>
+    <p>Palindromo es una palabra o frase que se lee igual en ambos sentidos, de derecha a izquierda y de izquierda a derecha</p>
+    <input type="text" id="input_palin">
+    <br>
+    <button onclick="comprobarPalindromo()">Comprobar palindromo</button>
   </body>
 </html>
