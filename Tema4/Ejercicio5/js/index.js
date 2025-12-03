@@ -1,0 +1,1 @@
+document.write("Este es mi ejercicio de Javascript");
