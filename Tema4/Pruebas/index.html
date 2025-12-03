@@ -33,34 +33,50 @@
     <h2>Calculadora</h2>
     <input type="number" id="num1" />
     <input type="number" id="num2" />
-    <br>
-    <input type="button" value="+" onclick="sumar()">
-    <input type="button" value="-" onclick="resta()">
-    <input type="button" value="*" onclick="multiplicar()">
-    <input type="button" value="/" onclick="dividir()">
+    <br />
+    <input type="button" value="+" onclick="sumar()" />
+    <input type="button" value="-" onclick="resta()" />
+    <input type="button" value="*" onclick="multiplicar()" />
+    <input type="button" value="/" onclick="dividir()" />
     <p id="result"></p>
-    <hr>
+    <hr />
     <h2>Cambio de color</h2>
-    <div id="box" style="background-color: black; width: 100px; height: 100px;">
-    </div>
+    <div
+      id="box"
+      style="background-color: black; width: 100px; height: 100px"
+    ></div>
     <button type="button" onclick="cambiarColor()">Cambiar color</button>
-    <hr>
+    <hr />
     <h2>Generar numeros</h2>
     <p id="numeros"></p>
     <button type="button" onclick="generaNumeros()">Genera numeros</button>
     <button type="button" onclick="borrar()">Borrar</button>
-    <hr>
+    <hr />
     <h2>Comprobador de numeros pares</h2>
     <label for="numero">Indique el numero: </label>
-    <input id="input_par" type="number">
-    <br>
+    <input id="input_par" type="number" />
+    <br />
     <button onclick="comprobarPar()">Comprobar numero</button>
     <p id="result_par"></p>
-    <hr>
+    <hr />
     <h2>Comprobar palindromo</h2>
-    <p>Palindromo es una palabra o frase que se lee igual en ambos sentidos, de derecha a izquierda y de izquierda a derecha</p>
-    <input type="text" id="input_palin">
-    <br>
+    <p>
+      Palindromo es una palabra o frase que se lee igual en ambos sentidos, de
+      derecha a izquierda y de izquierda a derecha
+    </p>
+    <input type="text" id="input_palin" />
+    <br />
     <button onclick="comprobarPalindromo()">Comprobar palindromo</button>
+    <p id="result_palin"></p>
+    <hr />
+    <h2>RANDOM!!!</h2>
+    <p>Array numeros que te indica cuantas veces se repite</p>
+    <button onclick="sorteo()">Comprobar aleatoriedad</button>
+    <div id="container_random"></div>
+    <hr />
+    <video id="video" autoplay></video>
+    <button id="startbutton" onclick="foto()">Take photo</button>
+    <canvas id="canvas"></canvas>
+    <img id="photo" alt="photo" />
   </body>
 </html>

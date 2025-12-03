@@ -154,15 +154,97 @@ function comprobarPar() {
   }
 }
 //------------------------------------------------------------
-function comprobarPalindromo(){
-  let frase = toString(document.getElementById("input_palin").value);
-  let fraseReves = obtenerReves(frase)
-  console.log(fraseReves);
+function comprobarPalindromo() {
+  let frase = document
+    .getElementById("input_palin")
+    .value.toLowerCase()
+    .trim()
+    .replace(/\s+/g, "");
+  let fraseReves = obtenerReves(frase);
+  let resultado = document.getElementById("result_palin");
+
+  if (fraseReves == frase) {
+    resultado.innerHTML = "Es palindromo";
+    console.log(fraseReves);
+  } else {
+    console.log(frase);
+    resultado.innerHTML = "No es palindromo";
+  }
 }
-function obtenerReves(frase){
-  let reves ="";
-  for(var i = frase.length;i>=0;i--){
-    reves+= frase[i];
+function obtenerReves(frase) {
+  let reves = "";
+  for (var i = frase.length - 1; i >= 0; i--) {
+    reves += frase[i];
   }
   return reves;
 }
+//-------------------------------------------------------------
+function sorteo() {
+  let array = [];
+  //es un div
+  let container = document.getElementById("container_random");
+  console.log(container);
+  for (let i = 0; i <= 100; i++) {
+    array.push(Math.floor(Math.random() * 101));
+  }
+  array.sort((a, b) => a - b);
+  console.log(array);
+  let contador = 0;
+  container.innerHTML = "<ul>";
+  for (let i = 0; i <= array.length - 1; i++) {
+    contador = 0;
+    for (let numero of array) {
+      if (i == numero) {
+        contador++;
+      }
+    }
+    container.innerHTML += `<li>${i} : ${contador}</li>`;
+  }
+  container.innerHTML += "</ul>";
+}
+
+//---------------------------------------------------------
+function foto() {
+  const video = document.querySelector("#video");
+  const canvas = document.querySelector("#canvas");
+  const photo = document.querySelector("#photo");
+  const startbutton = document.querySelector("#startbutton");
+  const width = 500;
+  let height = 300;
+  let streaming = false;
+
+  // Acceder a la cámara con la API moderna
+  navigator.mediaDevices
+    .getUserMedia({ video: true, audio: false })
+    .then((stream) => {
+      video.srcObject = stream;
+      video.play();
+    })
+    .catch((err) => {
+      console.error("Error al acceder a la cámara: " + err);
+    });
+
+  video.addEventListener("canplay", () => {
+    if (!streaming) {
+      height = video.videoHeight / (video.videoWidth / width);
+      video.setAttribute("width", width);
+      video.setAttribute("height", height);
+      canvas.setAttribute("width", width);
+      canvas.setAttribute("height", height);
+      streaming = true;
+    }
+  });
+
+  function takepicture() {
+    canvas.width = width;
+    canvas.height = height;
+    canvas.getContext("2d").drawImage(video, 0, 0, width, height);
+    const data = canvas.toDataURL("image/png");
+    photo.setAttribute("src", data);
+  }
+
+  startbutton.addEventListener("click", (ev) => {
+    takepicture();
+    ev.preventDefault();
+  });
+};
