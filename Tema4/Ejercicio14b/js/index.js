@@ -1,0 +1,23 @@
+var a,b;
+a=parseFloat(prompt("Escribe el primer número",""));
+b=parseFloat(prompt("Escribe el segundo número",""));
+if(a==b)alert("los dos números son iguales");
+if(a!=b)alert("Los dos números son distintos");
+if(a>b)
+{
+alert("El primer número es mayor que el segundo");
+}
+else
+{
+alert("El primer número no es mayor que el segundo");
+}
+if((a>b)&&(100>a))
+{
+alert("El primero es mayor que el segundo");
+alert("Además los dos son menores de 100");
+}
+else
+{
+alert("El primero no es mayor que el segundo");
+alert("O uno de los dos números es mayor o igual a 100");
+}

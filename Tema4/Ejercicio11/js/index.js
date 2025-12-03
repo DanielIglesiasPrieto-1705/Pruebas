@@ -1,0 +1,15 @@
+var num1;
+var num2;
+var num3;
+var num4;
+num1=prompt("Ingrese el primer valor:");
+num2=prompt("Ingrese el segundo valor:");
+num3=prompt("Ingrese el tercer valor:");
+num4=prompt("Ingrese el cuarto valor:");
+var suma;
+suma=Number(num3)+Number(num4);
+var producto;
+producto=num1*num2;
+document.write("La multiplicación de los dos primeros valores es: " + producto);
+document.write('<br>');
+document.write("La suma del tercer y cuarto valor es: " + suma);

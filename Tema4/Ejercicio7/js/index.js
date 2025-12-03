@@ -1,0 +1,13 @@
+var x,y,z;
+salida="";
+var x1="Pablito Clavon", y1="Pepe Lopez";
+var num1=64, num2=5.4321;
+x=prompt("Escribe tu nombre:","");
+y=prompt("Escribe tu primer apellido:","");
+z=prompt("Escribe tu segundo apellido","");
+salida=salida+"Ahora un alert largo";
+salida=salida+x+y+z;
+salida=salida+x1+""+y1;
+salida=salida+num1+""+num2;
+salida=salida+",ya me he cansado";
+alert(salida);
