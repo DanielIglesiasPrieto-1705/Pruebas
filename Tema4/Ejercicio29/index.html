@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      var articulos = ["lápiz", "bolígrafo", "rotulador", "marcador"];
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio</title>
+  </head>
+  <body>
+    <script>
+      document.writeln(
+        `El primer artículo es <strong>${articulos[0]}</strong><br>`
+      );
+      document.writeln(
+        `El ultimo elemento es <strong>${
+          articulos[articulos.length - 1]
+        }</strong><br>`
+      );
+      articulos.unshift("portaminas");
+      document.writeln(
+        `Ahora el primer artículo es <strong>${articulos[0]}</strong><br>`
+      );
+      articulos.push("carpetas");
+      document.writeln(
+        `En este momento el último elemento es <strong>${
+          articulos[articulos.length - 1]
+        }</strong><br>`
+      );
+
+      mostrarLista();
+      articulos.shift();
+      document.writeln("Hemos procedido a borrar el primer elemento");
+      mostrarLista();
+      articulos.pop();
+      document.writeln("Hemos procedido a borrar el ultimo elemento");
+      mostrarLista();
+      function mostrarLista() {
+        document.writeln("<ul>");
+        for (var i = 0; i < articulos.length; i++) {
+          document.writeln(`<li>${articulos[i]}</li>`);
+        }
+        document.writeln("</ul>");
+    
+      }
+    </script>
+  </body>
+</html>
