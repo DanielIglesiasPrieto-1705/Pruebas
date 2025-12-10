@@ -247,4 +247,15 @@ function foto() {
     takepicture();
     ev.preventDefault();
   });
-};
+}
+//----------------------------------
+function desplegable(btn) {
+  var panel = btn.nextElementSibling;
+  if (panel.style.display === "block") {
+    panel.style.display = "none";
+    boton.classList.remove("active");
+  } else {
+    panel.style.display = "block";
+    boton.classList.add("active");
+  }
+}
