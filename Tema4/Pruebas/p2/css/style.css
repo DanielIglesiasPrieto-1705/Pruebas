@@ -1,0 +1,24 @@
+ul {
+    background-color: bisque;
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+ul li {
+    padding: 20px;
+    font-size: 1.3rem;
+}
+li:hover{
+    background-color: beige;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.tabcontent{
+    background-color: rgba(222, 184, 135, 0.486);
+    padding: 10px;
+    margin: 20px 0 20px 0;
+    border-radius: 20px;
+    display: none;
+}
