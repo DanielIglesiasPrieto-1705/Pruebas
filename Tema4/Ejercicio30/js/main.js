@@ -9,6 +9,8 @@ if (continuar.toLowerCase() == "si") {
   continuar = true;
 } else if (continuar.toLowerCase() == "no") {
   continuar = false;
+} else {
+  continuar = false;
 }
 if (continuar) {
   do {
@@ -17,16 +19,16 @@ if (continuar) {
     );
 
     if (condimento.toLowerCase() == "tomate") {
-        alert(condimento+ " añadido (+0.5€)");
+      alert(condimento + " añadido (+0.5€)");
       precioPlus += 0.5;
     } else if (condimento.toLowerCase() == "lechuga") {
-        alert(condimento+ " añadido (+0.6€)");
+      alert(condimento + " añadido (+0.6€)");
       precioPlus += 0.6;
     } else if (condimento.toLowerCase() == "queso") {
-        alert(condimento+ " añadido (+1€)");
+      alert(condimento + " añadido (+1€)");
       precioPlus += 1;
     } else if (condimento.toLowerCase() == "cebolla") {
-        alert(condimento+ " añadido (+0.8€)");
+      alert(condimento + " añadido (+0.8€)");
       precioPlus += 0.8;
     } else if (condimento.toLowerCase() == "salir") {
       terminado = false;
@@ -34,6 +36,7 @@ if (continuar) {
       alert("No tenemos este ingrediente, lo sentimos");
     }
   } while (terminado);
-
 }
-document.writeln(`<p>La haburguesa tiene un precio de : ${hamburguesa+precioPlus} €</p>`);
+document.writeln(
+  `<p>La haburguesa tiene un precio de : ${hamburguesa + precioPlus} €</p>`
+);
