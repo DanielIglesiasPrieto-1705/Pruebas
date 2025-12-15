@@ -1,0 +1,222 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: "Pangolin", cursive;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.671);
+}
+main {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+nav li {
+  transition: all 0.75s;
+  padding: 20px;
+  border-radius: 20px;
+}
+nav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+nav ul li:hover {
+  transition: all 0.75s;
+  background-color: rgb(56, 51, 52);
+}
+p {
+  font-size: 1.2rem;
+}
+h2 {
+  font-size: 2rem;
+}
+#container_index{
+  display: flex;
+  gap: 50px;
+}
+#container_warren{
+  width: 70%;
+}
+#container_right{
+  width: 30%;
+}
+.txt-gray{
+  color: rgb(216, 203, 203);
+  font-size: medium;
+}
+.img_noticia{
+  width: 80%;
+}
+#art_introduccion {
+  background-color: #353333;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 20px;
+}
+#img_bienvenida {
+  width: 30%;
+  border-radius: 20px;
+}
+iframe {
+  width: 80%;
+  border-radius: 20px;
+}
+#art_main {
+  background-color: #353333;
+  padding: 10px;
+  border-radius: 20px;
+}
+.articles_web {
+  background-color: rgb(56, 51, 52);
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 20px;
+}
+#img_exorcismo,
+#img_ed_lorraine,
+#warren_cine {
+  width: 40%;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+.img_libro {
+  width: 600px;
+  height: 300px;
+}
+/*------------------------------------------------------
+-----------------------Objetos.html---------------------
+--------------------------------------------------------*/
+#museo {
+  width: 300px;
+}
+#sec_objetos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  max-width: 400px;
+  margin-bottom: 150px;
+  text-align: center;
+  background-color: transparent;
+  perspective: 1000px;
+}
+.card_interior {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.8s;
+}
+.card:hover .card_interior {
+  transform: rotateY(180deg);
+}
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.back {
+  color: white;
+  transform: rotateY(180deg);
+}
+.img_card {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 300px;
+}
+.rs_img_1{
+  background-image: url(../img/youtube.png);
+}
+.rs_img_2{
+  background-image: url(../img/instagram.png);
+}
+.rs_img_3{
+  background-image: url(../img/web.png);
+}
+/*--------------------------------------------
+-----------------formulario.html--------------
+----------------------------------------------*/
+#main_contacto {
+  display: flex;
+}
+#sec_contacto {
+  width: 50%;
+}
+#form_contacto {
+  width: 50%;
+  text-align: left;
+}
+label {
+  font-size: 1.3rem;
+}
+span {
+  color: red;
+}
+input {
+  margin-bottom: 40px;
+  padding: 15px;
+  width: 80%;
+}
+textarea {
+  width: 85%;
+  height: 200px;
+}
+#btn {
+  transition: all 0.25s;
+  padding: 12px;
+  border: 1px solid gray;
+  width: 100px;
+  background-color: white;
+  justify-content: end;
+  margin-top: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+#btn:hover {
+  transition: all 0.25s;
+  background-color: rgb(160, 156, 156);
+}
+
+@media screen and (max-width: 1000px) {
+  #sec_objetos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #container_index{
+    display: block;
+  }
+  #container_warren{
+    width: 100%;
+  }
+  #container_right{
+    width: 100%;
+  }
+  #sec_objetos {
+    grid-template-columns: 1fr; /* una sola columna en móviles */
+  }
+}
