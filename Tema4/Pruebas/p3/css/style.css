@@ -1,0 +1,72 @@
+header {
+    padding: 50px;
+}
+#boton-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+#menu-pantalla {
+    transition: 1s;
+  background-color: rgba(0, 0, 0, 0.774);
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  top: 0;
+  left: -100px;
+}
+#menu-salir {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#menu-salir:hover {
+  transition: 0.5s;
+  transform: rotateZ(180deg);
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+ul li {
+    margin: 20px 0;
+}
+ul li a {
+    text-decoration: none;
+    font-size: 2em;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    transition: 0.5s;
+}
+.card{
+    width: 300px;
+    height: 400px;
+    background-color: rgb(230, 220, 220);
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.img_perfil{
+width: 100%;
+height: 200px;
+}
+#card_list {
+    display: flex;
+    justify-content: space-evenly;
+}

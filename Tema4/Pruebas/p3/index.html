@@ -1,20 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/main.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio </title>
-</head>
-<body>
-       <header>
-        <ul>
-            <li>Home</li>
-            <li>News</li>
-            <li>Contact</li>
-            <li>About</li>
-        </ul>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio</title>
+  </head>
+  <body>
+    <header>
+      <button id="boton-menu" onclick="active_menu()">
+        <img src="img/menu.png" alt="menu" />
+      </button>
     </header>
-</body>
+    <!-- Menú de pantalla completa -->
+    <div id="menu-pantalla">
+      <button id="menu-salir" onclick="close_menu()">
+        <img src="img/x.png" alt="salir" />
+      </button>
+      <div id="menu-contenido">
+        <ul>
+          <li><a href="">Inicio</a></li>
+          <li><a href="">Acerca de</a></li>
+          <li><a href="">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="card_list">
+      <div class="card">
+        <img class="img_perfil" src="img/person.jpg" alt="Imagen de tarjeta" />
+        <h2>Juan Pérez</h2>
+        <p>Desarrollador web desde 2023</p>
+        <button class="btn_contacto">Contactar</button>
+      </div>
+      <div class="card">
+        <img class="img_perfil" src="img/person.jpg" alt="Imagen de tarjeta" />
+        <h2>Juan Pérez</h2>
+        <p>Desarrollador web desde 2023</p>
+        <button class="btn_contacto">Contactar</button>
+      </div>
+      <div class="card">
+        <img class="img_perfil" src="img/person.jpg" alt="Imagen de tarjeta" />
+        <h2>Juan Pérez</h2>
+        <p>Desarrollador web desde 2023</p>
+        <button class="btn_contacto">Contactar</button>
+      </div>
+    </div>
+    <hr>
+    <button>Registrarte</button>
+    <div></div>
+  </body>
 </html>
