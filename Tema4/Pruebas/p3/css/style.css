@@ -63,10 +63,26 @@ ul li a {
 }
 
 .img_perfil{
-width: 100%;
+width: 70%;
+border-radius: 50%;
 height: 200px;
 }
 #card_list {
     display: flex;
     justify-content: space-evenly;
+}
+#panel-registro{
+    width: 400px;
+    height: 600px;
+    background-color: beige;
+}
+.container_img {
+    height: 50%;
+}
+.container_img img{
+    display: block;
+    height: 80%;
+    border-radius: 80%;
+    width: 60%;
+    margin: 0 auto;
 }
