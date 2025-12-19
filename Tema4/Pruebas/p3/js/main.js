@@ -12,3 +12,12 @@ function close_menu() {
     menu.style.left = '-100px';
     boton.style.display = 'block';
 }
+
+function open_login(){
+    const login = document.getElementById("panel-registro");
+    login.style.display = "block";
+}
+function close_login(){
+    const login = document.getElementById("panel-registro");
+    login.style.display = "none";
+}
