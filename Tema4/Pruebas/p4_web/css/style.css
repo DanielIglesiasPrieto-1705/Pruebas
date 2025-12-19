@@ -1,0 +1,65 @@
+html {
+  font-family: "PT Mono", monospace;
+}
+.content_fix {
+  background-color: rgb(242, 244, 247);
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+#logotipo {
+  width: 100px;
+  height: 100px;
+}
+#menu {
+  width: 60px;
+  height: 60px;
+}
+.navbar {
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(242, 244, 247);
+  border-radius: 0px 0px 20px 20px;
+}
+.list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 90%;
+  flex-wrap: wrap;
+}
+.contenido_list {
+  padding: 10px;
+}
+.contenido_list a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+}
+.contenido_list a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.contenido_list a:hover::after {
+  transform: scaleX(1);
+}
+
+@media screen and (max-width: 450px) {
+  .list {
+    display: inline;
+  }
+  .contenido_list a {
+    font-size: 1rem;
+  }
+}
