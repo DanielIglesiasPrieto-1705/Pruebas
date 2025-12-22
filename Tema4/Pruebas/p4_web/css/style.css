@@ -3,32 +3,30 @@ html {
 }
 .content_fix {
   background-color: rgb(242, 244, 247);
-  height: 100px;
+  height: 75px;
   align-items: center;
   justify-content: space-between;
   display: flex;
 }
 #logotipo {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
 }
-#menu {
+#menu_icon {
   width: 60px;
   height: 60px;
 }
 .navbar {
-  width: 40%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
   background-color: rgb(242, 244, 247);
   border-radius: 0px 0px 20px 20px;
 }
 .list {
   display: flex;
   list-style: none;
-  justify-content: space-between;
   width: 90%;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .contenido_list {
   padding: 10px;
@@ -36,7 +34,6 @@ html {
 .contenido_list a {
   position: relative;
   text-decoration: none;
-  font-size: 1.5rem;
   color: black;
 }
 .contenido_list a::after {
@@ -54,12 +51,96 @@ html {
 .contenido_list a:hover::after {
   transform: scaleX(1);
 }
+#menu {
+  position: fixed;
+  left: 0;
+  width: 0;
+  height: 100%;
+  padding: 20px;
+  background-color: aqua;
+  overflow: hidden;
+  transition: width 0.5s ease;
+}
+#noticias {
+  margin-top: 40px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  overflow-x: auto;
+}
+#noticias::-webkit-scrollbar {
+  display: none;
+}
+.grupo {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+  gap: 1rem;
+  animation: carrousel 40s infinite linear;
+}
+.anuncio {
+  transition: 0.75s;
+  height: 500px;
+  width: 500px;
+  box-shadow: 0px 0px 8px rgb(190, 190, 190);
+  border-radius: 20px;
+  overflow: hidden;
+  /*Ponemos esto para que la clase contacto se pueda ubicar al final del articulo (anuncio)*/
+  display: flex;
+  flex-direction: column;
+}
+.anuncio:hover {
+  cursor: pointer;
+  transition: 0.75s;
+  box-shadow: 0px 2px 14px rgb(54, 54, 54);
+  transform: translateY(-10px);
+}
+.container_img {
+  margin-top: 5px;
+  height: 40%;
+  overflow: hidden;
+}
+.img_anuncio {
+  width: 95%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+.container_info {
+  width: 95%;
+  margin: 0 auto;
+}
+.contacto {
+  display: flex;
+  margin-top: auto;
+  height: 100px;
+  background-color: aliceblue;
+  align-items: center;
+  gap: 10px;
+}
+.contacto img {
+  width: 70px;
+  height: 70px;
+}
+.contacto_info {
+  font-size: 0.6rem;
+}
+.contacto_info span {
+  color: gray;
+}
+@keyframes carrousel {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -100%;
+  }
+}
 
 @media screen and (max-width: 450px) {
-  .list {
-    display: inline;
-  }
-  .contenido_list a {
-    font-size: 1rem;
+  .navbar {
+    width: fit-content;
   }
 }
