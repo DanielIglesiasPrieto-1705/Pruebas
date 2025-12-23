@@ -17,7 +17,12 @@
     <header>
       <div class="content_fix">
         <img id="logotipo" src="img/logotipo.png" alt="logotipo" />
-        <img onclick="activate_menu()" id="menu_icon" src="img/menu.png" alt="menu" />
+        <img
+          onclick="activate_menu()"
+          id="menu_icon"
+          src="img/menu.png"
+          alt="menu"
+        />
       </div>
       <nav class="navbar">
         <ul class="list">
@@ -28,7 +33,15 @@
       </nav>
     </header>
     <main>
-      <section>
+      <aside id="menu">
+        <ul id="list_menu">
+          <li><a href="#">Iniciar sesión</a></li>
+          <li><a href="#">PlayStation</a></li>
+          <li><a href="#">Xbox</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </aside>
+      <section id="sec_1">
         <div id="noticias">
           <div class="grupo">
             <!--LOS CONTENIDOS SE CREAN MEDIANTE EL JAVASCRIPT-->
@@ -36,9 +49,7 @@
           <!--Esta parte es la copia para que en el carrusel no salga un espacio en blanco a la hora de finalizar el translado-->
         </div>
       </section>
+      
     </main>
-    <div id="menu">
-      <p><a href="">aaa</a></p>
-    </div>
   </body>
 </html>

@@ -1,6 +1,13 @@
 html {
   font-family: "PT Mono", monospace;
 }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; 
+}
 .content_fix {
   background-color: rgb(242, 244, 247);
   height: 75px;
@@ -56,10 +63,33 @@ html {
   left: 0;
   width: 0;
   height: 100%;
-  padding: 20px;
-  background-color: aqua;
-  overflow: hidden;
+  border-radius: 0 20px 20px 0;
+  background-color: rgb(245, 240, 240);
   transition: width 0.5s ease;
+  z-index: 1;
+}
+#list_menu {
+  list-style: none;
+  display: none;
+}
+#list_menu li {
+  display: block;
+  text-align: center;
+  width: 90%;
+  padding: 15px 0;
+  margin: 50px 0;
+}
+#list_menu li a {
+  color: black;
+  text-decoration: none;
+}
+#list_menu li:hover {
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+#sec_1 {
+  margin-top: 150px;
+  background-color: rgb(0, 0, 0);
 }
 #noticias {
   margin-top: 40px;
@@ -83,6 +113,7 @@ html {
   transition: 0.75s;
   height: 500px;
   width: 500px;
+  background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 8px rgb(190, 190, 190);
   border-radius: 20px;
   overflow: hidden;
@@ -138,9 +169,48 @@ html {
     translate: -100%;
   }
 }
-
+#sec_2 {
+  width: 100%;
+  background-color: aliceblue;
+  min-height: 75vh;
+}
+#img_oferta {
+  display: block;
+  height: 40%;
+}
 @media screen and (max-width: 450px) {
   .navbar {
     width: fit-content;
+  }
+  .anuncio {
+    width: 300px;
+    height: 300px;
+  }
+  .container_info h2 {
+    font-size: 0.8rem;
+  }
+  .container_info p {
+    font-size: 0.7rem;
+    overflow: auto;
+    height: 60px;
+  }
+  .container_img {
+    margin-top: 5px;
+    height: 60%;
+    overflow: hidden;
+  }
+  #list_menu li {
+    display: block;
+    text-align: center;
+    width: 90%;
+    padding: 15px 0;
+    margin: 60px 0;
+  }
+  .img_anuncio {
+    width: 95%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 1rem;
   }
 }

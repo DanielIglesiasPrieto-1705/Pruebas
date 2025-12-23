@@ -71,17 +71,27 @@ contenidoNoticias.appendChild(nuevoGrupo);
 function activate_menu() {
   const menu_icon = document.querySelector("#menu_icon");
   const menu = document.querySelector("#menu");
+  const lista_menu = document.querySelector("#list_menu");
   menu_icon.src = "img/x.png";
   menu_icon.onclick = desactivate_menu;
-  menu.style.display = "block";
-  menu.style.width = "15%";  
+  if (window.innerWidth <= 450) {
+    menu.style.width = "100%";
+  } else if (window.innerWidth <= 540) {
+    menu.style.width = "40%";
+  } else if (window.innerWidth >= 800) {
+    menu.style.width = "25%";
+  } else {
+    menu.style.width = "50%";
+  }
+  lista_menu.style.display = "block";
 }
 function desactivate_menu() {
   const menu = document.querySelector("#menu");
   const menu_icon = document.querySelector("#menu_icon");
-  console.log("YAA");
+  const lista_menu = document.querySelector("#list_menu");
   menu.style.width = "0%";
-  menu.style.display = "none";
-  menu_icon.src = "img/menu.png"
+  lista_menu.style.display = "  none";
+
+  menu_icon.src = "img/menu.png";
   menu_icon.onclick = activate_menu;
 }
