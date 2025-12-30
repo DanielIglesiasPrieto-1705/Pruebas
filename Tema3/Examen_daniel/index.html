@@ -47,18 +47,19 @@
                 <!--Indicar nombre-->
                 <label for="nombre">Nombre y apellido</label>
                 <br />
-                <input type="text" name="nombre" />
+                <input type="text" name="nombre" required />
                 <span class="obligatorio">Nombre obligatorio</span>
                 <br />
                 <!--Indicar correo-->
                 <label for="correo">Correo electrónico</label>
-                <br /><input type="email" name="correo" />
+                <br /><input type="email" name="correo" required />
                 <span class="obligatorio">email obligatorio</span>
                 <br />
                 <!--Indicar contraseña-->
                 <label for="contraseña">Contraseña</label>
                 <br />
                 <input
+                  required
                   type="password"
                   name="contraseña"
                   placeholder="Solo numeros"
@@ -129,23 +130,24 @@
               <img src="img/email.png" alt="Redes" />
             </div>
             <!--Segundo formulario-->
-            <form action="datos.txt" method="get">
+            <form action="datos.txt" method="get" id="form2">
               <!--Titulo del formulario-->
               <h2>INNpulsa premium</h2>
               <!--Indicar nombre-->
               <label for="usuario">Nombre de usuario</label>
               <br />
-              <input type="text" name="usuario" />
+              <input type="text" name="usuario" id="nombre_form2" />
               <br />
               <!--Indicar contraseña-->
               <label for="contraseña">Contraseña</label>
               <br />
-              <input type="password" name="contraseña" />
+              <input type="password" name="contraseña" id="password_form2" />
               <br />
               <!--Indicar si quiere recordar la cuenta-->
               <input type="checkbox" name="recordar" />
               <label for="recordar">Recuerdame</label>
               <br />
+              <div id="error"></div>
               <!--Botones de acceso-->
               <input type="submit" value="Acceder" />
               <input type="submit" value="Regístrate" />

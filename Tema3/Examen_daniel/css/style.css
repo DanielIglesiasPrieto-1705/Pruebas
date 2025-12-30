@@ -107,7 +107,7 @@ h1 {
 }
 /*Hacemos que el articulo del section tenga un 50%*/
 #art_form_pr {
-  width: 50%;
+  width: 80%;
 }
 /*Hacemos que el formulario tenga un color de fondo gris y un espacido interno de 20 pixeles*/
 #sec_form_pr form {

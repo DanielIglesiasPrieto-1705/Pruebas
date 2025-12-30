@@ -181,6 +181,11 @@ Parte de la 2 seccion, del juego destacado
   width: 100%;
   background-color: black;
 }
+#title_ofertas{
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
 #ofertas {
   display: flex;
   justify-content: space-around;
@@ -262,6 +267,9 @@ Parte de la 2 seccion, del juego destacado
     display: block;
     margin: 0 auto;
     border-radius: 1rem;
+  }
+    #panel_oferta {
+    width: 60%;
   }
 }
 @media screen and (max-width: 450px) {

@@ -22,7 +22,12 @@ datos_noticias = [
   },
 ];
 
-datos_juegos
+datos_juegos = [
+  {
+    imagen: ""
+  }
+
+];
 
 const contenidoNoticias = document.querySelector("#noticias");
 const grupo = document.querySelector(".grupo");
