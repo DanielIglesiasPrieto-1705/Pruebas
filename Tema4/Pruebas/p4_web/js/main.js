@@ -1,4 +1,4 @@
-datos = [
+datos_noticias = [
   {
     imagen: "img/expedition.jpg",
     titulo: "Clair Obscur Expedition 33 gana los Game Awards",
@@ -22,11 +22,13 @@ datos = [
   },
 ];
 
+datos_juegos
+
 const contenidoNoticias = document.querySelector("#noticias");
 const grupo = document.querySelector(".grupo");
 const nuevoGrupo = document.createElement("div");
 nuevoGrupo.classList.add("grupo");
-datos.forEach((item) => {
+datos_noticias.forEach((item) => {
   grupo.innerHTML += `
     <article class="anuncio">
             <div class="container_img">
