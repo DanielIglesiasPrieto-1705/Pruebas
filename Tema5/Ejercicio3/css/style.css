@@ -1,0 +1,78 @@
+body{
+  background-color: #dbc22f65;
+}
+#container {
+  width: 40%;
+  margin: 0 auto;
+  border: 1px solid #ffbb00;
+  padding: 50px;
+}
+input {
+  margin-bottom: 20px;
+}
+input[type="text"] {
+  width: 80%;
+  outline-color: rgb(221, 181, 0);
+  
+}
+label {
+  font-size: 1.2rem;
+}
+textarea {
+  width: 300px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+input[type="reset"],
+input[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+input[type="reset"] {
+  float: left;
+  background-color: red;
+  border-color: rgb(182, 15, 15);
+}
+
+input[type="submit"] {
+  float: right;
+  background-color: #5b9203;
+}
+
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+input[type="reset"]:active,
+input[type="submit"]:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+input[type="file"] {
+  padding: 10px;
+  border: 2px dashed #ffbb00; 
+  border-radius: 8px;
+  background-color: #8b60029a;
+  cursor: pointer;
+  color: #333;
+}
+
+input[type="file"]::file-selector-button{
+    padding: 6px;
+    border: 1px solid #9e6e079a;
+    background-color: #b67007;
+}
+#errores {
+  text-align: center;
+  margin-top: 70px;
+}

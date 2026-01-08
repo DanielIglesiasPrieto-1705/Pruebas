@@ -6,7 +6,6 @@ let apellido = document.getElementById("apellidos");
 let direccion = document.getElementById("direccion");
 form.addEventListener("submit", function (evt) {
   let errores = [];
-  evt.preventDefault();
   if (comprobarDatos(nombre)) {
     errores.push("Debes de indicar el nombre");
   }
@@ -16,7 +15,10 @@ form.addEventListener("submit", function (evt) {
   if (comprobarDatos(direccion)) {
     errores.push("Debes de indicar la direccion");
   }
-  error.innerHTML = errores.join("<br>");
+  if (errores.length > 0) {
+    evt.preventDefault();
+    error.innerHTML = errores.join("<br>");
+  }
 });
 
 function comprobarDatos(obj) {

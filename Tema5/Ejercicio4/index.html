@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 31</title>
+  </head>
+  <body>
+    <!-- Fieldset Principal -->
+    <fieldset id="flsmain">
+      <legend id="lgmain">Información del usuario</legend>
+
+      <!-- FORMULARIO INFORMACIÓN PERSONAL -->
+      <form id="formularioPersonal" method="get" action="datos.txt">
+        <fieldset id="flspersonal">
+          <legend>Información Personal</legend>
+          <ol>
+            <li>
+              <label for="nombre">Nombre:</label>
+              <input type="text" name="nombre" id="nombre" />
+            </li>
+
+            <li>
+              <label for="apellido">Apellidos:</label>
+              <input type="text" name="apellido" id="apellido" />
+            </li>
+
+            <li>
+              <label>Fecha de nacimiento:</label>
+
+              <select id="fecha_mes" name="fnacimiento_mes">
+                <option value="" disabled selected>Mes</option>
+                <option value="Enero">Enero</option>
+                <option value="Febrero">Febrero</option>
+                <option value="Marzo">Marzo</option>
+                <option value="Abril">Abril</option>
+                <option value="Mayo">Mayo</option>
+                <option value="Junio">Junio</option>
+                <option value="Julio">Julio</option>
+                <option value="Agosto">Agosto</option>
+                <option value="Septiembre">Septiembre</option>
+                <option value="Octubre">Octubre</option>
+                <option value="Noviembre">Noviembre</option>
+                <option value="Diciembre">Diciembre</option>
+              </select>
+
+              <select id="fecha_dia" name="fnacimiento_dia">
+                <option value="" disabled selected>Día</option>
+                <!-- opciones 1–31 -->
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+
+              <select id="fecha_año" name="fnacimiento_año">
+                <option value="" disabled selected>Año</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+              </select>
+            </li>
+
+            <li>
+              <label for="genero">Género:</label>
+              <select name="genero" id="genero">
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+              </select>
+            </li>
+          </ol>
+          <div id="error_personal"></div>
+          <input type="submit" value="Enviar Personal" />
+        </fieldset>
+      </form>
+      <!-- FIN FORM PERSONAL -->
+
+      <!-- FORMULARIO CUENTA -->
+      <form id="formularioCuenta" method="get" action="#">
+        <fieldset id="flscuenta">
+          <legend>Información de cuenta</legend>
+          <ol>
+            <li>
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" />
+            </li>
+
+            <li>
+              <label for="repmail">Repita su Email:</label>
+              <input id="repmail" type="email" name="emailrep" />
+            </li>
+
+            <li>
+              <label for="pwd">Password:</label>
+              <input id="pwd" type="password" name="pwd" />
+            </li>
+
+            <li>
+              <label for="pwdrep">Repita su Password:</label>
+              <input type="password" name="pwdrep" id="pwdrep" />
+            </li>
+
+            <li>
+              <label for="pregunta">Pregunta de seguridad:</label>
+              <select name="pregunta" id="pregunta">
+                <option value="" disabled selected>Escoge su pregunta</option>
+                <option value="p_1">Marca primer vehículo</option>
+                <option value="p_2">Amigo de la infancia</option>
+                <option value="p_3">Nombre de primera mascota</option>
+              </select>
+            </li>
+          </ol>
+          <div id="error_cuenta"></div>
+          <input type="submit" value="Enviar Cuenta" />
+        </fieldset>
+      </form>
+      <!-- FIN FORM CUENTA -->
+
+      <!-- FORMULARIO CONTACTO -->
+      <form id="formularioContacto" method="get" action="#">
+        <fieldset id="flscontacto">
+          <legend>Información de contacto</legend>
+          <ol>
+            <li>
+              <label for="direccion">Dirección:</label>
+              <input type="text" name="direccion" id="direccion" />
+            </li>
+
+            <li>
+              <label for="poblacion">Población:</label>
+              <input type="text" name="poblacion" id="poblacion" />
+            </li>
+
+            <li>
+              <label for="provincia">Provincia:</label>
+              <select name="provincia" id="provincia">
+                <option value="Sevilla">Sevilla</option>
+                <option value="Granada">Granada</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Huelva">Huelva</option>
+                <option value="Jaén">Jaén</option>
+                <option value="Almería">Almería</option>
+                <option value="Málaga">Málaga</option>
+                <option value="Cádiz">Cádiz</option>
+              </select>
+            </li>
+
+            <li>
+              <label for="cdpostal">Código Postal:</label>
+              <input id="cdpostal" type="text" pattern="[0-9]+" name="cpostal" maxlength="5" />
+            </li>
+
+            <li>
+              <label for="telf">Teléfono:</label>
+              <input id="telf" pattern="[0-9]+" type="text" name="telefono" />
+
+              <select name="tipo" id="tipo">
+                <option value="Móvil">Móvil</option>
+                <option value="Telefono fijo">Teléfono fijo</option>
+              </select>
+            </li>
+          </ol>
+          <div id="error_contacto"></div>
+          <input type="submit" value="Enviar Contacto" />
+        </fieldset>
+      </form>
+      <!-- FIN FORM CONTACTO -->
+    </fieldset>
+    <!-- FIN FIELDSET PRINCIPAL -->
+  </body>
+</html>

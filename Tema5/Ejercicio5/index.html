@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 32</title>
+</head>
+<body>
+    <h1>Formulario de contacto</h1>
+    <form id="form" action="datos.txt" method="get">
+        <label for="nombre">Nombre y Apellido (*)</label>
+        <br>
+        <input type="text" id="nombre" size="30" name="nombre">
+        <hr>
+        <label for="email">Email (*)</label>
+        <br>
+        <input type="email" id="email" name="email" size="30" required >
+        <hr>
+        <label for="genero">Genero</label>
+        <br>
+        <input type="radio" name="genero" value="Hombre">
+        <label for="genero">Hombre</label>
+        <input type="radio" name="genero" value="Mujer">
+        <label for="genero">Mujer</label>
+        <hr>
+        <label for="intereses">Intereses</label>
+        <br>
+        <input type="checkbox" value="Deporte" name="intereses">
+        <label for="intereses">Deporte</label>
+        <input type="checkbox" value="Politica" name="intereses">
+        <label for="intereses">Politica</label>
+        <input type="checkbox" value="Ciencia" name="intereses">
+        <label for="intereses">Ciencia</label>
+        <hr>
+        <label for="comentarios">Comentarios</label>
+        <br>
+        <textarea name="comentarios" id="comentarios"></textarea>
+        <br>
+        <label id="aviso">Campos requridos (*)</label>
+        <br>
+        <input type="submit" value="Enviar Datos">
+        <input type="reset" value="Borrar campos">
+        <div id="error"></div>
+    </form>
+</body>
+</html>
