@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 33</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Formulario de registro</h1>
+      <form id="form" action="datos.txt" method="get">
+        <ol>
+          <li>
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" name="nombre" />
+          </li>
+          <li>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" name="apellidos" />
+          </li>
+          <li>
+            <label for="email">Tu email:</label>
+            <input pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3,}$" id="email" type="email" name="email" />
+          </li>
+          <li>
+            <label for="emailrep"
+              >Escribe de nuevo el correo electrónico:</label
+            >
+            <input pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3,}$" id="emailrep" type="email" name="emailrep" />
+          </li>
+          <li>
+            <label for="pwd">Contraseña nueva:</label>
+            <input id="pwd" type="password" name="pwd" />
+          </li>
+          <li>
+            <label for="genero">Sexo:</label>
+            <select name="genero">
+              <option value="Hombre">Hombre</option>
+              <option value="Mujer">Mujer</option>
+            </select>
+          </li>
+          <li>
+            <label for="fnacimiento">Fecha de nacimiento:</label>
+            <select name="fnacimiento_dia">
+              <option value="" selected disabled>Día:</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            
+            </select>
+            <select name="fnacimiento_mes">
+              <option value="" disabled selected>Mes</option>
+              <option value="Enero">Enero</option>
+              <option value="Febrero">Febrero</option>
+              <option value="Marzo">Marzo</option>
+              <option value="Abril">Abril</option>
+              <option value="Mayo">Mayo</option>
+              <option value="Junio">Junio</option>
+              <option value="Julio">Julio</option>
+              <option value="Agosto">Agosto</option>
+              <option value="Septiembre">Septiembre</option>
+              <option value="Octubre">Octubre</option>
+              <option value="Noviembre">Noviembre</option>
+              <option value="Diciembre">Diciembre</option>
+            </select>
+            <select name="fnacimiento_año">
+              <option value="" selected disabled>Año:</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+            </select>
+          </li>
+          <li id="registro">
+            <label for="info"
+              >¿Por qué debo proporcionar esta información?</label
+            >
+            <div id="error"></div>
+            <input type="submit" value="Registrate" />
+          </li>
+        </ol>
+      </form>
+    </div>
+  </body>
+</html>

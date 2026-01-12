@@ -1,9 +1,9 @@
 form{
     width: 30%;
     margin: 0 auto;
-    background-color: silver;
+    background-color: rgb(243, 142, 9);
     padding: 20px;
-    border: 10px solid gray;
+    border: 10px solid rgb(255, 223, 42);
 }
 label{
     font-weight: bold;
@@ -18,7 +18,10 @@ textarea{
     height: 100px;
 }
 input[type="reset"],input[type="submit"]{
+    background-color: rgb(255, 191, 94);
+    padding: 10px;
     border-radius: 20px;
+    border: none;
     font-weight: bold;
 }
 #aviso{

@@ -24,7 +24,7 @@ datos_noticias = [
 
 datos_juegos = [
   {
-    imagen: ""
+    imagen: "img/"
   }
 
 ];
