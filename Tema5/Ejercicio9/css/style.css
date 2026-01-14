@@ -1,0 +1,161 @@
+/* Establece el fondo con un degradado, color de texto blanco, centrado y sin márgenes */
+body {
+  background: linear-gradient(to left, #53b3af93, #4c88bda1, #4448aa96);
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+/* Estilo para los enlaces, color blanco y sin subrayado */
+a {
+  color: white;
+  text-decoration: none;
+}
+/* Estilos del encabezado principal, centrado, con degradado y borde inferior redondeado */
+header {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    to right,
+    rgba(11, 83, 124, 0.397),
+    rgba(19, 131, 196, 0.397)
+  );
+  border-radius: 0 0 50px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+/* Contenedor del logo con fondo degradado y bordes redondeados */
+.container_icon {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 20px;
+  background: linear-gradient(
+    to right,
+    rgba(10, 73, 209, 0.5),
+    rgba(4, 36, 126, 0.397)
+  );
+  border-radius: 40px;
+}
+/* Imagen del logo, tamaño fijo */
+#logo {
+  width: 60px;
+}
+/* Título del sitio, tamaño y peso de fuente */
+#title_web {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+/* Contenedor de la barra de navegación */
+#navBar {
+  display: flex;
+}
+/* Lista de navegación sin viñetas, en línea y con espacio entre elementos */
+.nav_list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+/* Estilo de los enlaces dentro de la barra de navegación */
+.nav_list li a {
+  padding: 10px 18px;
+  font-size: 18px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+/* Efecto hover para los enlaces de navegación */
+.nav_list li a:hover {
+  background: linear-gradient(
+    to right,
+    rgba(10, 10, 172, 0.473),
+    rgba(10, 94, 172, 0.473)
+  );
+}
+/* Oculta el checkbox del menú en escritorio */
+#menu_toggle {
+  display: none;
+}
+/* Icono del menú hamburguesa, oculto por defecto y con tamaño */
+.menu_icon {
+  display: none;
+  font-size: 35px;
+  cursor: pointer;
+}
+/* Imagen genérica, tamaño fijo */
+.img {
+  width: 300px;
+}
+/* Artículos del contenido, centrados, con padding y fondo degradado */
+article {
+  width: 50%;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 20px;
+  background: linear-gradient(
+    270deg,
+    rgb(13, 159, 226),
+    rgb(15, 171, 182),
+    rgb(9, 178, 184)
+  );
+}
+/* Título principal de la sección montaña */
+.title_mountain {
+  font-size: 40px;
+}
+/* Imagen de montaña, tamaño máximo y bordes redondeados */
+.img_mountain {
+  width: 60%;
+  max-width: 500px;
+  border-radius: 30px;
+}
+/* Contenedor del pie de página centrado */
+footer {
+  width: 50%;
+  margin: 40px auto;
+}
+/* Contenedor de redes sociales, centrado y con espacio entre iconos */
+.container_socialmedia {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+@media (max-width: 890px) {
+  /* Ajuste del header, ancho mayor, flex-wrap y bordes menos redondeados */
+  header {
+    width: 90%;
+    flex-wrap: wrap;
+    border-radius: 25px;
+  }
+  /* Muestra el icono del menú en móvil */
+  .menu_icon {
+    display: block;
+  }
+  /* Oculta la barra de navegación por defecto en móvil */
+  #navBar {
+    width: 100%;
+    display: none;
+  }
+  /* Lista de navegación en columna, centrada y con menor espacio entre enlaces */
+  .nav_list {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  /* Muestra el navBar cuando el checkbox está marcado */
+  #menu_toggle:checked + .menu_icon + #navBar {
+    display: block;
+  }
+  /* Ajuste de tamaño del logo y título en móvil */
+  #logo {
+    width: 50px;
+  }
+  #title_web {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 8</title>
+  </head>
+  <body>
+    <div id="container">
+      <img
+        src="https://eslaformacion.com/wp-content/uploads/2025/07/Logotipo-Membrete.svg"
+        alt=""
+      />
+      <h2>
+        Rellena el siguiente formulario y te contestaremos con la máxima
+        brevedad posible.
+      </h2>
+      <form action="datos.txt" id="formulario" method="get">
+        <div class="fila">
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre*" />
+          <input
+            type="text"
+            id="apellido"
+            name="apellidos"
+            placeholder="Apellidos*"
+          />
+          <input
+            type="email"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3,}$"
+            id="email"
+            name="email"
+            placeholder="Correo electronico*"
+          />
+        </div>
+        <div class="fila">
+          <input
+            type="text"
+            pattern="\d{9}"
+            id="telefono"
+            name="telefono"
+            placeholder="Teléfono* (ej: 68364783)"
+          />
+          <select name="provincias" id="provincias">
+            <option value="">Selecciona una provincia</option>
+            <option value="almeria">Almería</option>
+            <option value="cadiz">Cádiz</option>
+            <option value="cordoba">Córdoba</option>
+            <option value="granada">Granada</option>
+            <option value="huelva">Huelva</option>
+            <option value="jaen">Jaén</option>
+            <option value="malaga">Málaga</option>
+            <option value="sevilla">Sevilla</option>
+          </select>
+          <input type="text" id="asunto" placeholder="Asunto*" />
+        </div>
+        <textarea
+          name="comentarios"
+          id="comentario"
+          placeholder="Comentarios"
+        ></textarea>
+        <div id="error"></div>
+        <div id="containerTerminos">
+          <div id="terminos">
+            <input
+              type="checkbox"
+              id="terminos_check"
+              name="aceptar_terminos"
+            />
+            <label for="aceptar_terminos"
+              >He leído y acepto los términos y condiciones de la política de
+              privacidad *</label
+            >
+          </div>
+          <p>*campos obligatorios</p>
+        </div>
+        <input type="submit" id="enviar" value="ENVIAR" />
+      </form>
+    </div>
+  </body>
+</html>
