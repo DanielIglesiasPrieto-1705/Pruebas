@@ -24,11 +24,76 @@ datos_noticias = [
 
 datos_juegos = [
   {
-    imagen: "img/"
-  }
+    imagen: "img/expedition_game.png",
+    precio: "59.99€",
+  },
+  {
+    imagen: "img/spiderman_game.jpg",
+    precio: "69.99€",
+  },
+  {
+    imagen: "img/silenthill_game.png",
+    precio: "49.99€",
+  },
+  {
+    imagen: "img/nosky_game.jpg",
+    precio: "20.99€",
+  },
+  {
+    imagen: "img/black_myth_Game.png",
+    precio: "79.99€",
+  },
+  {
+    imagen: "img/batman.jpg",
+    precio: "34.99€",
+  },
+  {
+    imagen: "img/prototype.avif",
+    precio: "79.99€",
+  },
 
+  {
+    imagen: "img/infamous.jpg",
+    precio: "15.99€",
+  },
+  {
+    imagen: "img/prototype1.jpg",
+    precio: "29.99€",
+  },
+  {
+    imagen: "img/resistent.jpg",
+    precio: "19.99€",
+  },
+  {
+    imagen: "img/naruto.avif",
+    precio: "14.99€",
+  },
+  {
+    imagen: "img/TLOU.jpg",
+    precio: "79.99€",
+  },
+  {
+    imagen: "img/TLOU2.jpg",
+    precio: "69.99€",
+  },
+  {
+    imagen: "img/nier.avif",
+    precio: "29.99€",
+  },
 ];
 
+const grid = document.querySelector("#grid_games");
+datos_juegos.forEach((item) => {
+  grid.innerHTML += `
+<article>
+            <div id="container_img_game">
+              <img src="${item.imagen}" alt="games">
+              <span id="precio_game">${item.precio}</span>
+            </div>
+          </article>`;
+});
+
+// Apartado para crear las noticias
 const contenidoNoticias = document.querySelector("#noticias");
 const grupo = document.querySelector(".grupo");
 const nuevoGrupo = document.createElement("div");

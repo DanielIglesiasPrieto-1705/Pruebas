@@ -92,7 +92,7 @@ header {
 }
 /* Artículos del contenido, centrados, con padding y fondo degradado */
 article {
-  width: 50%;
+  width: 70%;
   margin: 20px auto;
   padding: 15px;
   border-radius: 20px;
@@ -127,7 +127,7 @@ footer {
 @media (max-width: 890px) {
   /* Ajuste del header, ancho mayor, flex-wrap y bordes menos redondeados */
   header {
-    width: 90%;
+    width: 80%;
     flex-wrap: wrap;
     border-radius: 25px;
   }
@@ -137,7 +137,7 @@ footer {
   }
   /* Oculta la barra de navegación por defecto en móvil */
   #navBar {
-    width: 100%;
+    width: 80%;
     display: none;
   }
   /* Lista de navegación en columna, centrada y con menor espacio entre enlaces */
@@ -157,5 +157,11 @@ footer {
   }
   #title_web {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 450px) {
+  #title_web{
+    font-size: 0.8rem;
   }
 }
