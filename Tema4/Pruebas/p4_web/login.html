@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/login.css" />
+    <script src="js/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar sesión/Registro</title>
+  </head>
+  <body>
+    <header>
+      <div class="content_fix">
+        <img id="logotipo" src="img/logotipo.png" alt="logotipo" />
+        <img
+          onclick="activate_menu()"
+          id="menu_icon"
+          src="img/menu.png"
+          alt="menu"
+        />
+      </div>
+      <nav class="navbar">
+        <ul class="list">
+          <li class="contenido_list"><a onclick="activate_login(this)" href="">Iniciar sesión</a></li>
+          <li id="centrar" class="contenido_list">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="contenido_list"><a onclick="activate_login(this)" href="">Registrar</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <aside id="menu">
+        <ul id="list_menu">
+          <li><a href="#">PlayStation</a></li>
+          <li><a href="#">Xbox</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </aside>
+      <section id="login_section">
+        <div id="login_form">
+            <form id="login_formulario">
+              <h2>Iniciar sesión</h2>
+            <input
+              id="username_input"
+              type="text"
+              id="username"
+              placeholder="Nombre de usuario"
+            />
+            <input
+              id="username_input"
+              type="text"
+              id="email"
+              placeholder="Correo electrónico"
+            />
+            <input
+              id="pwd_input"
+              type="password"
+              id="password"
+              placeholder="Contraseña"
+            />
+            <button id="iniciar" type="submit">Iniciar sesión</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="regis_section">
+        <div id="regis_form">
+            <form id="regis_formulario">
+              <h2>Registrate</h2>
+            <input
+              id="username_input"
+              type="text"
+              id="username"
+              placeholder="Nombre de usuario"
+            />
+            <input
+              id="pwd_input"
+              type="password"
+              id="password"
+              placeholder="Contraseña"
+            />
+            <button id="iniciar" type="submit">Registrarse</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

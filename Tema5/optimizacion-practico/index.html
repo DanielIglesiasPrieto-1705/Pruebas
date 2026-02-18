@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DelTaco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="description" content="DelTaco, los mejores tacos de la ciudad" />
+    <meta name="keywords" content="tacos, comida mexicana, DelTaco, restaurante" />
+    <meta name="author" content="Daniel Iglesias Prieto"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eater&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="assets/taco-logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
+  </head>
+  <body>
+    <header class="header-box">
+      <img src="assets/taco-logo.png" alt="Logotipo" class="logo" />
+      <h1 class="slogan eater-regular">De México a tu boca</h1>
+    </header>
+    <section id="examples" class="examples-section">
+      <div class="container">
+        <h2>Disfruta de nuestros tacos</h2>
+
+        <div class="image-row">
+          <div class="image-set">
+            <a
+              class="example-image-link"
+              href="assets/image1.jpg"
+              data-lightbox="example-set"
+              data-title="Tacos al pastor"
+              ><img class="example-image" src="assets/image1.jpg" alt=""
+            /></a>
+            <a
+              class="example-image-link"
+              href="assets/image2.jpg"
+              data-lightbox="example-set"
+              data-title="Tacos de carnitas con queso gratinado"
+              ><img class="example-image" src="assets/image2.jpg" alt=""
+            /></a>
+            <a
+              class="example-image-link"
+              href="assets/image3.jpg"
+              data-lightbox="example-set"
+              data-title="Tacos de carnitas con guacamole"
+              ><img class="example-image" src="assets/image3.jpg" alt=""
+            /></a>
+            <a
+              class="example-image-link"
+              href="assets/taco-logo.png"
+              data-lightbox="example-set"
+              data-title="Logo diseñado por los fundadores de DelTaco"
+              ><img class="example-image" src="assets/local.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="container_video">
+      <video src="assets/video-taco.mp4" autoplay loop controls></video>
+    </div>
+    <footer>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12681.039242959012!2d-5.990155935287458!3d37.38368757816794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126f6613eae8b1%3A0xb4137b489e508d3a!2sTaco%20Bell!5e0!3m2!1ses!2ses!4v1769169954553!5m2!1ses!2ses"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </footer>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/lightbox.js"></script>
+
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-2196019-1"]);
+      _gaq.push(["_trackPageview"]);
+
+      (function () {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src =
+          ("https:" == document.location.protocol
+            ? "https://ssl"
+            : "http://www") + ".google-analytics.com/ga.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

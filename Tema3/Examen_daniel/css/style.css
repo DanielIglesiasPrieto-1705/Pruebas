@@ -135,3 +135,26 @@ footer {
 footer img {
   height: 75px;
 }
+/*Hacemos que los contenedores de errores tengan un ancho del 100%, margen, color rojo, justificación centrada y alineación centrada*/
+#errores_1,#errores_2{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  color: red;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width:800px){
+  #forms{
+    flex-direction: column;
+    align-items: center;
+  }
+  #sec_1{
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  #sec_form_pr{
+    width: 60%;
+  }
+}

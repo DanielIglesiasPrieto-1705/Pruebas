@@ -1,10 +1,19 @@
+/* Hace que la página ocupe toda la pantalla */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 /*Ponemos el body un background color morado*/
 body {
-  background-color: #3c1b4a;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
 }
 /*Hacemos mas pequeña la imagen*/
 #arbol_img {
+  box-shadow: none;
   width: 30%;
 }
 /*Hacemos el titulo de distinto color*/
@@ -13,12 +22,14 @@ body {
 }
 /*Hacemos que el header tenga los contenidos en la misma linea,  que esten alineados y centrado en el centro */
 header {
+  background-color: #00c01a;
   display: flex;
   gap: 5%;
   align-items: center;
 }
 /*Hacemos que el main tenga un color de fondo blanco*/
 #contenidos {
+  flex: 1;
   background-color: white;
   height: auto;
 }
@@ -38,9 +49,9 @@ article {
   width: 95%;
   margin: 0 auto;
 }
-/*Hacemos que los subtitulos tengan el color #3C1B4A*/
+/*Hacemos que los subtitulos tengan el color #00c01a*/
 h2 {
-  color: #3c1b4a;
+  color: #00c01a;
 }
 /*Hacemos que las imagenes tengan un ancho y altura maximo y minimo por defecto (para mejor visualizacion en el responsive)*/
 img {
@@ -48,14 +59,15 @@ img {
   max-width: 200px;
   min-height: 100px;
   max-height: 200px;
+  box-shadow: 10px 10px 5px black;
 }
-/*hacemos que todos los parrafos de articulo tengan el color #3C1B4A*/
+/*hacemos que todos los parrafos de articulo tengan el color #00c01a*/
 #art_index p {
-  color: #3c1b4a;
+  color: #00c01a;
 }
 /*Hacemos que el enlace tenga un color morado y que no tenga la linea debajo*/
 a {
-  color: #3c1b4a;
+  color: #00c01a;
   text-decoration: none;
   font-size: large;
 }
@@ -73,7 +85,7 @@ iframe {
 }
 /*hacemos que el footer este abajo del todo y que el color sus hijos sean blancos*/
 footer {
-  bottom: 0;
+  background-color: #00c01a;
   color: white;
 }
 /*Hacemos que el enlace de el footer sea de color blanco*/
@@ -89,7 +101,7 @@ footer a {
   gap: 30px;
   margin: 0 AUTO;
   display: flex;
-  color: #3c1b4a;
+  color: #00c01a;
   align-items: center;
 }
 /*Hacemos mas pequeña la imagen de animalia*/
@@ -109,7 +121,7 @@ footer a {
   gap: 50px;
   width: 50%;
   margin: 0 auto;
-  color: #3c1b4a;
+  color: #00c01a;
   align-items: center;
 }
 /*--------------------------------------------
@@ -126,7 +138,7 @@ footer a {
   gap: 50px;
   width: 50%;
   margin: 0 auto;
-  color: #3c1b4a;
+  color: #00c01a;
   align-items: center;
 }
 /*--------------------------------------------
@@ -137,7 +149,7 @@ footer a {
   gap: 50px;
   width: 50%;
   margin: 0 auto;
-  color: #3c1b4a;
+  color: #00c01a;
   align-items: center;
 }
 #container_info_1,
@@ -162,7 +174,7 @@ footer a {
   gap: 50px;
   width: 50%;
   margin: 0 auto;
-  color: #3c1b4a;
+  color: #00c01a;
   align-items: center;
 }
 /*#container_protista_info1,
@@ -253,6 +265,7 @@ footer a {
 }
 #info_2{
   grid-area: info_2;
+  margin: 0 auto;
 }
 #img_2{
   grid-area: img_protista_2;

@@ -15,7 +15,7 @@ formularios.addEventListener('submit',  function(evt){
     }
     if(comprobarDatos(asunto)){
         arrErrores.push("Falta por indicar el asunto");
-    }
+    }  
 
     if(arrErrores.length > 0){
         evt.preventDefault();

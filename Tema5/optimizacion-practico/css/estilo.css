@@ -1,0 +1,48 @@
+.eater-regular {
+  font-family: "Eater", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.center{
+  text-align: center;
+}
+.header-box{
+  background-color: #fbc27d;
+}
+.logo{
+  max-width: 30%;
+}
+.slogan{
+  color: #444;
+  width: 50%;
+  margin: 1.5rem auto;
+  text-shadow: 3px 3px 8px #7db6fb;
+  text-transform: uppercase;
+  float: right;
+}
+footer{
+  background-color: #7db6fb;
+}
+#container_video {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+video {
+width: 60%;
+max-width: 600px;
+margin-bottom: 50px;
+}
+iframe{
+  width: 80%;
+  height: 300px;
+  border: 0;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 863px) {
+  .slogan{
+    float: none;
+    width: 90%;
+  }
+}

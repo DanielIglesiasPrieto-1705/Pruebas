@@ -167,3 +167,18 @@ function desactivate_menu() {
   menu_icon.src = "img/menu.png";
   menu_icon.onclick = activate_menu;
 }
+
+/* APARTADO LOGIN */
+let login_form = document.querySelector("#login_section");
+let regis_form = document.querySelector("#regis_section");
+
+function activate_login(obj) {
+
+  if (obj.textContent === "Iniciar sesión") {
+    login_form.style.display = "block";
+    regis_form.style.display = "none";
+  } else {
+    login_form.style.display = "none";
+    regis_form.style.display = "block";
+  }
+}

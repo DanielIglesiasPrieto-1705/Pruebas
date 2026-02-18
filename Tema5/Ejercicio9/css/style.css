@@ -20,8 +20,8 @@ header {
   justify-content: space-between;
   background: linear-gradient(
     to right,
-    rgba(11, 83, 124, 0.397),
-    rgba(19, 131, 196, 0.397)
+    rgb(11, 83, 124),
+    rgb(19, 131, 196)
   );
   border-radius: 0 0 50px 50px;
   position: sticky;
