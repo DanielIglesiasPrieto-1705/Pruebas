@@ -326,6 +326,10 @@ Apartado para el media
   }
 }
 @media screen and (max-width: 450px) {
+  .list{
+    display: block;
+    text-align: center;
+  }
   #centrar {
     text-align: center;
   }

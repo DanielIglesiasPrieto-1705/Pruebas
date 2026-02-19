@@ -81,64 +81,67 @@ datos_juegos = [
     precio: "29.99€",
   },
 ];
+let html = window.location.pathname;
+if (!html.includes("login.html")) {
 
-const grid = document.querySelector("#grid_games");
-datos_juegos.forEach((item) => {
-  grid.innerHTML += `
-<article>
-            <div id="container_img_game">
-              <img src="${item.imagen}" alt="games">
-              <span id="precio_game">${item.precio}</span>
-            </div>
-          </article>`;
-});
-
-// Apartado para crear las noticias
-const contenidoNoticias = document.querySelector("#noticias");
-const grupo = document.querySelector(".grupo");
-const nuevoGrupo = document.createElement("div");
-nuevoGrupo.classList.add("grupo");
-datos_noticias.forEach((item) => {
-  grupo.innerHTML += `
-    <article class="anuncio">
-            <div class="container_img">
-              <img class="img_anuncio" src="${item.imagen}" alt="expedition_33_IA" />
-            </div>
-            <div class="container_info">
-              <h2>${item.titulo}</h2>
-              <p>${item.info}</p>
-            </div>
-            <div class="contacto">
-              <img src="img/logotipo.png" alt="contacto">
-              <div class="contacto_info">
-                <p>Daniel Iglesias Prieto</p>
-                <p>Programador Junior</p>
-                <span>Dec 19, 2025</span>
+  const grid = document.querySelector("#grid_games");
+  datos_juegos.forEach((item) => {
+    grid.innerHTML += `
+  <article>
+              <div id="container_img_game">
+                <img src="${item.imagen}" alt="games">
+                <span id="precio_game">${item.precio}</span>
               </div>
-            </div>
-          </article>
-    `;
-  nuevoGrupo.innerHTML += `
-    <article class="anuncio">
-            <div class="container_img">
-              <img class="img_anuncio" src="${item.imagen}" alt="expedition_33_IA" />
-            </div>
-            <div class="container_info">
-              <h2>${item.titulo}</h2>
-              <p>${item.info}</p>
-            </div>
-            <div class="contacto">
-              <img src="img/logotipo.png" alt="contacto">
-              <div class="contacto_info">
-                <p>Daniel Iglesias Prieto</p>
-                <p>Programador Junior</p>
-                <span>Dec 19, 2025</span>
+            </article>`;
+  });
+  
+  // Apartado para crear las noticias
+  const contenidoNoticias = document.querySelector("#noticias");
+  const grupo = document.querySelector(".grupo");
+  const nuevoGrupo = document.createElement("div");
+  nuevoGrupo.classList.add("grupo");
+  datos_noticias.forEach((item) => {
+    grupo.innerHTML += `
+      <article class="anuncio">
+              <div class="container_img">
+                <img class="img_anuncio" src="${item.imagen}" alt="expedition_33_IA" />
               </div>
-            </div>
-          </article>
-    `;
-});
-contenidoNoticias.appendChild(nuevoGrupo);
+              <div class="container_info">
+                <h2>${item.titulo}</h2>
+                <p>${item.info}</p>
+              </div>
+              <div class="contacto">
+                <img src="img/logotipo.png" alt="contacto">
+                <div class="contacto_info">
+                  <p>Daniel Iglesias Prieto</p>
+                  <p>Programador Junior</p>
+                  <span>Dec 19, 2025</span>
+                </div>
+              </div>
+            </article>
+      `;
+    nuevoGrupo.innerHTML += `
+      <article class="anuncio">
+              <div class="container_img">
+                <img class="img_anuncio" src="${item.imagen}" alt="expedition_33_IA" />
+              </div>
+              <div class="container_info">
+                <h2>${item.titulo}</h2>
+                <p>${item.info}</p>
+              </div>
+              <div class="contacto">
+                <img src="img/logotipo.png" alt="contacto">
+                <div class="contacto_info">
+                  <p>Daniel Iglesias Prieto</p>
+                  <p>Programador Junior</p>
+                  <span>Dec 19, 2025</span>
+                </div>
+              </div>
+            </article>
+      `;
+  });
+  contenidoNoticias.appendChild(nuevoGrupo);
+}
 
 function activate_menu() {
   const menu_icon = document.querySelector("#menu_icon");
@@ -171,7 +174,7 @@ function desactivate_menu() {
 /* APARTADO LOGIN */
 let login_form = document.querySelector("#login_section");
 let regis_form = document.querySelector("#regis_section");
-
+regis_form.style.display = "none";
 function activate_login(obj) {
 
   if (obj.textContent === "Iniciar sesión") {

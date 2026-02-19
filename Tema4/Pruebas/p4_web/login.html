@@ -26,11 +26,11 @@
       </div>
       <nav class="navbar">
         <ul class="list">
-          <li class="contenido_list"><a onclick="activate_login(this)" href="">Iniciar sesión</a></li>
+          <li class="contenido_list"><a onclick="activate_login(this)" return false; href="#">Iniciar sesión</a></li>
           <li id="centrar" class="contenido_list">
             <a href="index.html">Home</a>
           </li>
-          <li class="contenido_list"><a onclick="activate_login(this)" href="">Registrar</a></li>
+          <li class="contenido_list"><a onclick="activate_login(this)" return false; href="#">Registrar</a></li>
         </ul>
       </nav>
     </header>
@@ -49,11 +49,9 @@
             <input
               id="username_input"
               type="text"
-              id="username"
               placeholder="Nombre de usuario"
             />
             <input
-              id="username_input"
               type="text"
               id="email"
               placeholder="Correo electrónico"
@@ -61,7 +59,6 @@
             <input
               id="pwd_input"
               type="password"
-              id="password"
               placeholder="Contraseña"
             />
             <button id="iniciar" type="submit">Iniciar sesión</button>
